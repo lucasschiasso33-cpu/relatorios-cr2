@@ -6,50 +6,95 @@
 <title>Carrossel Elevador</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Carrossel Elevador</h1>
-  <div class="empresa">Mamute</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Carrossel Elevador</h1>
+    <div class="empresa">Mamute</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/b502d690-0b71-46c1-b089-acfc94f65f1c/Mamute_-_Elevador-01.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466X7ULQTNQ%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220144Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDI1GjpJ27dmjV6P4oC8Pavzz9UPWYIr%2Bv8NUFLdcKbsAIhAM992WKOyj1H8DPNXkEDPtUsql3S3LUCIHFBxUINMBAsKv8DCH8QABoMNjM3NDIzMTgzODA1IgyGziAgNwoCg6%2B52YEq3AOL3zz3hjPJntNoSkqOhKy4gGtgkls7HLfgVmQKmucKCqclvg1EhYNmgAmlwsrGQ1%2FbB3oigBFGlH2pDrXQjU3U%2FDj%2Bw8AC4nmH1Zz9vr0B38pSc0WVizkJ3cdcx56FmfHvl7jqAZLZTK3PjLiqvQFnq52F9PzwiWbsIlBPZqVqtRL6vuAkjzmVj6w3VL2JSWxd2U0q4BFRMtc5LnPxB%2FN82mhO8QHEYF9bm0reYDZQsb38tOwrnseyyegr%2Br8qWJccLxKHerABP4lFM6ynh%2F%2BppbbrJN5uhkvIxBsn%2BDqzPOR4v3TamqIEiNa3htXGr0r%2BAh92C2pMqNcbSR60N2otuEWhdPBIO6ECSYpjfqRZE0bMhOocGwV18Ry7LHzd4Y3np7VY%2FjZ9MOZuKsvtAUhKqnKaenGGLcFRx4zSPZ107eUncvCDc31RVv190daJMchUaR9NSXwlTSAlt7xUZ%2FLvl3mhxeejerMnk6EZeLPS9%2FbMXTocmIrjyzBwYADc0ivNaemukm%2BGSK2mQbJafUMffcA0XTxOgvSXjhm5cOdK77x2kJb63nnbxfNXFEvK9x%2BA8YgsIPpMWNwh6Qm6DyG1SC7OPWgPzAIluHg3B6bH4RqdieROYA70zY%2BR6jCiy%2FXOBjqkAagkF0R6lrl6Mhe7p%2FAvRT3TPbyjPDG1QwccWbS2TuoeHnUb1CtQEKWyWTJuPmNjuEZ3Xn22XfnORZXAaiG4jnZ8ivHEAErcvQIb7Jv2%2FZ1G24ZAa0fmIgI6AqCF5OJk1suoTYZGDQZE03yAuIuDifBlpTOphSQUiU9qtLXZZ0O%2F3P1xANZNhYfZX4vxnWo%2BEj8Aj9rS3j9%2B7o66KENKZE598%2Faq&X-Amz-Signature=8d0fcd7169424ac7f4b4529c2227fc4c7013fa1560e63cd5b6596e915a8489c4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Mamute - Elevador-01.png</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/d51a62f4-7d63-4d1e-8686-aef5f60c0c95/Mamute_-_Elevador-02.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466X7ULQTNQ%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220144Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDI1GjpJ27dmjV6P4oC8Pavzz9UPWYIr%2Bv8NUFLdcKbsAIhAM992WKOyj1H8DPNXkEDPtUsql3S3LUCIHFBxUINMBAsKv8DCH8QABoMNjM3NDIzMTgzODA1IgyGziAgNwoCg6%2B52YEq3AOL3zz3hjPJntNoSkqOhKy4gGtgkls7HLfgVmQKmucKCqclvg1EhYNmgAmlwsrGQ1%2FbB3oigBFGlH2pDrXQjU3U%2FDj%2Bw8AC4nmH1Zz9vr0B38pSc0WVizkJ3cdcx56FmfHvl7jqAZLZTK3PjLiqvQFnq52F9PzwiWbsIlBPZqVqtRL6vuAkjzmVj6w3VL2JSWxd2U0q4BFRMtc5LnPxB%2FN82mhO8QHEYF9bm0reYDZQsb38tOwrnseyyegr%2Br8qWJccLxKHerABP4lFM6ynh%2F%2BppbbrJN5uhkvIxBsn%2BDqzPOR4v3TamqIEiNa3htXGr0r%2BAh92C2pMqNcbSR60N2otuEWhdPBIO6ECSYpjfqRZE0bMhOocGwV18Ry7LHzd4Y3np7VY%2FjZ9MOZuKsvtAUhKqnKaenGGLcFRx4zSPZ107eUncvCDc31RVv190daJMchUaR9NSXwlTSAlt7xUZ%2FLvl3mhxeejerMnk6EZeLPS9%2FbMXTocmIrjyzBwYADc0ivNaemukm%2BGSK2mQbJafUMffcA0XTxOgvSXjhm5cOdK77x2kJb63nnbxfNXFEvK9x%2BA8YgsIPpMWNwh6Qm6DyG1SC7OPWgPzAIluHg3B6bH4RqdieROYA70zY%2BR6jCiy%2FXOBjqkAagkF0R6lrl6Mhe7p%2FAvRT3TPbyjPDG1QwccWbS2TuoeHnUb1CtQEKWyWTJuPmNjuEZ3Xn22XfnORZXAaiG4jnZ8ivHEAErcvQIb7Jv2%2FZ1G24ZAa0fmIgI6AqCF5OJk1suoTYZGDQZE03yAuIuDifBlpTOphSQUiU9qtLXZZ0O%2F3P1xANZNhYfZX4vxnWo%2BEj8Aj9rS3j9%2B7o66KENKZE598%2Faq&X-Amz-Signature=f493f23f1daa373b2b4330849ad3e6e5f1c4b8521e91b7ff2b8aa3cbfc682c5c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">02</span>
-          <span class="nome">Mamute - Elevador-02.png</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/a22a073e-3142-495a-a2f5-112f12ff24b2/Mamute_-_Elevador-03.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466X7ULQTNQ%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220144Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDI1GjpJ27dmjV6P4oC8Pavzz9UPWYIr%2Bv8NUFLdcKbsAIhAM992WKOyj1H8DPNXkEDPtUsql3S3LUCIHFBxUINMBAsKv8DCH8QABoMNjM3NDIzMTgzODA1IgyGziAgNwoCg6%2B52YEq3AOL3zz3hjPJntNoSkqOhKy4gGtgkls7HLfgVmQKmucKCqclvg1EhYNmgAmlwsrGQ1%2FbB3oigBFGlH2pDrXQjU3U%2FDj%2Bw8AC4nmH1Zz9vr0B38pSc0WVizkJ3cdcx56FmfHvl7jqAZLZTK3PjLiqvQFnq52F9PzwiWbsIlBPZqVqtRL6vuAkjzmVj6w3VL2JSWxd2U0q4BFRMtc5LnPxB%2FN82mhO8QHEYF9bm0reYDZQsb38tOwrnseyyegr%2Br8qWJccLxKHerABP4lFM6ynh%2F%2BppbbrJN5uhkvIxBsn%2BDqzPOR4v3TamqIEiNa3htXGr0r%2BAh92C2pMqNcbSR60N2otuEWhdPBIO6ECSYpjfqRZE0bMhOocGwV18Ry7LHzd4Y3np7VY%2FjZ9MOZuKsvtAUhKqnKaenGGLcFRx4zSPZ107eUncvCDc31RVv190daJMchUaR9NSXwlTSAlt7xUZ%2FLvl3mhxeejerMnk6EZeLPS9%2FbMXTocmIrjyzBwYADc0ivNaemukm%2BGSK2mQbJafUMffcA0XTxOgvSXjhm5cOdK77x2kJb63nnbxfNXFEvK9x%2BA8YgsIPpMWNwh6Qm6DyG1SC7OPWgPzAIluHg3B6bH4RqdieROYA70zY%2BR6jCiy%2FXOBjqkAagkF0R6lrl6Mhe7p%2FAvRT3TPbyjPDG1QwccWbS2TuoeHnUb1CtQEKWyWTJuPmNjuEZ3Xn22XfnORZXAaiG4jnZ8ivHEAErcvQIb7Jv2%2FZ1G24ZAa0fmIgI6AqCF5OJk1suoTYZGDQZE03yAuIuDifBlpTOphSQUiU9qtLXZZ0O%2F3P1xANZNhYfZX4vxnWo%2BEj8Aj9rS3j9%2B7o66KENKZE598%2Faq&X-Amz-Signature=b41c90b134489e66f0e74876560c4c82de49143d2a62ad23691cbd289e7e2359&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">03</span>
-          <span class="nome">Mamute - Elevador-03.png</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/22d58ff1-df3e-4726-85c5-10943bd45fc7/Mamute_-_Elevador-04.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466X7ULQTNQ%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220144Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDI1GjpJ27dmjV6P4oC8Pavzz9UPWYIr%2Bv8NUFLdcKbsAIhAM992WKOyj1H8DPNXkEDPtUsql3S3LUCIHFBxUINMBAsKv8DCH8QABoMNjM3NDIzMTgzODA1IgyGziAgNwoCg6%2B52YEq3AOL3zz3hjPJntNoSkqOhKy4gGtgkls7HLfgVmQKmucKCqclvg1EhYNmgAmlwsrGQ1%2FbB3oigBFGlH2pDrXQjU3U%2FDj%2Bw8AC4nmH1Zz9vr0B38pSc0WVizkJ3cdcx56FmfHvl7jqAZLZTK3PjLiqvQFnq52F9PzwiWbsIlBPZqVqtRL6vuAkjzmVj6w3VL2JSWxd2U0q4BFRMtc5LnPxB%2FN82mhO8QHEYF9bm0reYDZQsb38tOwrnseyyegr%2Br8qWJccLxKHerABP4lFM6ynh%2F%2BppbbrJN5uhkvIxBsn%2BDqzPOR4v3TamqIEiNa3htXGr0r%2BAh92C2pMqNcbSR60N2otuEWhdPBIO6ECSYpjfqRZE0bMhOocGwV18Ry7LHzd4Y3np7VY%2FjZ9MOZuKsvtAUhKqnKaenGGLcFRx4zSPZ107eUncvCDc31RVv190daJMchUaR9NSXwlTSAlt7xUZ%2FLvl3mhxeejerMnk6EZeLPS9%2FbMXTocmIrjyzBwYADc0ivNaemukm%2BGSK2mQbJafUMffcA0XTxOgvSXjhm5cOdK77x2kJb63nnbxfNXFEvK9x%2BA8YgsIPpMWNwh6Qm6DyG1SC7OPWgPzAIluHg3B6bH4RqdieROYA70zY%2BR6jCiy%2FXOBjqkAagkF0R6lrl6Mhe7p%2FAvRT3TPbyjPDG1QwccWbS2TuoeHnUb1CtQEKWyWTJuPmNjuEZ3Xn22XfnORZXAaiG4jnZ8ivHEAErcvQIb7Jv2%2FZ1G24ZAa0fmIgI6AqCF5OJk1suoTYZGDQZE03yAuIuDifBlpTOphSQUiU9qtLXZZ0O%2F3P1xANZNhYfZX4vxnWo%2BEj8Aj9rS3j9%2B7o66KENKZE598%2Faq&X-Amz-Signature=b4d0308ee83cdba5b797743895b8e365b43aa7c6a49baccd1c239ed68ecb44ce&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">04</span>
-          <span class="nome">Mamute - Elevador-04.png</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/9ded0a73-820b-45ab-ba31-7ca1676c266f/Mamute_-_Elevador-05.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466X7ULQTNQ%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220144Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDI1GjpJ27dmjV6P4oC8Pavzz9UPWYIr%2Bv8NUFLdcKbsAIhAM992WKOyj1H8DPNXkEDPtUsql3S3LUCIHFBxUINMBAsKv8DCH8QABoMNjM3NDIzMTgzODA1IgyGziAgNwoCg6%2B52YEq3AOL3zz3hjPJntNoSkqOhKy4gGtgkls7HLfgVmQKmucKCqclvg1EhYNmgAmlwsrGQ1%2FbB3oigBFGlH2pDrXQjU3U%2FDj%2Bw8AC4nmH1Zz9vr0B38pSc0WVizkJ3cdcx56FmfHvl7jqAZLZTK3PjLiqvQFnq52F9PzwiWbsIlBPZqVqtRL6vuAkjzmVj6w3VL2JSWxd2U0q4BFRMtc5LnPxB%2FN82mhO8QHEYF9bm0reYDZQsb38tOwrnseyyegr%2Br8qWJccLxKHerABP4lFM6ynh%2F%2BppbbrJN5uhkvIxBsn%2BDqzPOR4v3TamqIEiNa3htXGr0r%2BAh92C2pMqNcbSR60N2otuEWhdPBIO6ECSYpjfqRZE0bMhOocGwV18Ry7LHzd4Y3np7VY%2FjZ9MOZuKsvtAUhKqnKaenGGLcFRx4zSPZ107eUncvCDc31RVv190daJMchUaR9NSXwlTSAlt7xUZ%2FLvl3mhxeejerMnk6EZeLPS9%2FbMXTocmIrjyzBwYADc0ivNaemukm%2BGSK2mQbJafUMffcA0XTxOgvSXjhm5cOdK77x2kJb63nnbxfNXFEvK9x%2BA8YgsIPpMWNwh6Qm6DyG1SC7OPWgPzAIluHg3B6bH4RqdieROYA70zY%2BR6jCiy%2FXOBjqkAagkF0R6lrl6Mhe7p%2FAvRT3TPbyjPDG1QwccWbS2TuoeHnUb1CtQEKWyWTJuPmNjuEZ3Xn22XfnORZXAaiG4jnZ8ivHEAErcvQIb7Jv2%2FZ1G24ZAa0fmIgI6AqCF5OJk1suoTYZGDQZE03yAuIuDifBlpTOphSQUiU9qtLXZZ0O%2F3P1xANZNhYfZX4vxnWo%2BEj8Aj9rS3j9%2B7o66KENKZE598%2Faq&X-Amz-Signature=620fe7b9a314be9b5743387028dcb0d0d8863567858bac62ebff3a2e71e16eb5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">05</span>
-          <span class="nome">Mamute - Elevador-05.png</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Mamute - Elevador-01.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/b502d690-0b71-46c1-b089-acfc94f65f1c/Mamute_-_Elevador-01.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WHJ3YDHX%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222803Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDPP%2FfcJcVImk0G0SPAm1battG2kYonWa8nssZbzOdJowIhAPFbR8NgbVZvlquQPlelwYeGG%2FyF8OOlfuIQ0uGZOPdeKv8DCH8QABoMNjM3NDIzMTgzODA1Igzd5K2sIP5P8H7N9eAq3ANz2XrzzYpi8hSkWXxYmbunZfE3NWZRU6DuvzzrzsGv3ae1xNNdHlSENpFTcaK9KqgnPDL2hX%2BoS2YCj1WX2Au7OQ%2BkD9u7HjioLMW0onQUKX7aJqO%2BC8PYgiRK9a4q1WWo%2FkU0r6R73hmdMDNgFDgjqBbYzZM9bh4gVB5O9cqeLij7nMt132QnsOPylB6fEWW%2Fn5zqpWv3eTZ%2FhTQfsPHPZFupDUERO7XFpcBdTnkmL086UkCd5CiE4i%2F0KS29YXr3lu5XZOUFxaxRRmCB%2B6mzWqe57Em2m0IssZICYWKLwz6HUiREUlKFYASd%2FGKdgYIOGCObxd6xlZ3PY1xSNFMsAGH%2FUliSkvn6PA%2FI7KzVRBm6zHv5GNDP5%2FSI2PkIu%2Bq791zOhw8vj6BtL6tRudog4qSe3roC62kHa8oghuX%2BGLJ%2Fr1MdVCqA7LE8ZBeAfxWZJAksHzwkejml6LQ1UignyFk8Yqh7SnjVnmTzL8JTahUIWNnAoNIXEsxt0ZnEYWn6i5gu88HfMKtivJxZCuKzdUxQQ7c0BfBvh5g11K001lCSgtUjqyMD1pBiOTvkD%2F4Z4odLW83i%2Bx0SpKdfDnYUjDhQOnv%2BigY76GgrFA%2FtdpDaXcsvNrKrIbap3jCiy%2FXOBjqkASgaM520vGS4Lb%2B29Z44NeuKcd1I0jeO44CVFRxcX2shc0UrUDEEpq2yk8Lj3thzc1G%2Bw%2BroDT05syytkV0kMrRUhgFNj5B87d6Cf17SWG%2F0t0rJvD2u%2BhfjzARnzM7JkhVbygmOIZCAFnLR7N086AybJyltmqR1cWrHz48uCA5k0bgcpCPlulQweALSNWKJb7V%2Bs1JhmklKbYujmroXXLkgb%2B%2Bp&X-Amz-Signature=f44ad11af241f7a3780dda7f4d660bae6dbc3201087fc5be85b26f28db0c966f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq2')">
+            <span class="num">02</span>
+            <span class="nome">Mamute - Elevador-02.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq2">Ver</span>
+          </div>
+          <div class="preview" id="prevarq2">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/d51a62f4-7d63-4d1e-8686-aef5f60c0c95/Mamute_-_Elevador-02.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WHJ3YDHX%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222803Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDPP%2FfcJcVImk0G0SPAm1battG2kYonWa8nssZbzOdJowIhAPFbR8NgbVZvlquQPlelwYeGG%2FyF8OOlfuIQ0uGZOPdeKv8DCH8QABoMNjM3NDIzMTgzODA1Igzd5K2sIP5P8H7N9eAq3ANz2XrzzYpi8hSkWXxYmbunZfE3NWZRU6DuvzzrzsGv3ae1xNNdHlSENpFTcaK9KqgnPDL2hX%2BoS2YCj1WX2Au7OQ%2BkD9u7HjioLMW0onQUKX7aJqO%2BC8PYgiRK9a4q1WWo%2FkU0r6R73hmdMDNgFDgjqBbYzZM9bh4gVB5O9cqeLij7nMt132QnsOPylB6fEWW%2Fn5zqpWv3eTZ%2FhTQfsPHPZFupDUERO7XFpcBdTnkmL086UkCd5CiE4i%2F0KS29YXr3lu5XZOUFxaxRRmCB%2B6mzWqe57Em2m0IssZICYWKLwz6HUiREUlKFYASd%2FGKdgYIOGCObxd6xlZ3PY1xSNFMsAGH%2FUliSkvn6PA%2FI7KzVRBm6zHv5GNDP5%2FSI2PkIu%2Bq791zOhw8vj6BtL6tRudog4qSe3roC62kHa8oghuX%2BGLJ%2Fr1MdVCqA7LE8ZBeAfxWZJAksHzwkejml6LQ1UignyFk8Yqh7SnjVnmTzL8JTahUIWNnAoNIXEsxt0ZnEYWn6i5gu88HfMKtivJxZCuKzdUxQQ7c0BfBvh5g11K001lCSgtUjqyMD1pBiOTvkD%2F4Z4odLW83i%2Bx0SpKdfDnYUjDhQOnv%2BigY76GgrFA%2FtdpDaXcsvNrKrIbap3jCiy%2FXOBjqkASgaM520vGS4Lb%2B29Z44NeuKcd1I0jeO44CVFRxcX2shc0UrUDEEpq2yk8Lj3thzc1G%2Bw%2BroDT05syytkV0kMrRUhgFNj5B87d6Cf17SWG%2F0t0rJvD2u%2BhfjzARnzM7JkhVbygmOIZCAFnLR7N086AybJyltmqR1cWrHz48uCA5k0bgcpCPlulQweALSNWKJb7V%2Bs1JhmklKbYujmroXXLkgb%2B%2Bp&X-Amz-Signature=cefe5dd7999ea3071f63b2e0dc3ac31c0536e09d6527f5a814098ed6a78e31a4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq3')">
+            <span class="num">03</span>
+            <span class="nome">Mamute - Elevador-03.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq3">Ver</span>
+          </div>
+          <div class="preview" id="prevarq3">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/a22a073e-3142-495a-a2f5-112f12ff24b2/Mamute_-_Elevador-03.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WHJ3YDHX%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222802Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDPP%2FfcJcVImk0G0SPAm1battG2kYonWa8nssZbzOdJowIhAPFbR8NgbVZvlquQPlelwYeGG%2FyF8OOlfuIQ0uGZOPdeKv8DCH8QABoMNjM3NDIzMTgzODA1Igzd5K2sIP5P8H7N9eAq3ANz2XrzzYpi8hSkWXxYmbunZfE3NWZRU6DuvzzrzsGv3ae1xNNdHlSENpFTcaK9KqgnPDL2hX%2BoS2YCj1WX2Au7OQ%2BkD9u7HjioLMW0onQUKX7aJqO%2BC8PYgiRK9a4q1WWo%2FkU0r6R73hmdMDNgFDgjqBbYzZM9bh4gVB5O9cqeLij7nMt132QnsOPylB6fEWW%2Fn5zqpWv3eTZ%2FhTQfsPHPZFupDUERO7XFpcBdTnkmL086UkCd5CiE4i%2F0KS29YXr3lu5XZOUFxaxRRmCB%2B6mzWqe57Em2m0IssZICYWKLwz6HUiREUlKFYASd%2FGKdgYIOGCObxd6xlZ3PY1xSNFMsAGH%2FUliSkvn6PA%2FI7KzVRBm6zHv5GNDP5%2FSI2PkIu%2Bq791zOhw8vj6BtL6tRudog4qSe3roC62kHa8oghuX%2BGLJ%2Fr1MdVCqA7LE8ZBeAfxWZJAksHzwkejml6LQ1UignyFk8Yqh7SnjVnmTzL8JTahUIWNnAoNIXEsxt0ZnEYWn6i5gu88HfMKtivJxZCuKzdUxQQ7c0BfBvh5g11K001lCSgtUjqyMD1pBiOTvkD%2F4Z4odLW83i%2Bx0SpKdfDnYUjDhQOnv%2BigY76GgrFA%2FtdpDaXcsvNrKrIbap3jCiy%2FXOBjqkASgaM520vGS4Lb%2B29Z44NeuKcd1I0jeO44CVFRxcX2shc0UrUDEEpq2yk8Lj3thzc1G%2Bw%2BroDT05syytkV0kMrRUhgFNj5B87d6Cf17SWG%2F0t0rJvD2u%2BhfjzARnzM7JkhVbygmOIZCAFnLR7N086AybJyltmqR1cWrHz48uCA5k0bgcpCPlulQweALSNWKJb7V%2Bs1JhmklKbYujmroXXLkgb%2B%2Bp&X-Amz-Signature=5daeff01801d14a2f0d49c2ca5ac58aadcfc235cca5716f8fbc6345be5302c5f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq4')">
+            <span class="num">04</span>
+            <span class="nome">Mamute - Elevador-04.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq4">Ver</span>
+          </div>
+          <div class="preview" id="prevarq4">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/22d58ff1-df3e-4726-85c5-10943bd45fc7/Mamute_-_Elevador-04.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WHJ3YDHX%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222802Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDPP%2FfcJcVImk0G0SPAm1battG2kYonWa8nssZbzOdJowIhAPFbR8NgbVZvlquQPlelwYeGG%2FyF8OOlfuIQ0uGZOPdeKv8DCH8QABoMNjM3NDIzMTgzODA1Igzd5K2sIP5P8H7N9eAq3ANz2XrzzYpi8hSkWXxYmbunZfE3NWZRU6DuvzzrzsGv3ae1xNNdHlSENpFTcaK9KqgnPDL2hX%2BoS2YCj1WX2Au7OQ%2BkD9u7HjioLMW0onQUKX7aJqO%2BC8PYgiRK9a4q1WWo%2FkU0r6R73hmdMDNgFDgjqBbYzZM9bh4gVB5O9cqeLij7nMt132QnsOPylB6fEWW%2Fn5zqpWv3eTZ%2FhTQfsPHPZFupDUERO7XFpcBdTnkmL086UkCd5CiE4i%2F0KS29YXr3lu5XZOUFxaxRRmCB%2B6mzWqe57Em2m0IssZICYWKLwz6HUiREUlKFYASd%2FGKdgYIOGCObxd6xlZ3PY1xSNFMsAGH%2FUliSkvn6PA%2FI7KzVRBm6zHv5GNDP5%2FSI2PkIu%2Bq791zOhw8vj6BtL6tRudog4qSe3roC62kHa8oghuX%2BGLJ%2Fr1MdVCqA7LE8ZBeAfxWZJAksHzwkejml6LQ1UignyFk8Yqh7SnjVnmTzL8JTahUIWNnAoNIXEsxt0ZnEYWn6i5gu88HfMKtivJxZCuKzdUxQQ7c0BfBvh5g11K001lCSgtUjqyMD1pBiOTvkD%2F4Z4odLW83i%2Bx0SpKdfDnYUjDhQOnv%2BigY76GgrFA%2FtdpDaXcsvNrKrIbap3jCiy%2FXOBjqkASgaM520vGS4Lb%2B29Z44NeuKcd1I0jeO44CVFRxcX2shc0UrUDEEpq2yk8Lj3thzc1G%2Bw%2BroDT05syytkV0kMrRUhgFNj5B87d6Cf17SWG%2F0t0rJvD2u%2BhfjzARnzM7JkhVbygmOIZCAFnLR7N086AybJyltmqR1cWrHz48uCA5k0bgcpCPlulQweALSNWKJb7V%2Bs1JhmklKbYujmroXXLkgb%2B%2Bp&X-Amz-Signature=1b97aa3988de1a7a050d5cd7bb849b4e28d4beeab77fe2ee059d05e931bd7832&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq5')">
+            <span class="num">05</span>
+            <span class="nome">Mamute - Elevador-05.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq5">Ver</span>
+          </div>
+          <div class="preview" id="prevarq5">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/9ded0a73-820b-45ab-ba31-7ca1676c266f/Mamute_-_Elevador-05.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WHJ3YDHX%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222803Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDPP%2FfcJcVImk0G0SPAm1battG2kYonWa8nssZbzOdJowIhAPFbR8NgbVZvlquQPlelwYeGG%2FyF8OOlfuIQ0uGZOPdeKv8DCH8QABoMNjM3NDIzMTgzODA1Igzd5K2sIP5P8H7N9eAq3ANz2XrzzYpi8hSkWXxYmbunZfE3NWZRU6DuvzzrzsGv3ae1xNNdHlSENpFTcaK9KqgnPDL2hX%2BoS2YCj1WX2Au7OQ%2BkD9u7HjioLMW0onQUKX7aJqO%2BC8PYgiRK9a4q1WWo%2FkU0r6R73hmdMDNgFDgjqBbYzZM9bh4gVB5O9cqeLij7nMt132QnsOPylB6fEWW%2Fn5zqpWv3eTZ%2FhTQfsPHPZFupDUERO7XFpcBdTnkmL086UkCd5CiE4i%2F0KS29YXr3lu5XZOUFxaxRRmCB%2B6mzWqe57Em2m0IssZICYWKLwz6HUiREUlKFYASd%2FGKdgYIOGCObxd6xlZ3PY1xSNFMsAGH%2FUliSkvn6PA%2FI7KzVRBm6zHv5GNDP5%2FSI2PkIu%2Bq791zOhw8vj6BtL6tRudog4qSe3roC62kHa8oghuX%2BGLJ%2Fr1MdVCqA7LE8ZBeAfxWZJAksHzwkejml6LQ1UignyFk8Yqh7SnjVnmTzL8JTahUIWNnAoNIXEsxt0ZnEYWn6i5gu88HfMKtivJxZCuKzdUxQQ7c0BfBvh5g11K001lCSgtUjqyMD1pBiOTvkD%2F4Z4odLW83i%2Bx0SpKdfDnYUjDhQOnv%2BigY76GgrFA%2FtdpDaXcsvNrKrIbap3jCiy%2FXOBjqkASgaM520vGS4Lb%2B29Z44NeuKcd1I0jeO44CVFRxcX2shc0UrUDEEpq2yk8Lj3thzc1G%2Bw%2BroDT05syytkV0kMrRUhgFNj5B87d6Cf17SWG%2F0t0rJvD2u%2BhfjzARnzM7JkhVbygmOIZCAFnLR7N086AybJyltmqR1cWrHz48uCA5k0bgcpCPlulQweALSNWKJb7V%2Bs1JhmklKbYujmroXXLkgb%2B%2Bp&X-Amz-Signature=0d7a7f0d88e2bc0a227f6566e9710a3420b7888fa1bcf9ce7d94d73f52f90e39&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
