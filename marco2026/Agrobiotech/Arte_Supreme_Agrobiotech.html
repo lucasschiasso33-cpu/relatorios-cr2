@@ -6,35 +6,66 @@
 <title>Arte Supreme (Agrobiotech)</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Arte Supreme (Agrobiotech)</h1>
-  <div class="empresa">Agrobiotech</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Arte Supreme (Agrobiotech)</h1>
+    <div class="empresa">Agrobiotech</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/4df8f92e-4045-492c-ab2c-b390b8f352ce/SupremeV8.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QMKZXWRR%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T215846Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIC2Cp5Zcpjqr%2F6q1a9BPI%2BxSK3jAwXvyrl59OlvT%2BlP1AiBs5LvvL%2Bahn77t1dpCVcbPIOjEVq%2Flh5m6lZ1ijE1VLSr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMUiLGnZLk24bj%2BSOmKtwDGVS1RbPi3zb%2BG8XcDHZO8DHTxepqKFvfNNX1QpaXMMuCBywZIDy%2F44gL0d%2B5YzkSk0xisfvMIu4WjFRN2pMXUDZyothSJUGGLMXcPXbE7%2Frkl7JTkOD9Mco5QxWhetPqjGiLfQ%2BJQJwmAG9dsBrwPA9KtkJCbgb1xXkj6Riz5su%2Fx94R%2FJD746T8VOKjXUZEQx3XHRdNUbR5TdyPZ46D7f8yq4gKKuDpIvoEMAMzCfvat73j17wcpI2U%2FpKNQNDV05EWfW1eUCwtW3Aq9Pto0%2BNlCL7sGvA3xGryf8zOM5Ru9xpddlJjZaoLLYvtw%2Fs1bMoWzoAUfoXUbRbvPeZhlkR%2BogRWMawLKhZWYEyLEYdBEZ9yqxtTXiwKDWb9qPKyjGudyiR5e9vKKNZPxODgz6QAjowxOlqYkfHqa5JA3UBymkX18IsFSH087czu4KPE1F9Pk5T2K3ytYLB4p7NlXU834sjVQl0ike80lFa5ehWeSOiU16EOt2L9UNFlvwKGCErd6A5H7LCTr14BuGf%2FX9UKcneaUQaoqe34%2Fko%2FiZ%2B2c1kJb%2FzuW9eyR6D17CG7GfOMt8oQNLD8UvUJVX7H9Mu1Uq1yjOXCemxzROu9p1JceiG4PjO0iXvRGWUwocv1zgY6pgFYrXqYNgT%2FLVCM%2FK2Wf%2BVF9mT910DSuM2k3H7pvdryRQpehpu3hZ8qHkCkecPPULZU3jW16VucIoIytfNOA3X3V3%2BJIg%2FZoneHJ1J96Bv1aR4iKT%2BVnPCfRU0KtGt0yHMIAVSAFiDERDnDNSbZggb6E1k0AWa9xaxOIv6r5qv084C9I0xOmDuJ7CgNgtGwTUWPIqcVBdj0qhZuPmqB6FF6EP10GJMF&X-Amz-Signature=7d06ce04551b1541ddc7eafec3dee0edc4a0935837b4a3fa1974a5835c5f8cc3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">SupremeV8.mp4</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/6862c5bd-1c97-47d8-b4ab-5126b5d467ff/SupremeV7.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QMKZXWRR%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T215846Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIC2Cp5Zcpjqr%2F6q1a9BPI%2BxSK3jAwXvyrl59OlvT%2BlP1AiBs5LvvL%2Bahn77t1dpCVcbPIOjEVq%2Flh5m6lZ1ijE1VLSr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMUiLGnZLk24bj%2BSOmKtwDGVS1RbPi3zb%2BG8XcDHZO8DHTxepqKFvfNNX1QpaXMMuCBywZIDy%2F44gL0d%2B5YzkSk0xisfvMIu4WjFRN2pMXUDZyothSJUGGLMXcPXbE7%2Frkl7JTkOD9Mco5QxWhetPqjGiLfQ%2BJQJwmAG9dsBrwPA9KtkJCbgb1xXkj6Riz5su%2Fx94R%2FJD746T8VOKjXUZEQx3XHRdNUbR5TdyPZ46D7f8yq4gKKuDpIvoEMAMzCfvat73j17wcpI2U%2FpKNQNDV05EWfW1eUCwtW3Aq9Pto0%2BNlCL7sGvA3xGryf8zOM5Ru9xpddlJjZaoLLYvtw%2Fs1bMoWzoAUfoXUbRbvPeZhlkR%2BogRWMawLKhZWYEyLEYdBEZ9yqxtTXiwKDWb9qPKyjGudyiR5e9vKKNZPxODgz6QAjowxOlqYkfHqa5JA3UBymkX18IsFSH087czu4KPE1F9Pk5T2K3ytYLB4p7NlXU834sjVQl0ike80lFa5ehWeSOiU16EOt2L9UNFlvwKGCErd6A5H7LCTr14BuGf%2FX9UKcneaUQaoqe34%2Fko%2FiZ%2B2c1kJb%2FzuW9eyR6D17CG7GfOMt8oQNLD8UvUJVX7H9Mu1Uq1yjOXCemxzROu9p1JceiG4PjO0iXvRGWUwocv1zgY6pgFYrXqYNgT%2FLVCM%2FK2Wf%2BVF9mT910DSuM2k3H7pvdryRQpehpu3hZ8qHkCkecPPULZU3jW16VucIoIytfNOA3X3V3%2BJIg%2FZoneHJ1J96Bv1aR4iKT%2BVnPCfRU0KtGt0yHMIAVSAFiDERDnDNSbZggb6E1k0AWa9xaxOIv6r5qv084C9I0xOmDuJ7CgNgtGwTUWPIqcVBdj0qhZuPmqB6FF6EP10GJMF&X-Amz-Signature=5904004ec753ba6c6ef59b90137d7821468999084044ce40302704984a68e917&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">02</span>
-          <span class="nome">SupremeV7.mp4</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">SupremeV8.mp4</span>
+            <span class="ext">MP4</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
+                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/4df8f92e-4045-492c-ab2c-b390b8f352ce/SupremeV8.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662RSAFPN4%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222508Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCMZp1ht6Hjz5aSJn0IJWF4EebkGEki6510KFT2tQ1J7QIgPK0Df1AeRtPkLWfWJAajT98Z8qHi5xZ6c%2FRmQmXCaJgq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDDjDW%2BWtePnTZ0SAZCrcA8bEpgPIu7U251jyfw637zXRKQ54HbZi6531OhEzD9n0YiejpNAVMQigXygp%2B9%2FW2ibb9y0I0LBnVceD5xc8xTm3kLPD2XECPPHAya%2BxFwtp0mKkiMCsRysTseFvVjOl53EMemPhxSk2UHkcTdgsMQ7WPSui3ALmXQw3GJnLRd9slzCO6jguNPTqM59p7IVdVc3rlRpZHe37Fth0vyyH5tUwhSDP%2Fo%2FPuOXam8Nas2%2BySv%2BPaFqKLHGevkacgoAyKJ%2B66tUoDxvzghI78oXmHwWbnnj0sJzn7a84BgDLXPNwDFSYFGmrKJa9fVhmpUNrey4WCYvZ5z78uSgSaJ%2BBA2pmJ2VUC5bVij9yxhUtpA3W8oeZ3jWTZ%2Bn%2FauhWUxLuPa2zoGgpKD9TIA0PJA8M60Qvl%2BvncL37Jt3QlcBqfLDitYL9KY3Xsbao%2FEmvK5CWauuzKibrnPTB35wTIpYrxlzngktNhG7GDujK6VKt5WhWKnrqWwSszFYRMLI%2BBM%2FUIKfDpIGVejWUOWNuHEfKW%2FdIlxXTUydE2%2BnJIzdwNeFdm9NyRnoXpwj%2FriDYtGkCzeZPHJgPSf0%2FDQ11AQh5WYcMFicJc4ps%2F2qvppD2G5cYO4bbCACyEJjm7p7uMJ%2FL9c4GOqUBtEzPJYMPvKSTENLVPaqoNn9JPa09blJq7VpsQ4jba6bwDGXWO20vICh2jkALDpAobxDYF86%2Bv3VfXIpa550qe99OWQGTDmdD1cbuTivreGW05t41JSyfygKeLc%2BuVKv6eVEapk8gMvv3%2B%2BU7Ro15xdFl3aLV%2BnZSyrd%2B%2BY8whAEUtw0HqXGW%2F%2B7ka6nXilCk8BZ%2FWNR%2Fcwl%2BwvAS39wt1Ua8hJGT&X-Amz-Signature=1546e21846a02ef76b187b0f4b68878c437ec1b2f69e9c122250d0207298808f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
+              </video>
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq2')">
+            <span class="num">02</span>
+            <span class="nome">SupremeV7.mp4</span>
+            <span class="ext">MP4</span>
+            <span class="btn" id="btnarq2">Ver</span>
+          </div>
+          <div class="preview" id="prevarq2">
+              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
+                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/6862c5bd-1c97-47d8-b4ab-5126b5d467ff/SupremeV7.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662RSAFPN4%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222508Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCMZp1ht6Hjz5aSJn0IJWF4EebkGEki6510KFT2tQ1J7QIgPK0Df1AeRtPkLWfWJAajT98Z8qHi5xZ6c%2FRmQmXCaJgq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDDjDW%2BWtePnTZ0SAZCrcA8bEpgPIu7U251jyfw637zXRKQ54HbZi6531OhEzD9n0YiejpNAVMQigXygp%2B9%2FW2ibb9y0I0LBnVceD5xc8xTm3kLPD2XECPPHAya%2BxFwtp0mKkiMCsRysTseFvVjOl53EMemPhxSk2UHkcTdgsMQ7WPSui3ALmXQw3GJnLRd9slzCO6jguNPTqM59p7IVdVc3rlRpZHe37Fth0vyyH5tUwhSDP%2Fo%2FPuOXam8Nas2%2BySv%2BPaFqKLHGevkacgoAyKJ%2B66tUoDxvzghI78oXmHwWbnnj0sJzn7a84BgDLXPNwDFSYFGmrKJa9fVhmpUNrey4WCYvZ5z78uSgSaJ%2BBA2pmJ2VUC5bVij9yxhUtpA3W8oeZ3jWTZ%2Bn%2FauhWUxLuPa2zoGgpKD9TIA0PJA8M60Qvl%2BvncL37Jt3QlcBqfLDitYL9KY3Xsbao%2FEmvK5CWauuzKibrnPTB35wTIpYrxlzngktNhG7GDujK6VKt5WhWKnrqWwSszFYRMLI%2BBM%2FUIKfDpIGVejWUOWNuHEfKW%2FdIlxXTUydE2%2BnJIzdwNeFdm9NyRnoXpwj%2FriDYtGkCzeZPHJgPSf0%2FDQ11AQh5WYcMFicJc4ps%2F2qvppD2G5cYO4bbCACyEJjm7p7uMJ%2FL9c4GOqUBtEzPJYMPvKSTENLVPaqoNn9JPa09blJq7VpsQ4jba6bwDGXWO20vICh2jkALDpAobxDYF86%2Bv3VfXIpa550qe99OWQGTDmdD1cbuTivreGW05t41JSyfygKeLc%2BuVKv6eVEapk8gMvv3%2B%2BU7Ro15xdFl3aLV%2BnZSyrd%2B%2BY8whAEUtw0HqXGW%2F%2B7ka6nXilCk8BZ%2FWNR%2Fcwl%2BwvAS39wt1Ua8hJGT&X-Amz-Signature=e1b1c9bb834db28ec415483a3b7fd3c0ad5b757a9f93387d1609180c530d14f3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
+              </video>
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
