@@ -6,30 +6,53 @@
 <title>POSTAGEM - MAMUTE</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>POSTAGEM - MAMUTE</h1>
-  <div class="empresa">Mamute</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>POSTAGEM - MAMUTE</h1>
+    <div class="empresa">Mamute</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/1b2325ad-e412-4fe4-a2e8-2f6061dfdfea/Mamute_-_Inovao.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662IBFT3AY%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220131Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIDkOn1bJKtvsRJ8O0c3OuyoUEP8JVHHNLImOvxGSPdDLAiBnmU8VG2u145FcHRpIm9TtFHgI6skr4XRi1tl5gNbVpyr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIM6xkGaKDAXIxZnSvaKtwDlSuHJzhEZKIwGbrNuSDCMLI2BatSa%2B4RbkJQA0VOKTNfzg3OC7AVPpgIiHN5bG6HUSGNKG73zvwxwSwwlBI2zGDa5BTZcgeg6c%2BVbP3yFTAEoVgdENZMdu6ZzfjW6kJSvUrXbwu8EmpE1Q7DdIq1gZ%2B5ObX8%2B2OHCLguN5S28vCDPXoVuYQxcnEgA9V2UMVvf8QqTDLb65JP64a%2F4Yj8C8ORilwZQfpkXhe6cUCBs90Rchw6UFVWbACjIFq%2Ba82lzBVzrKIvgjNU3w0H4xCnEMPBWiy1kpzWy79cs%2FuIGU73foHaYNcEE40JVV2dWUwh4EnKbUVtBQeEVRkVDoqcXgGs9ECR%2BF%2BvRWpzzFnvtP5d4Ed8ex10MS3wxphVpmWMbb5YKwtER%2FOBoZoC32AU2Ur5zADWv28T%2B3FQA0VWkfYtodrGnGhdMIkvptf02Y5tEahnkR51I7FVjTC%2Bi5FNdDqmokNMJ1mGHLl%2FseclhZ1TbWMcM%2BEOclUwQZ01pCoWpV5a6xjCy%2FHLRdTJJdRwLtTcY3mme6XBXDwhtl7yk8nkW8IKVXy2NDlAhpqTaU4eLG6cLWzvcCSSx3BqM3SpXRZ2XxRhVpkYa3dTLzseOX3DNehdJOWMG9Ba%2FvYwnsv1zgY6pgHL10nyL938MEep8eq3ZbXCnmcTV%2B8%2BJuF4UJGdLBcuRyWAwZMfeX1MtAsuzPQ3%2BSDtooyvnt%2FhUFvKsFcA6h6RiQGZ9jDuKgIXiJ3NlwteoeMFNYoxx%2FAvUUHDEk3RBC%2FGJ%2BqpgD63GucCEsv4n7fF5VOhJXtf8s3pefrAiSd%2BVNIfCPpUrdy2dCxcSJFE1OZmiF4aFvs5Wl43MfLOVsQ%2BgdS13jUO&X-Amz-Signature=49f4cc12557e63a218f2adf8299a289103bf0ea64c737d57d5bf35fe3fb3e8bf&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Mamute - Inovação.mp4</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Mamute - Inovação.mp4</span>
+            <span class="ext">MP4</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
+                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/1b2325ad-e412-4fe4-a2e8-2f6061dfdfea/Mamute_-_Inovao.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667JIOYNZZ%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222750Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIHqkhGsxMpWwlKWnvuHtToCeP3LNFjl5x%2FlJyMmbTs%2BlAiBTcgXvOIxwojcxj2OUkjewPC2c19PKxTw9LDUogW76iCr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMRBqNXlFT%2BfE6hXhJKtwD%2BfMFqdRrgzxTVNS3PMiXGgcR%2BPrpR3%2FzbVxPw4HiBUhjQk8jXH0MtBbtItOqadE8KZ5yKIxEIBSpyTVa%2BX4nKNtPGmmY59%2Bz2GIGb0Cb1Mw7qMbUAoCraYeATt8bjLG68sLUaygcTIhpQ7s9iD%2FNsn24i%2BK39DSEZtPubOfOoS2cXsGsk6qS1GRoEV3err%2FAL%2FB3GHwsgT%2B1CUmm2EuYWkRtuZzjexo05AJD4feWt2xZ2HBaG%2BglSLr3mDHQq6f6DlsAEuNpTctvDez6TTdJ%2FxcwpHlwck8dyTJGyC2UyKz%2B0Mi9auzQjeBFoWXq9vDkGjrONJjKuHZby6CICSNdY%2BulwfJIUrssXD4MxTz320Sg41wKWJkpmCeghEWJN61kPABRZcfuNh251HDez0gB6Yeai6GNvMHSuy6oxKx7HU0MWHQB9mx9XHjWK%2FqDrA2k%2BfD3Vde4ezWIhTOUGEX66SNXOhUO9uuDMKxT4C5du3f8sJbAtXTuuaKFAZhQbe8VxY9OxH8%2BKu94ZVxn1tXGQiOUAipvXT0i%2B0a63Oth6y%2BWY8A17HodinUMH0lmCwJwzNselIa%2FNA7PWueif%2B0vt0mPAB9A9H22YI8G1kbFM4i7P%2F4teTjeZTEaRRYwnsv1zgY6pgHRGm3p6Aosfhfgug3GorX68ZSLsbGFvKUrWTiUu0dGH0y4srS5Q7JVd%2FUwpYe90SRKsTBHHUjUne8Y83%2BP1UeEj%2Bk8%2B4uHyDwiXdi2jcbPjkHd5sWVIk2E4TtP9iwvpkEveR7FiXAz43aV5knU%2F9JMnXNu7lriwo6%2F4XgH8ZZ8oCxJOMgL00ajiOoeq4YRkBwrBwUvy6svcaY9j%2B0vlXlkzDTVpDm4&X-Amz-Signature=d4db055223af7a30f7c67f56c548759b99ce7cbd2b67413114861a4a99f82883&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
+              </video>
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
