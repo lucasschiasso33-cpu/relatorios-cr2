@@ -6,30 +6,53 @@
 <title>10 Perguntas - Chamada Alex</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>10 Perguntas - Chamada Alex</h1>
-  <div class="empresa">Antoniosi</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>10 Perguntas - Chamada Alex</h1>
+    <div class="empresa">Antoniosi</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/4b1ce279-7b9f-4ce0-b2a0-448d4d831922/Chamada_-_Alex_Antoniosi.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466REUJ3QU4%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220029Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCd1W%2B%2FMC%2FL9DyRvMRqAQW%2BBpfxlJ8T9aXUebLZhe908QIhAIksdVHFUEiOtqbytiz14zRSzNUDuAt9WndnRy%2FfP1MWKv8DCH8QABoMNjM3NDIzMTgzODA1Igwbz3N7wKAAppvfFOwq3AOzUXLpB8Qg8izo77cNliwk%2Fz6kJlVZnXxJl7K97ErZ3Y2bkdbncOZsDypyf0gUp1J4ZWtxSw7Ed8BPzKVJhlA7eGzSJrySB3HGjyX80MgYydKo0%2FeN2bAdl0CRkRCZNNhPm7jtlti7iHAF6ykYFhGLAL1x9d8hKd2UQJtklZLYFdYpg6umbD6tsXwY6EPHayU8c25BddJEjyoMmiARi7O40KB6LvL6DF45qxLdbGJA02cbEChVEdABuHa7Da0pTNPwbw17l5emNmo9zPAd4YhNhWL7EdzjyNdRbj5ED32qLmijLbBSgt7JU5ZjmDf0lfGxmrUZtEyviuSPnedLektxYF%2FrvkU9Frd7p%2FAyrlkiRczxS%2BD61qwngAtOlFMaiLVZlL5hv2Vk6rrjibhsF1D6A0eR7nhro21Z2QIRjTo3D70MPDkHxyGaRlv4YvZkJddSYL5daHWNYnCMj58N1t6O1Jp5xLrlNE%2BxQfWKw%2F%2FMC3KS76AjNK072bIZOJPhjfmWdG6LsHKFvXBpr6Guc%2BgsqWrTyqV%2FOzxKxJp7QQhaD9Nl7Ss6E5L850hLs3BjB6blDonYLYdHAC9AEXGHaTkR6Tykco9BuPoXvqmLak6uwahaKHYaJgKWBy3qbDCiy%2FXOBjqkASw2wySR1HqeNG4T4rmlDa0yLeM0RzgPTKotvkeyycQ3stbEcNAkZFzTbePUckRdBmYPGrgbNZ%2BjNCBSbf6bV0qNoU%2Bxfh%2FKGIUzZBFsjb15Rzqutd4RfwQFguZ20%2FA8yg9nMSbXngmTrgjmG324I1tLpqWTXLfdFGTIlvrc7zCWNWkQMsdNQjSnVeXe6PnRVY3lPxmgTbE39wvSDpK0DMyvzOAQ&X-Amz-Signature=1293aaae2ca691bc357cb9cc5a3700b314fdcf2fbf66fdcc49ca15a63882444d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Chamada - Alex Antoniosi.mp4</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Chamada - Alex Antoniosi.mp4</span>
+            <span class="ext">MP4</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
+                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/4b1ce279-7b9f-4ce0-b2a0-448d4d831922/Chamada_-_Alex_Antoniosi.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TPN6HL3N%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222649Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIFmMSMegISfGx4vtF%2FMq9sAlTYIluo0GuQzZdV%2FZIy8pAiA54ozTlSdH1WpWlrVUH58eg%2FY5IF7hqSmZtrsUoNk0Yyr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMlZbQkKLmzMt5vzI%2BKtwD5jJe9%2Foy%2B%2BEJKgrA4eGnMqt5yhoBnRVeWcytb8ck9PVdHaW7Y3PzWVRpaoJq0O44KUk6U26Vh%2Brce7XvV7iOdI6EvT3TpRkOECxUu8AxVua7ZJRirbUyUH%2FVpKMfCMLxriT5%2B3ztuvJhNqQyJjWLL7U13Tg36oTjga2WsrB2oe4f1UyHkhqc1k060PPkKWHk3DJZ%2BEaZzdMkUD27FRtw7NJ6O4guvYtiTQTcWQx%2BOS0ujl2tGFqSMvGxqtI6HozddEs6r0xP1hgGPiQWoXtIYn5YXeSHoIy6tHW5zxClAfzCvN9LbVdkCbBOk8UiNcVXMOQvVWBqupT3NnOyMAxwacchNmJYec25eP5Pn4X24qq9XE%2BJxLJK358J2beP2V5wgRViKq3cUy%2BCHiY1K4DCcGFn1cu3xia%2BJ8z7rWmlipSN6izo%2BsyRRMxTTLt5MeWhDo6AAnMWxdjvA%2Bty5bB4%2BJC6%2BaLXz3AoIfusKPkR3uDbs4fw5HXeYythIWhQPJS8etLj80mommSwYp7cJUvkRkwhGQRLBgXnWXy%2Bpoevzn3a2mUmxcLYP283nJ2oPpX661MxYGPaAUz3OprwSeAqTibGJbYrHbmh%2FrY%2B%2BQppYd6Ei8RKN17eGQS30egwncv1zgY6pgH7oHlJtRz%2FltE2VAPZ%2Fjhqw27Y50VBftpQ7QZIXpRJJVWRPp%2FgYffQ02bTCur7KJLPkko4sA0h%2FmUQ9EFldvYpZUWQPf00BqviVIACY7JWPPjjx1A4hr%2F%2B%2FeKNk2K4Pu2sm%2BVMqI8%2Fl6Pcl6nZbFePVxrB5F%2FPP7ew3XGkk29f1aqb%2BOR%2F4Jl0CzCt0MHFd3cQGioQLg%2BN7Qg3fNSGONK7SM%2ByCyEb&X-Amz-Signature=4d56b64fb9e4b0405f12aac61689a7f16391d033dae0dcf8e19d82a1862f5095&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
+              </video>
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
