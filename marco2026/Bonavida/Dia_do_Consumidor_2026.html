@@ -6,35 +6,62 @@
 <title>Dia do Consumidor 2026</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Dia do Consumidor 2026</h1>
-  <div class="empresa">Bonavida</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Dia do Consumidor 2026</h1>
+    <div class="empresa">Bonavida</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/c635f041-50bb-4c4d-af91-0462e39f8fec/Arte_Bona_Vida_v4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667GBXQWNP%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220021Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIAzGQ2Mh8P158zS95n0fKEVR7dLSZgBM4oqu3eDfhNbwAiBo%2FT5dknsyi97pf8%2BbjL%2Fb%2F9MMDZZwvr0Ln3vghFPYGSr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMjuhvZ5PsAI9AViqWKtwDx1STagvi619ykdS1iNi5OaH3TRdaGGRvDZGhKNMtqpNboYtJJ68oNBtfUy59QJj17odXMfTOGVYzvDPv3J%2Ffo48jlxk41mdn55d7ejm2qYgx46pBx5QS2CpoiZf34lPEGMxX0InXV0KYFITlJOVRoTioSjutyWFHl2uv8dZkbFX3FLftH96gFDxMEsZLTQnTsIoTfK85DhLUnU%2FJEDVAJk0eCdtfULWC6TRl5jmae4%2BIwPD%2FH7eUav4Qm625yhjq1FFeeGPK0OL646GsxtSE17UjKFNerjfGHP3UZ1FjkiUtbBlVhKkckkWtBYYiK9wJbDE5LoxMuvFo1f%2BEWnjlNb429jWYoci0%2BR4dH2DJ%2F0Y%2F5p8ARbMGEfRhpQQ0X8qkKVFZork%2Fyb5bzDgzkOIPZDAwwqdoT0xJmhCHADnvJGRbIhBQCoF4WbRNG158A1PnQDhwRUluZTLcV5ySyfdV6DHsI6ExJQOcX%2FWKqccM1igsrnuBE9b6Y8ihfiP5hDHWR5GilAILEi9vl62V4JJ7gIKRUbgF7LnSHPzIfCRSR%2FBW8u%2FRmXYpbVQdiJisFXyT3zoX0rWwj8UjV9ic83IO0PdqEcfI51dsE9L56bRrR1PnbT789XIT3ChSSGMwoMv1zgY6pgFwb%2B4My85QfGkCc8Y%2FhLW8JrFcAmVWOWFGKadqv2lqYi0h4wDFYuvBiosI1oq4NBK2fj6zOJMhWdBq6ESaQabCLwhka6okqHof8K03%2FrXD0h%2FKKiQ%2Fl%2FKNYKoNeXo%2BwDd%2BRcNCsQJZWMoKsfUaCDJoRKwb3knK2HMCnKrfignRPqurAXrirlM9FIHVS92G1Dd5NA019x77PdFt4wSTkSCxZuGVvK6Y&X-Amz-Signature=667d7745cfb321f81a09645e8455cc0117985b5c25857083a3d293acd1ef1eae&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Arte_Bona_Vida_v4.jpg</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/feab7e4f-e497-48e7-bb35-0b32eb3db990/Arte_Bona_Vida_v3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667GBXQWNP%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220021Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIAzGQ2Mh8P158zS95n0fKEVR7dLSZgBM4oqu3eDfhNbwAiBo%2FT5dknsyi97pf8%2BbjL%2Fb%2F9MMDZZwvr0Ln3vghFPYGSr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMjuhvZ5PsAI9AViqWKtwDx1STagvi619ykdS1iNi5OaH3TRdaGGRvDZGhKNMtqpNboYtJJ68oNBtfUy59QJj17odXMfTOGVYzvDPv3J%2Ffo48jlxk41mdn55d7ejm2qYgx46pBx5QS2CpoiZf34lPEGMxX0InXV0KYFITlJOVRoTioSjutyWFHl2uv8dZkbFX3FLftH96gFDxMEsZLTQnTsIoTfK85DhLUnU%2FJEDVAJk0eCdtfULWC6TRl5jmae4%2BIwPD%2FH7eUav4Qm625yhjq1FFeeGPK0OL646GsxtSE17UjKFNerjfGHP3UZ1FjkiUtbBlVhKkckkWtBYYiK9wJbDE5LoxMuvFo1f%2BEWnjlNb429jWYoci0%2BR4dH2DJ%2F0Y%2F5p8ARbMGEfRhpQQ0X8qkKVFZork%2Fyb5bzDgzkOIPZDAwwqdoT0xJmhCHADnvJGRbIhBQCoF4WbRNG158A1PnQDhwRUluZTLcV5ySyfdV6DHsI6ExJQOcX%2FWKqccM1igsrnuBE9b6Y8ihfiP5hDHWR5GilAILEi9vl62V4JJ7gIKRUbgF7LnSHPzIfCRSR%2FBW8u%2FRmXYpbVQdiJisFXyT3zoX0rWwj8UjV9ic83IO0PdqEcfI51dsE9L56bRrR1PnbT789XIT3ChSSGMwoMv1zgY6pgFwb%2B4My85QfGkCc8Y%2FhLW8JrFcAmVWOWFGKadqv2lqYi0h4wDFYuvBiosI1oq4NBK2fj6zOJMhWdBq6ESaQabCLwhka6okqHof8K03%2FrXD0h%2FKKiQ%2Fl%2FKNYKoNeXo%2BwDd%2BRcNCsQJZWMoKsfUaCDJoRKwb3knK2HMCnKrfignRPqurAXrirlM9FIHVS92G1Dd5NA019x77PdFt4wSTkSCxZuGVvK6Y&X-Amz-Signature=b61fa9ece29ab7b8ba2395bf9b4cb2be0e96a33c35349bc43df17fd72b98b347&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">02</span>
-          <span class="nome">Arte_Bona_Vida_v3.jpg</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Arte_Bona_Vida_v4.jpg</span>
+            <span class="ext">JPG</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/c635f041-50bb-4c4d-af91-0462e39f8fec/Arte_Bona_Vida_v4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666XCMFPV2%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222642Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDeO4yf4hZyARJ%2B78nXeHALFUpWsv2kUk1BNuTczrNMLQIgW5zzMLlP5HVXuqKG0HnOOa9FBJMlkz29rNiB3D6F0Z0q%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDP87wMuMcN2GgODIVyrcA4OSpVCh2ATG1TjXryAV8SZbLJKS2mrk%2Fwx5DRGeYxmM7WdCLN5lT8CAKnNNUOOpiCK8PENK%2FtJbUAclWJ9rOrSaq0NKNVEStNKNOaDs3snv5IeMY5bl3Uc82KZ6bJOIdTvO04ig%2Fn1SM%2FbbNC3Kc4C7N%2BftFVHO47sL%2BaV8tPLrlRV48zBXOmEc9QlyHjPMVyMoitaHzlKHOwbR9JVUJqwwaIk4clnXng683egYzlHQrFBSUmx48NLwBhulFquZfrTR6KL%2BIMpKRbqHaFsuWIEpEer3nH7F1OMqt2feuVp%2B4F%2BxIQXytuN13oqOZX5mdmKWD%2B7m%2FwLn95BHzYZH5C7dXXIn1gz%2BvowMck79JPvWKAoi2RIaybaZYnPTr3%2B1f2m0hcm0KR0874H0dT5lukAY6t0YSiNFGo%2BSH3jAthDM2T5G%2BHYJg00jYBU19GGZqdB5wOEofzi72tjt66NSZ4ddQ9hMYvVD5fl%2Fja%2FPdaNTvQ91MsJeqAfSEP9HjCABQ5BidDVCfaPh2hpvU3XNbWPXjhVvZmPztOMr26sfRZv2i%2BZ%2FKMn0Dzu%2BssRck6NH7Tnhj99zxf0Bhrf49Qj1Mqh0ikdHn4QJRcPYoNK5s2tiLeAF64PZrzwm0jzpMJXL9c4GOqUBr5dN7Em65a19YBOygnML87DI94mdQIFWjP4Oaz6Y6LgPqgeF6nWCWEt3v24Xv%2Fa8MKQU3j6dLnRe7ZEMv1Nk5vNnNNRUDFmzBbiaOl2fm2OnxGRUI6vzE5qj7avfgTP9ulz080QvEUym11Qs3ptCoc6seIJNcrHDQTJdsqlgEysUN7%2FoJvJp8O%2BU2S6wERUaaV1cpt6GZqZmFr7Vu7q%2FBHi6RFJk&X-Amz-Signature=d2b83b683c682e0baddf03379e07c0e34266b1b784f741dacca16ce70cc45d05&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq2')">
+            <span class="num">02</span>
+            <span class="nome">Arte_Bona_Vida_v3.jpg</span>
+            <span class="ext">JPG</span>
+            <span class="btn" id="btnarq2">Ver</span>
+          </div>
+          <div class="preview" id="prevarq2">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/feab7e4f-e497-48e7-bb35-0b32eb3db990/Arte_Bona_Vida_v3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666XCMFPV2%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222642Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDeO4yf4hZyARJ%2B78nXeHALFUpWsv2kUk1BNuTczrNMLQIgW5zzMLlP5HVXuqKG0HnOOa9FBJMlkz29rNiB3D6F0Z0q%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDP87wMuMcN2GgODIVyrcA4OSpVCh2ATG1TjXryAV8SZbLJKS2mrk%2Fwx5DRGeYxmM7WdCLN5lT8CAKnNNUOOpiCK8PENK%2FtJbUAclWJ9rOrSaq0NKNVEStNKNOaDs3snv5IeMY5bl3Uc82KZ6bJOIdTvO04ig%2Fn1SM%2FbbNC3Kc4C7N%2BftFVHO47sL%2BaV8tPLrlRV48zBXOmEc9QlyHjPMVyMoitaHzlKHOwbR9JVUJqwwaIk4clnXng683egYzlHQrFBSUmx48NLwBhulFquZfrTR6KL%2BIMpKRbqHaFsuWIEpEer3nH7F1OMqt2feuVp%2B4F%2BxIQXytuN13oqOZX5mdmKWD%2B7m%2FwLn95BHzYZH5C7dXXIn1gz%2BvowMck79JPvWKAoi2RIaybaZYnPTr3%2B1f2m0hcm0KR0874H0dT5lukAY6t0YSiNFGo%2BSH3jAthDM2T5G%2BHYJg00jYBU19GGZqdB5wOEofzi72tjt66NSZ4ddQ9hMYvVD5fl%2Fja%2FPdaNTvQ91MsJeqAfSEP9HjCABQ5BidDVCfaPh2hpvU3XNbWPXjhVvZmPztOMr26sfRZv2i%2BZ%2FKMn0Dzu%2BssRck6NH7Tnhj99zxf0Bhrf49Qj1Mqh0ikdHn4QJRcPYoNK5s2tiLeAF64PZrzwm0jzpMJXL9c4GOqUBr5dN7Em65a19YBOygnML87DI94mdQIFWjP4Oaz6Y6LgPqgeF6nWCWEt3v24Xv%2Fa8MKQU3j6dLnRe7ZEMv1Nk5vNnNNRUDFmzBbiaOl2fm2OnxGRUI6vzE5qj7avfgTP9ulz080QvEUym11Qs3ptCoc6seIJNcrHDQTJdsqlgEysUN7%2FoJvJp8O%2BU2S6wERUaaV1cpt6GZqZmFr7Vu7q%2FBHi6RFJk&X-Amz-Signature=fc5447ab19a0f4185ed532e00933bc0e7111e9c44e20cb5f9ed96282d11d8a7b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
