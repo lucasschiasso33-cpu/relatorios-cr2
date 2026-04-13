@@ -6,30 +6,51 @@
 <title>Apresentação Agrobiotech (INGLÊS)</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Apresentação Agrobiotech (INGLÊS)</h1>
-  <div class="empresa">Agrobiotech</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Apresentação Agrobiotech (INGLÊS)</h1>
+    <div class="empresa">Agrobiotech</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/ab7a3194-2b20-4ba5-8eb9-e33a2b1f44b2/Agrobiotech_%28BTB-EN%29.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666B5HER3M%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220001Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIFxnDFcXZ6g39gOGzwrxe%2Ft7vdurujYeJUD4iPK6y6R1AiBcYvPcD%2BaGTiuV3Jt4V0nDJp1PtXKXmVtml7AWcXvuYyr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMVMp6DWf7PYY%2F0Qx2KtwDITC%2Fya3o26EyiWCFBCPrLiqiqsu273koAp%2F42%2FSz1xhho%2FuIyAthBvp3lbgg34lJaUneALhNG9S83c1xJY0d2aYt%2FmyYZNNyA3Jg8YPpAVhUv10u38g%2BwJmJGIqcRs8cVlVLfoxLtEmn1zypzFZ6rMJ62vmG16hlhoeI4T3tTawvMbSYyH7xJmDks1wsG1o7BIcSRC9Xbj%2BFIKBFYC4DT46PjzXH2oIEMh08MdQLVRAEE3p%2BYehxUggBzX37zD2r85LBbWlFyK51HsrtEKFD%2BkgyP9map74FZIBApp9JqB2iM3X868EB09%2FWkTq9CXGf5fgswXVpu44FB4DYL8FYAA0zLwF1OIdMIqvm7GB2r9iiXw1q0KhnOdd5uxeBUgEu%2FkmiH%2BNbripW8unHmp9f2BVp7CTN1Y0ORs%2BRg%2BKcoOSrv%2BTF5pxumT%2F1yabOQGh0Bl5NfX15kMnB1pLa2VC3GS68DBYUx1yailfjZ37cda1NtWbtGd8NDIaecze2mJ1FXzwBmPCzuW9Wrx%2BrBpLj93QfMs3IzcgtoXyCGRvCLS4UyaQZrs%2Fj21O9n%2BbEZCI02FmhjqzlCBFi6tMtGXMLKgMoeQ3QqFMwKnXjHeh4ox5dqMr1dbzSS6qXBHkwnsv1zgY6pgHnB6KFZs3aULM2%2Farrp4uA18cumH82jynKvNJ1kbMHJza5cLyThKrLnpEYaqAFUqM74Sx%2BhyAbiaHehM%2Bn8zLaAUgPLHnjAwHQyJUh0olq8y%2FYtskhlXsr6rI%2FBq5qg7qBCU0xeYoSm0BqXPYt5k066e2YLvGmGt%2FwPYsiDkbGfSed8SZIlhAf%2Bxo36XyC%2B4yJw6M2UtJ995dylfm2ztqpnsVMIuuZ&X-Amz-Signature=a470bcba1fd761880d796f92fbb28584617811f9c0a70ac5c13979abab0399ea&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Agrobiotech (BTB-EN).pdf</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Agrobiotech (BTB-EN).pdf</span>
+            <span class="ext">PDF</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/ab7a3194-2b20-4ba5-8eb9-e33a2b1f44b2/Agrobiotech_%28BTB-EN%29.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YV263EWR%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222623Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQC2FcL1jq3BxVh%2FLhK0OsL2t5eZlwJ1ix%2FCYe9a14l4WQIgD8N0UKQvH7TFrMFRIkfQWGs53zjyKEyP6PxO0syLs0Uq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDGAF2kt2WTE2l%2FlbDCrcA9XhvrOJAAiXTkKSAqXvpd8qjQPKxuDU%2FV5qJXc6Kkcos7PW4XyNLXb2Z2wIqjaympfgbth5%2BHWRCu1O583yGNmsSk2hzK%2Fy5XVGvRgCQDC3qT8mRY8hsQ7gP25%2BMNb419ZvK33cid%2BJ%2BXsQtEi5afO39A%2Fxokt9sPXEuxVkBH7GZ5bHJGnjuXkzCKJAxYT06CP%2BnsYMOD3nwoURrnbIjigfSbrhPqQwCk2JodGuhTPaFwpWkxF5W69F8gm9a439bZl6QdAEz6uVEcb%2BB0aYYNea3IDG0hrgLF3oLPonBLtTYF%2BgkCbwhsBPivffncUucRw1Do%2Bdh7cKFpE%2FPYWtPASO6zhKFkE2LH9HWyD9fuVIEcQiq2fexKkZMXwXqdZ4FVFV5EdNRbki8sPyhNpZ8vfDHFjTUHXj1X6q7v3Ejsr8hWAZU0RWyNppU5EmSZVHj%2BsgemtBLj9m6qLvcTHKPXEtEFwoIJrhdXlhGxusrcGNnqYZG1%2FRYt7uc8fXeZYXNZ3VAOIS5XxXFBFg0l15K1ww4K9ZS5qmHobpBVDTkNflhJ%2Bzt7MzWrYCFnxWc8tIzSrwc3CNPkioNKkV4KRLbxfBCKhpmmGsLc04%2BaL5IyB7c0DVDIWXy1O4kLUHMJ%2FL9c4GOqUBMRetoewFTg%2FlmbacVHI9QHsx46grJu5bcrVAVlhpbt50tT8Y9O3n%2B0SPRJUjFF4p%2FNo4qfAMHl6y%2By%2Bv4s3cYa2HRhtlM7VWJ%2BzfMtI05s62W9vYQgtgii%2BMN4kBSpUiLcGQCZ8P2B%2BMDscbO4qJ0HBDybqiZouIm2P73T5nf1GiTXF3Tmmv9iqc89FDTfFQUsxPcgoAXmNZ%2F5S9VXYZOqMWmUJT&X-Amz-Signature=26641d05f7b8a640912e0b81dddd0eb9f044c69cef8eaf8b2bbdd35dd39ece77&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="width:100%;height:80vh;border:none;border-radius:6px;" allowfullscreen></iframe>
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
