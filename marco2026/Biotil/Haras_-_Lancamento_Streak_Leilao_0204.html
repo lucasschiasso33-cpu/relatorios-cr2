@@ -6,30 +6,53 @@
 <title>Haras - Lançamento Streak Leilão (02/04)</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Haras - Lançamento Streak Leilão (02/04)</h1>
-  <div class="empresa">Biotil</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Haras - Lançamento Streak Leilão (02/04)</h1>
+    <div class="empresa">Biotil</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/389e415a-e5a1-40be-8592-9c611312738e/Leilo_-_Lanamento_Streak_02.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RCUPGIRC%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220221Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCVdtuQ%2B6oNxD2emwrunbB6Vclmt6ffuV%2F%2FN1yG5CQbhQIhAN9M4wDvD4EUIfO3V6EBv4lVj53YNhoUKI93PRhOkGtqKv8DCH8QABoMNjM3NDIzMTgzODA1Igy%2BiXG7TI6yaPo0l9cq3APyOCo%2FXGxXZU7OvWo%2BwZFrqPo8eepm5gFdiSeKn7qoIsV4cOcTjCB%2FkzOWtkl2tpsumz3TEnm2%2BFYZJehh4SBQyO%2BgCFGIvSDfYu92ah9RqGFdHElgICbTBdgo%2FkcLoa4FpQVOc5iNn7ykLcSOQvTeVjhHhko91bv0VBsWymJFW8lvMbOiNbxh6j%2Ba29XnOsgp9H6NN%2Bsg9psH7uGHeEUCoQQvOOh9UyVwS%2Fw68lr%2Bhh4nQqPhah6pq%2BfWrdbkyeZkljrNCPQP1dJ7mRDj040RcijTJ%2BFR9B%2BPViowy47YPIc%2FimFh6Tr9AvSA17IUh8kkatCIc3NNicbYW9V6ascZ4gWT8b36wHahqpeHF2LtXNMWJbun%2F1BxWxlU6j93mfT1pJcbvhnvBoaAXJ8J7LLOsYjqzBinsipVLo58yfswdP2LX5%2BPm%2FdX4j2ca5WT3TsXuor0frzkwcbeGcN5pDNwozK6iNkrQ402th2SrqGjfFu5W3xN5ClGIqtNIgS8rVqyx75WZuX7nmtdR3nBhIRSJIjxMdeGtHYHYkKlGi41%2BRr86XGPh9fKQAs8hoYHDZPtmL1VCYkE7IoLjI7W7MYmBFGxVCi331RkETJQp6Lw1sOugi2E%2BW0l3CfJizCey%2FXOBjqkASsn8QnWuTXTuENOT8RgX8wUGTSjVcz9wsjiYAnjBKxgvBDKUwG%2BuSGqITtxWAHOgQINTTfNimH6z0nq3F5%2B0ixtO70zV%2B%2FCkRxtvDrMd4Krb4XxbxoR%2F9DFnMQILrcZhiJwvN%2FggcTr3oqMhA4MnYT3dJFcuzQaKONM%2FMMFTPL3poPoXvlwB6U5AOBvBlwJ1qpl1sHlOFTQO5BfczTG7OJ4%2Bpb9&X-Amz-Signature=5e5f169db206a632475a989a12b041e01d87393c3dde6588b01f4bf32341da96&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Leilão - Lançamento Streak 02.mp4</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Leilão - Lançamento Streak 02.mp4</span>
+            <span class="ext">MP4</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
+                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/389e415a-e5a1-40be-8592-9c611312738e/Leilo_-_Lanamento_Streak_02.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466SEJDKWIW%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222842Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIH%2FnPuptMqoNGfaLqlZMoo18LcVP74SjG2rYWCDEcYGDAiEA7ylKAZqRzfLLINkdaSJH8x06%2BIeDLtY1AIFmhuulvCMq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDNng2PF4pY2omKi4BircA1bjLkZ7C5QG6rtFtggaKK9Is%2FWCyF3ThF0i7Q2iTWJFYiZlcKEckk%2BOF9cocR8mkWMVXoYIp3dYiPW3cGfy0KifCcmU2GKSR%2FJmHXRXt1SodUKZjXy9VH58GSv3aZ5o8DoxjAQNX7oIJPuoZCco6VmQ3602naXlA%2FExEQhK9SwxEjEwhkC48Q%2BN%2Bx5COLQVfBC%2FD6cZxiNxnMCfWip5fcMP%2Br2HjO6%2FFieaY6K6kOqplM4YFG0h%2Fqho%2BS34X6TO0%2FpYBwY3UCRMTnZBFd2LLy%2FR5ZMDR5nBLRmUz6BGL4G0WTLHCxZKgcAuZPZMHQS0PP5lGaqsCvdUvhN8de9QUmq2%2F6cxOhPymPQpRg7eHWjBd5lXGmMRloE%2BImdbEX%2FjQneD76C7YGKTIXIOz25WwS05vv0MwRZeur5rRa1x9K%2F1CBd4p6kAEcsW2r1taIkXbrvJ5slSYAau8dPpBSfIyTnSo1HZHaTyR1Y5B5xjpUmN45NpGj0WZfLp%2Fn4hu8HkcHVqL8J2yg%2B3na%2FWA5SfsGj6M4vHqrWKUTovFc4Mo%2BJhVYwPDVEgAO7bai%2B1jtxsCRSissWr5d7JBO6v5%2B9KPj%2FYbtC0xzbIUzTJT8PGzoKAmVDfqmYxpVKRuNnqMJ7L9c4GOqUBCw%2Fv4MpQ98YG0r6F3Tfxw7vXx3qIbcJGdu26A4T75EruMutRGY%2B4gKomSekkB7ayJjdlR7KFMFf%2B%2FKOhEfTku7nJLtEdSFWqt%2FYc0Ln8cvWfkiwtB%2BsvZh2hBjU89MMRWqaqVhfxtnkEH4tP9NPXYX%2FEG0R436yvFOhtLRL2tlMJ6lXkTOr0V5qFJ%2FZt0JHfoE7GnZa7Q8lVMTN3yXM%2FoGTJM6OE&X-Amz-Signature=79da2ce4a5eabc9f52c301ac8aedc21a1472a6b4b9460957d7d1ec8c75fd7676&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
+              </video>
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
