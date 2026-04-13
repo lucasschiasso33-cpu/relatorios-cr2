@@ -6,40 +6,73 @@
 <title>Carrossel Dia de Campo</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Carrossel Dia de Campo</h1>
-  <div class="empresa">Biotil</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Carrossel Dia de Campo</h1>
+    <div class="empresa">Biotil</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/3c2a5283-565d-4f7b-81b1-89c235d52b0f/Biotil_-_Carrossel-01.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TKMAV3IQ%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220253Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDR3OTdD36BwSGMSoMyAnnkZ6BUg76OdbBgKqFuv%2FFt3gIhAMXL%2BNTphEbtDnpWZH8d4T8RetLQTwa8wHYEpC3OfP1JKv8DCH8QABoMNjM3NDIzMTgzODA1IgwUdhHcVy51fGXR1ZYq3AP%2B2lEMXtFN2fmnHfMPzDOYVdoY2BhRx7m9JqGDq196rqzwnaspmv3z7KADL98ldmwg8zJCbzdmB%2BMEhmxfmFzoDbIQMxvFRmzkQFdOjeohga5iQIW%2BqqWbKNSbyi4pgUsfXlPm1ly4DrZu9lYDsZFuB7DsR%2FqYMlevwKh8mmx9P4vBo09HuD9TO9WaKZYXTKRVtngD8RAKnWbT95eIBkOSkYLktLTxDHvhfSvMUDPFC3FjLs5zWywp2BfDKSBPKhx5B9iEovcc0it29wfT9alBwmlwSx%2Bh2hMFF3fDYMWxR0MCjogqE8PkrxhmwirhHpLq4esK%2FWxXNKKEcJn5YZWEySeNMGDZ4vWU9U38NI3T7KVh1Yv33fYLFV%2FNxpsS7ah253ABvciX9NULODsz5g%2BGEYAi5WErfQuiIjvB9Kz2VJyBDP1IerVXUvbcB5rWDqWmxFhHsQQ8FFYL1rg6HO7gj16RxI99C8cx3Co4qzHIYTppQOtdGH%2BVk7nghnaKRBtM7NNj6OcIbATgJaTmty05McrmN9muoQyrfPmxLodHDM1jZ%2Fxy9SEXi1OK9y%2FIK3NhLz3byIMK3YBIo0Oy30nbyPgCi%2BD2gYsg2Um5f4NNbbntfT16C%2BVfYny3JTCey%2FXOBjqkAYJXpLaNCtcRPlTff8lDvIaUIPUfGpYbJOVabWf9AoNB1U8CTHysB905zx5iEs8dVYsJiYFiTduA1PGv0nasY9Jw%2FxYSTMQPFHgiT2NY6rRYz8oRGeIbhUZUQ6uZlEghH%2FkP%2BdSPzw3Ebx5OUhIhn9bYOOEZMLHWB5GI2HV4Usi0OaQGN9jm2BHUFUuvGyx9rv78WYrnL3eGfMO6CLG262Pkwe8A&X-Amz-Signature=5733d16ef7ad3a9ae7b8a6d9581981a5a15c08274b2eadcd0fcb0282e71e553b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Biotil - Carrossel-01.png</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/c6622f5d-1d15-4283-8f70-2c9dfb6deef4/Biotil_-_Carrossel-02.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TKMAV3IQ%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220253Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDR3OTdD36BwSGMSoMyAnnkZ6BUg76OdbBgKqFuv%2FFt3gIhAMXL%2BNTphEbtDnpWZH8d4T8RetLQTwa8wHYEpC3OfP1JKv8DCH8QABoMNjM3NDIzMTgzODA1IgwUdhHcVy51fGXR1ZYq3AP%2B2lEMXtFN2fmnHfMPzDOYVdoY2BhRx7m9JqGDq196rqzwnaspmv3z7KADL98ldmwg8zJCbzdmB%2BMEhmxfmFzoDbIQMxvFRmzkQFdOjeohga5iQIW%2BqqWbKNSbyi4pgUsfXlPm1ly4DrZu9lYDsZFuB7DsR%2FqYMlevwKh8mmx9P4vBo09HuD9TO9WaKZYXTKRVtngD8RAKnWbT95eIBkOSkYLktLTxDHvhfSvMUDPFC3FjLs5zWywp2BfDKSBPKhx5B9iEovcc0it29wfT9alBwmlwSx%2Bh2hMFF3fDYMWxR0MCjogqE8PkrxhmwirhHpLq4esK%2FWxXNKKEcJn5YZWEySeNMGDZ4vWU9U38NI3T7KVh1Yv33fYLFV%2FNxpsS7ah253ABvciX9NULODsz5g%2BGEYAi5WErfQuiIjvB9Kz2VJyBDP1IerVXUvbcB5rWDqWmxFhHsQQ8FFYL1rg6HO7gj16RxI99C8cx3Co4qzHIYTppQOtdGH%2BVk7nghnaKRBtM7NNj6OcIbATgJaTmty05McrmN9muoQyrfPmxLodHDM1jZ%2Fxy9SEXi1OK9y%2FIK3NhLz3byIMK3YBIo0Oy30nbyPgCi%2BD2gYsg2Um5f4NNbbntfT16C%2BVfYny3JTCey%2FXOBjqkAYJXpLaNCtcRPlTff8lDvIaUIPUfGpYbJOVabWf9AoNB1U8CTHysB905zx5iEs8dVYsJiYFiTduA1PGv0nasY9Jw%2FxYSTMQPFHgiT2NY6rRYz8oRGeIbhUZUQ6uZlEghH%2FkP%2BdSPzw3Ebx5OUhIhn9bYOOEZMLHWB5GI2HV4Usi0OaQGN9jm2BHUFUuvGyx9rv78WYrnL3eGfMO6CLG262Pkwe8A&X-Amz-Signature=9925b922f461c3d5988c65ce563aa7b22fa761938c7ba33ae148b2a60dfe1414&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">02</span>
-          <span class="nome">Biotil - Carrossel-02.png</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/8516d42d-ccc5-4593-b33e-111509f1c79a/Biotil_-_Carrossel-03.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TKMAV3IQ%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220253Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDR3OTdD36BwSGMSoMyAnnkZ6BUg76OdbBgKqFuv%2FFt3gIhAMXL%2BNTphEbtDnpWZH8d4T8RetLQTwa8wHYEpC3OfP1JKv8DCH8QABoMNjM3NDIzMTgzODA1IgwUdhHcVy51fGXR1ZYq3AP%2B2lEMXtFN2fmnHfMPzDOYVdoY2BhRx7m9JqGDq196rqzwnaspmv3z7KADL98ldmwg8zJCbzdmB%2BMEhmxfmFzoDbIQMxvFRmzkQFdOjeohga5iQIW%2BqqWbKNSbyi4pgUsfXlPm1ly4DrZu9lYDsZFuB7DsR%2FqYMlevwKh8mmx9P4vBo09HuD9TO9WaKZYXTKRVtngD8RAKnWbT95eIBkOSkYLktLTxDHvhfSvMUDPFC3FjLs5zWywp2BfDKSBPKhx5B9iEovcc0it29wfT9alBwmlwSx%2Bh2hMFF3fDYMWxR0MCjogqE8PkrxhmwirhHpLq4esK%2FWxXNKKEcJn5YZWEySeNMGDZ4vWU9U38NI3T7KVh1Yv33fYLFV%2FNxpsS7ah253ABvciX9NULODsz5g%2BGEYAi5WErfQuiIjvB9Kz2VJyBDP1IerVXUvbcB5rWDqWmxFhHsQQ8FFYL1rg6HO7gj16RxI99C8cx3Co4qzHIYTppQOtdGH%2BVk7nghnaKRBtM7NNj6OcIbATgJaTmty05McrmN9muoQyrfPmxLodHDM1jZ%2Fxy9SEXi1OK9y%2FIK3NhLz3byIMK3YBIo0Oy30nbyPgCi%2BD2gYsg2Um5f4NNbbntfT16C%2BVfYny3JTCey%2FXOBjqkAYJXpLaNCtcRPlTff8lDvIaUIPUfGpYbJOVabWf9AoNB1U8CTHysB905zx5iEs8dVYsJiYFiTduA1PGv0nasY9Jw%2FxYSTMQPFHgiT2NY6rRYz8oRGeIbhUZUQ6uZlEghH%2FkP%2BdSPzw3Ebx5OUhIhn9bYOOEZMLHWB5GI2HV4Usi0OaQGN9jm2BHUFUuvGyx9rv78WYrnL3eGfMO6CLG262Pkwe8A&X-Amz-Signature=f3945400532471e8572349dd861e28fdeb60d51b975382ef8dbb0cac629c1026&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">03</span>
-          <span class="nome">Biotil - Carrossel-03.png</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Biotil - Carrossel-01.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/3c2a5283-565d-4f7b-81b1-89c235d52b0f/Biotil_-_Carrossel-01.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665EFDPB5P%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222916Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIEzraq4wrb8VhyfCYrmurH2zoZdSDWGNaVCeJgn5EP%2BIAiEAtW8OgdjJ4BYRxV486BPKnrGFFTTxEFc11n4FMb0A4nQq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDC3UxQqUiNT0AM47zircA%2B%2FMSirVHXDvfFGLidRKSUqX%2FvyzDP36kAOjX6WyrdRZSc8ty6VQ%2F1KU%2B8FS0Ud7SCQyhR6U4eA7vuf%2FknodGk%2B44F4pmLonrM9PYQXjWTrgv6LRsCcADbJMhP3UMWWpuApxRDn%2BhOD4IMoOtlFVWBuYNruCZMva%2FNeO2ofp%2Bx0pEcZKCjQlTgU1IkFpMRw0h8avk%2BaSNN2Z2jk3Bvw50OkAHx9Iuc%2FBbSFx4sP2wQlHWysLEKbsxtHOUO1X%2BaQggIDLC6%2F%2BV5rtHN2U0jchaw7c5oEI72EOsOtd%2BixdW6YJRDJs8zTEcJpHMM%2BbnNVXfP7p8o76LpjUrZXemXAg%2BDV2ryzXL6bheLbhipmWjLs0pLqSIp2aZ4AocxV4FnyTBIuB6%2BH%2FArtRofuEgKRxKHACOmCizNnWRabgDBncAH8fnBh%2FRQruCS9uu3H57OgrkHVXvkx9wrfdL0LhibL96bJCqORvOXtx%2FNvKSMwOS%2FMWUtRTPpxdy55GPraPKlXfklwN5u6x0Qp7dhOky41uXkfG5iMZQ3ZjHm8eEa%2BzeuN20fZ9XvDflU%2Bn0EOmeuJ57QpBu7AABcU4NV7cK%2Fw6N7eBU%2FUmqFNGRd7uX%2F6795gMic0GlHYpBiDNOfbhMJ7L9c4GOqUBVpF%2Fh%2BqnlwnP8yy7HMk8feUwc77Ngeb%2FofY1rmblgjWpG%2B%2B3lJku2OaQXlP%2FE%2Fv%2BZcC8xtHZ2c%2FLUkucDREamCzl90QDGfQUM1yYb69P9DOkW%2FIljbocIU3uxWww2TqqhPPHHx6jtm9Q8m68DmVDFS44NnYhJjnAcz0zIp95lJJoOH86kh39pT2QnkY3uP5RL3pzMA3DJNhgBUWU3ksV0Ey20l8J&X-Amz-Signature=240180f30dd54982384d43a216ba796b8ec711f38e9600cdb1f8409ad9d5ad17&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq2')">
+            <span class="num">02</span>
+            <span class="nome">Biotil - Carrossel-02.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq2">Ver</span>
+          </div>
+          <div class="preview" id="prevarq2">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/c6622f5d-1d15-4283-8f70-2c9dfb6deef4/Biotil_-_Carrossel-02.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665EFDPB5P%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222916Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIEzraq4wrb8VhyfCYrmurH2zoZdSDWGNaVCeJgn5EP%2BIAiEAtW8OgdjJ4BYRxV486BPKnrGFFTTxEFc11n4FMb0A4nQq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDC3UxQqUiNT0AM47zircA%2B%2FMSirVHXDvfFGLidRKSUqX%2FvyzDP36kAOjX6WyrdRZSc8ty6VQ%2F1KU%2B8FS0Ud7SCQyhR6U4eA7vuf%2FknodGk%2B44F4pmLonrM9PYQXjWTrgv6LRsCcADbJMhP3UMWWpuApxRDn%2BhOD4IMoOtlFVWBuYNruCZMva%2FNeO2ofp%2Bx0pEcZKCjQlTgU1IkFpMRw0h8avk%2BaSNN2Z2jk3Bvw50OkAHx9Iuc%2FBbSFx4sP2wQlHWysLEKbsxtHOUO1X%2BaQggIDLC6%2F%2BV5rtHN2U0jchaw7c5oEI72EOsOtd%2BixdW6YJRDJs8zTEcJpHMM%2BbnNVXfP7p8o76LpjUrZXemXAg%2BDV2ryzXL6bheLbhipmWjLs0pLqSIp2aZ4AocxV4FnyTBIuB6%2BH%2FArtRofuEgKRxKHACOmCizNnWRabgDBncAH8fnBh%2FRQruCS9uu3H57OgrkHVXvkx9wrfdL0LhibL96bJCqORvOXtx%2FNvKSMwOS%2FMWUtRTPpxdy55GPraPKlXfklwN5u6x0Qp7dhOky41uXkfG5iMZQ3ZjHm8eEa%2BzeuN20fZ9XvDflU%2Bn0EOmeuJ57QpBu7AABcU4NV7cK%2Fw6N7eBU%2FUmqFNGRd7uX%2F6795gMic0GlHYpBiDNOfbhMJ7L9c4GOqUBVpF%2Fh%2BqnlwnP8yy7HMk8feUwc77Ngeb%2FofY1rmblgjWpG%2B%2B3lJku2OaQXlP%2FE%2Fv%2BZcC8xtHZ2c%2FLUkucDREamCzl90QDGfQUM1yYb69P9DOkW%2FIljbocIU3uxWww2TqqhPPHHx6jtm9Q8m68DmVDFS44NnYhJjnAcz0zIp95lJJoOH86kh39pT2QnkY3uP5RL3pzMA3DJNhgBUWU3ksV0Ey20l8J&X-Amz-Signature=9598ad3950d6dc5351b00ca6d5b9952f26a4ec000685b5ec1451e6ce0e33a70b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq3')">
+            <span class="num">03</span>
+            <span class="nome">Biotil - Carrossel-03.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq3">Ver</span>
+          </div>
+          <div class="preview" id="prevarq3">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/8516d42d-ccc5-4593-b33e-111509f1c79a/Biotil_-_Carrossel-03.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665EFDPB5P%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222916Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIEzraq4wrb8VhyfCYrmurH2zoZdSDWGNaVCeJgn5EP%2BIAiEAtW8OgdjJ4BYRxV486BPKnrGFFTTxEFc11n4FMb0A4nQq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDC3UxQqUiNT0AM47zircA%2B%2FMSirVHXDvfFGLidRKSUqX%2FvyzDP36kAOjX6WyrdRZSc8ty6VQ%2F1KU%2B8FS0Ud7SCQyhR6U4eA7vuf%2FknodGk%2B44F4pmLonrM9PYQXjWTrgv6LRsCcADbJMhP3UMWWpuApxRDn%2BhOD4IMoOtlFVWBuYNruCZMva%2FNeO2ofp%2Bx0pEcZKCjQlTgU1IkFpMRw0h8avk%2BaSNN2Z2jk3Bvw50OkAHx9Iuc%2FBbSFx4sP2wQlHWysLEKbsxtHOUO1X%2BaQggIDLC6%2F%2BV5rtHN2U0jchaw7c5oEI72EOsOtd%2BixdW6YJRDJs8zTEcJpHMM%2BbnNVXfP7p8o76LpjUrZXemXAg%2BDV2ryzXL6bheLbhipmWjLs0pLqSIp2aZ4AocxV4FnyTBIuB6%2BH%2FArtRofuEgKRxKHACOmCizNnWRabgDBncAH8fnBh%2FRQruCS9uu3H57OgrkHVXvkx9wrfdL0LhibL96bJCqORvOXtx%2FNvKSMwOS%2FMWUtRTPpxdy55GPraPKlXfklwN5u6x0Qp7dhOky41uXkfG5iMZQ3ZjHm8eEa%2BzeuN20fZ9XvDflU%2Bn0EOmeuJ57QpBu7AABcU4NV7cK%2Fw6N7eBU%2FUmqFNGRd7uX%2F6795gMic0GlHYpBiDNOfbhMJ7L9c4GOqUBVpF%2Fh%2BqnlwnP8yy7HMk8feUwc77Ngeb%2FofY1rmblgjWpG%2B%2B3lJku2OaQXlP%2FE%2Fv%2BZcC8xtHZ2c%2FLUkucDREamCzl90QDGfQUM1yYb69P9DOkW%2FIljbocIU3uxWww2TqqhPPHHx6jtm9Q8m68DmVDFS44NnYhJjnAcz0zIp95lJJoOH86kh39pT2QnkY3uP5RL3pzMA3DJNhgBUWU3ksV0Ey20l8J&X-Amz-Signature=f2e4ff387fc1238b03af041d1b2583d888a8d50e08a52818e5d46f8aa781ed97&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
