@@ -6,30 +6,51 @@
 <title>Conteúdo vaga de repositor</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Conteúdo vaga de repositor</h1>
-  <div class="empresa">Bonavida</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Conteúdo vaga de repositor</h1>
+    <div class="empresa">Bonavida</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/63cd98a6-0531-442c-8ab9-f8187dc7c9d9/Bonavida_Arte.cdr.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466T5Q577BO%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T215912Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDlFl962KfmwFFYjaDlQqANceswenBIhKh01x3E8mg4BQIhALLCXcKlM%2F4ucqVS75tuq%2Bn0S%2FnCeAsHSDQh%2FsGx98yNKv8DCH8QABoMNjM3NDIzMTgzODA1IgzJvOZruKIIiaTC6H0q3ANAJmcGV1sY8g8vFQtJ20amB%2FIXWZ%2B7XCeowAwu4YfTV3JfKLP4tfUKbCTAhPWXF0hLlAEyXaG5UYHTtRcO3LceJ2RXkwN%2BhbyIvZcaUpmyjgTlpWLPyrQlvJ7XXZuJIcyCgiGxqGHt6woTxz%2Bpz%2F4brishRXecsNDU9wPhAGjFmDN5fShTJ6aN0B6Lja5WiwRrdwYnzT7qodnnJ1nHlZ6cAZ7UJbyRnRDOALVlaadY1RsmzVDkIorvfCRxqJGaXIVC7RtgHBX9y5EXaSjM7%2B8wOaZBcJQBngpOx5zcEoraR4gX0ksFJjMHsak7l5up4mArD7OQ%2FumC4X3pah6ZK5a0CPkrNd3kHCvXcYxzwl1cI%2BUzk4Mi8L62321LegX2j%2FsY%2BI1mkzxTp73Kw1WIRqDjp9eQ3YmB0ICnCCj5uSS9MM4Y%2F%2BnfvaIi71oXkjuvp0UNFnWZYr8Ql4qFNHZFGWNZe%2B37KjSXuGIjs6yATQ6G1Gp6xczZmbNbgvgmJvSPqBDgk8eBKqzRc6WI86BLsZsGglo1Cdbxu5FtMKI9X%2Ftsp8vdJueFOFpdMlRcvIHjkMgi6sfg7660tmGwVzRVVEB%2BwN2YfFbq6UolbMfhcjvORon4oHigw2n3ewL03TCiy%2FXOBjqkATDfs4LJO2duUeWzxG%2FezNZg%2F9khG1c3eXELgfYlQJ18S%2FF5D8t%2FiAOiAuqZkIcbT%2B0pE1UbVq6SnW9wBhdFk%2BDGwX5rhy2pTwUJ%2FTQuibLX3c6I8DlECb3%2F3w%2BPvTtEzVMx1MOcJq3dOvSuoW9W7ckEKR6%2FnfdRyX9DI8ZUsCFe%2FNu7fXBJ5IqEWRPmCRDhktTBs%2F%2BJUrK9GQ2B66K0w8Aq%2B3VW&X-Amz-Signature=d8f090ae14eb8581eba9474d1b7838ca1d033b1709204878fd39cba42b86109b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Bonavida_Arte.cdr.jpg</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Bonavida_Arte.cdr.jpg</span>
+            <span class="ext">JPG</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/63cd98a6-0531-442c-8ab9-f8187dc7c9d9/Bonavida_Arte.cdr.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664R6TZWDF%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222536Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCMH8Wh7fHaqbGr9BB18EMiC2jxajyfADoCDUcFQJ1j2gIgRKsxDTTkOihG%2FBn2r92kbsO%2Brmndlp7QccZi%2Bg8Yp9sq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDNbTq4MU9l%2FcvMmFaCrcA80sF9LF3Zhh1yHNF2r5ta4XhV5t1skY9FcOYy6nxhOtlAEMa%2BI%2FKJPxZJfzQO8l4gCG%2B5tV0HAzq9jm2RvrTO1rjWdu3toRXRVtU2DDZV57l4BCIS80gwPS6Ip8m4coUjy8iDeAzO2aamxIkwfcdC3S5MP6WcftMDITFg270XZibC50R7lORLWPI9YvRYm7eKhVZe3T5o%2BMJaPGsgz1QHceffQIAEk2h%2FcYAZpHNsG%2BUXE8XRnev8Kvcexzn3DdDNbuqRQwOrmcr83HgTAb6Ec2vT%2BP2bD4TtbrRWjrToGu%2Fb0XPHojc3hpUuU2gkKKBTDDAiOFatVMbb2G1UlWEqfvl43yQ8wUMiHlbiI%2B8cw%2F2x6q%2FO2QXxwQwkBhJHbeJfOa8aicJpD8UIogE26dn4fgdwGyV4EJHiIQVQOVQQzoOUqeErQR4baXBYtdlbA7IP6lAyv8rRDIL5NIgCnZkBWnlTUeYiJeeyb%2Bkp5O%2FCcujOiLszQgC1CZsx4D52TTwXbGfMmMvGXqrP3ogPvueGpnfBwrBxyFC8MRd0F%2FA0WP8AaDuRhep273uUrH3vRSoh9pKIukRBXpbEdMgAKmGlon1T4r798mSXWnDeUu%2FDNGCFi893OZH2vC%2BSkEMKDL9c4GOqUBiuH8QAm%2BDW06zayxyZHL1D%2FL7rT%2F1pfcrrGmD8LCMoPfLTf5brPEJrmZqqK4EY9aji5UeYCiy%2Fe8lvvHNJxTDmQ%2Bapsijg%2FKm9JRexxHys2cImTBU6cUI%2B08k%2Fo5Dcc1ww6pDHcGGBPFNKoScZElVaIHbMRWVPpwSXLky%2BW9EI8zozF0j9gEFs925fB19mc972etAKJEE3FVnVCP%2BC5DrnDY%2BHq7&X-Amz-Signature=b2e6d1b6d9bf72373bb7bd4b9dafb59eb20cf65f58524834c9a765c987b67279&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
