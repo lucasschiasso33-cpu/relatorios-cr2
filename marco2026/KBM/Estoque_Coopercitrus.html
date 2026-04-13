@@ -6,45 +6,84 @@
 <title>Estoque Coopercitrus</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Estoque Coopercitrus</h1>
-  <div class="empresa">KBM</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Estoque Coopercitrus</h1>
+    <div class="empresa">KBM</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/db348bd8-13ce-43e8-a8f1-7aaac7a70596/KBM_-_Criativo-D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RZ36AVIF%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220309Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCvAGZ1BZp%2FgL4i%2FCTYWASB4UpU5Bpqt5bnnqqMoWfxjgIhAPDNRTkun%2Fy5tUEYZW5bPNzuc046yc9%2FY30QqJk7ytSjKv8DCH8QABoMNjM3NDIzMTgzODA1IgwceSwwxtA2wdqAzioq3AOJvGXxxRfN%2BAeRcxqLsHgJkpkqOaUz8PPqFei3%2Bs73PSYljPaxEk55Ym3Zz%2F5LwKEHs3tV60QzLzgNYWEE0n%2F42QiVnAkzvFtJj%2BXWYkgQNHp65jRq%2F3SEAwPZXDeVDqQIhUI6inwa%2Bp4sVrlWwcXWJDB6niSeprdaVug7P33wFqOg%2Bk%2FtAWMw2r9NLTtmVFcNgRsePF9VJHCuQbZf8nA5snoMdlvN%2F%2FSoF%2B4lspx8EQzlcaeNEfBRO00da%2BWWOKTtlExW6X1LpFqH09bY1fVGupzN4Tyo8YVlgQcjGDLHWhbgrmhIf03ibJzDZPjFHCu28K1Atg2Bc0lGgE7Jrb%2FYibSGB%2Bhaw0%2BZYXP11351iQ5pDtqFIWo2B19Al3XTTkJI7wvT%2BCOjEzxY08Q58JQshVzPs6ud%2FbLP5%2Fnu9IEatqQIFtoeAUE2s9fSUyT2Ev7UJcZr0MWaznG92hJ2SGFbPQ9S4WQHbCvYpYdr9zl8FAo8087xwkHEccZ0Xsx9YHmpyIdNzeS6cOGvomrJJ%2FueSwhLCi%2B3qDqo85F1LWS8ViSjfvPqamjkZK4b%2BNfJ7uVo7QmgblxQWQcyvFChbqR83wlf4RVpOQqctBnVOf6OjPQ9UBBoZN0Un6wEhTCey%2FXOBjqkAYnA5ywritMSJEqd2OWSWRmyCHq6tLLusSUg7rksoPQ7eVqH06WbfV%2BH3u8lRSxhphhidyw4TxTRi8yt9IocdKxodSUO8XLdl%2Ffwgzf%2FzOUjVLOLSKq4iEB2Tq56OU2jIM0nOKiwrOZHBtTX7h40EY%2Fm5WPlcZijoxWsqnQbs3IICKAVx2JKc%2BsdCSY%2FYRwy9jU8%2BQOmn9N0IS9WcEYJmIKkxPI7&X-Amz-Signature=469fcbb5ab59cfa2d1363ff2919d7245edc290c8e6ff2d54f766e07cd04c4764&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">KBM - Criativo-D.png</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/f76c2d3f-014b-4a66-91b8-1593da9515a0/KBM_-_Criativo-E.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RZ36AVIF%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220309Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCvAGZ1BZp%2FgL4i%2FCTYWASB4UpU5Bpqt5bnnqqMoWfxjgIhAPDNRTkun%2Fy5tUEYZW5bPNzuc046yc9%2FY30QqJk7ytSjKv8DCH8QABoMNjM3NDIzMTgzODA1IgwceSwwxtA2wdqAzioq3AOJvGXxxRfN%2BAeRcxqLsHgJkpkqOaUz8PPqFei3%2Bs73PSYljPaxEk55Ym3Zz%2F5LwKEHs3tV60QzLzgNYWEE0n%2F42QiVnAkzvFtJj%2BXWYkgQNHp65jRq%2F3SEAwPZXDeVDqQIhUI6inwa%2Bp4sVrlWwcXWJDB6niSeprdaVug7P33wFqOg%2Bk%2FtAWMw2r9NLTtmVFcNgRsePF9VJHCuQbZf8nA5snoMdlvN%2F%2FSoF%2B4lspx8EQzlcaeNEfBRO00da%2BWWOKTtlExW6X1LpFqH09bY1fVGupzN4Tyo8YVlgQcjGDLHWhbgrmhIf03ibJzDZPjFHCu28K1Atg2Bc0lGgE7Jrb%2FYibSGB%2Bhaw0%2BZYXP11351iQ5pDtqFIWo2B19Al3XTTkJI7wvT%2BCOjEzxY08Q58JQshVzPs6ud%2FbLP5%2Fnu9IEatqQIFtoeAUE2s9fSUyT2Ev7UJcZr0MWaznG92hJ2SGFbPQ9S4WQHbCvYpYdr9zl8FAo8087xwkHEccZ0Xsx9YHmpyIdNzeS6cOGvomrJJ%2FueSwhLCi%2B3qDqo85F1LWS8ViSjfvPqamjkZK4b%2BNfJ7uVo7QmgblxQWQcyvFChbqR83wlf4RVpOQqctBnVOf6OjPQ9UBBoZN0Un6wEhTCey%2FXOBjqkAYnA5ywritMSJEqd2OWSWRmyCHq6tLLusSUg7rksoPQ7eVqH06WbfV%2BH3u8lRSxhphhidyw4TxTRi8yt9IocdKxodSUO8XLdl%2Ffwgzf%2FzOUjVLOLSKq4iEB2Tq56OU2jIM0nOKiwrOZHBtTX7h40EY%2Fm5WPlcZijoxWsqnQbs3IICKAVx2JKc%2BsdCSY%2FYRwy9jU8%2BQOmn9N0IS9WcEYJmIKkxPI7&X-Amz-Signature=cb38a6af57560b54d53a0fe03496d9f03b7219915e401ddba4a379dd8cf46263&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">02</span>
-          <span class="nome">KBM - Criativo-E.png</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/94029ddd-c858-45ab-8f4a-c1505756f804/KBM_-_Criativo-F.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RZ36AVIF%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220309Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCvAGZ1BZp%2FgL4i%2FCTYWASB4UpU5Bpqt5bnnqqMoWfxjgIhAPDNRTkun%2Fy5tUEYZW5bPNzuc046yc9%2FY30QqJk7ytSjKv8DCH8QABoMNjM3NDIzMTgzODA1IgwceSwwxtA2wdqAzioq3AOJvGXxxRfN%2BAeRcxqLsHgJkpkqOaUz8PPqFei3%2Bs73PSYljPaxEk55Ym3Zz%2F5LwKEHs3tV60QzLzgNYWEE0n%2F42QiVnAkzvFtJj%2BXWYkgQNHp65jRq%2F3SEAwPZXDeVDqQIhUI6inwa%2Bp4sVrlWwcXWJDB6niSeprdaVug7P33wFqOg%2Bk%2FtAWMw2r9NLTtmVFcNgRsePF9VJHCuQbZf8nA5snoMdlvN%2F%2FSoF%2B4lspx8EQzlcaeNEfBRO00da%2BWWOKTtlExW6X1LpFqH09bY1fVGupzN4Tyo8YVlgQcjGDLHWhbgrmhIf03ibJzDZPjFHCu28K1Atg2Bc0lGgE7Jrb%2FYibSGB%2Bhaw0%2BZYXP11351iQ5pDtqFIWo2B19Al3XTTkJI7wvT%2BCOjEzxY08Q58JQshVzPs6ud%2FbLP5%2Fnu9IEatqQIFtoeAUE2s9fSUyT2Ev7UJcZr0MWaznG92hJ2SGFbPQ9S4WQHbCvYpYdr9zl8FAo8087xwkHEccZ0Xsx9YHmpyIdNzeS6cOGvomrJJ%2FueSwhLCi%2B3qDqo85F1LWS8ViSjfvPqamjkZK4b%2BNfJ7uVo7QmgblxQWQcyvFChbqR83wlf4RVpOQqctBnVOf6OjPQ9UBBoZN0Un6wEhTCey%2FXOBjqkAYnA5ywritMSJEqd2OWSWRmyCHq6tLLusSUg7rksoPQ7eVqH06WbfV%2BH3u8lRSxhphhidyw4TxTRi8yt9IocdKxodSUO8XLdl%2Ffwgzf%2FzOUjVLOLSKq4iEB2Tq56OU2jIM0nOKiwrOZHBtTX7h40EY%2Fm5WPlcZijoxWsqnQbs3IICKAVx2JKc%2BsdCSY%2FYRwy9jU8%2BQOmn9N0IS9WcEYJmIKkxPI7&X-Amz-Signature=a633f11d8011d76421de74d90f0466e3619a9dccb0bda5aebe05bf6f0f2d41e3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">03</span>
-          <span class="nome">KBM - Criativo-F.png</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/d12db14d-5a1d-4490-b5a3-935895f34fc4/KBM_-_Criativo-C.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RZ36AVIF%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220309Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCvAGZ1BZp%2FgL4i%2FCTYWASB4UpU5Bpqt5bnnqqMoWfxjgIhAPDNRTkun%2Fy5tUEYZW5bPNzuc046yc9%2FY30QqJk7ytSjKv8DCH8QABoMNjM3NDIzMTgzODA1IgwceSwwxtA2wdqAzioq3AOJvGXxxRfN%2BAeRcxqLsHgJkpkqOaUz8PPqFei3%2Bs73PSYljPaxEk55Ym3Zz%2F5LwKEHs3tV60QzLzgNYWEE0n%2F42QiVnAkzvFtJj%2BXWYkgQNHp65jRq%2F3SEAwPZXDeVDqQIhUI6inwa%2Bp4sVrlWwcXWJDB6niSeprdaVug7P33wFqOg%2Bk%2FtAWMw2r9NLTtmVFcNgRsePF9VJHCuQbZf8nA5snoMdlvN%2F%2FSoF%2B4lspx8EQzlcaeNEfBRO00da%2BWWOKTtlExW6X1LpFqH09bY1fVGupzN4Tyo8YVlgQcjGDLHWhbgrmhIf03ibJzDZPjFHCu28K1Atg2Bc0lGgE7Jrb%2FYibSGB%2Bhaw0%2BZYXP11351iQ5pDtqFIWo2B19Al3XTTkJI7wvT%2BCOjEzxY08Q58JQshVzPs6ud%2FbLP5%2Fnu9IEatqQIFtoeAUE2s9fSUyT2Ev7UJcZr0MWaznG92hJ2SGFbPQ9S4WQHbCvYpYdr9zl8FAo8087xwkHEccZ0Xsx9YHmpyIdNzeS6cOGvomrJJ%2FueSwhLCi%2B3qDqo85F1LWS8ViSjfvPqamjkZK4b%2BNfJ7uVo7QmgblxQWQcyvFChbqR83wlf4RVpOQqctBnVOf6OjPQ9UBBoZN0Un6wEhTCey%2FXOBjqkAYnA5ywritMSJEqd2OWSWRmyCHq6tLLusSUg7rksoPQ7eVqH06WbfV%2BH3u8lRSxhphhidyw4TxTRi8yt9IocdKxodSUO8XLdl%2Ffwgzf%2FzOUjVLOLSKq4iEB2Tq56OU2jIM0nOKiwrOZHBtTX7h40EY%2Fm5WPlcZijoxWsqnQbs3IICKAVx2JKc%2BsdCSY%2FYRwy9jU8%2BQOmn9N0IS9WcEYJmIKkxPI7&X-Amz-Signature=b6780dfd907037d40d28300f730567f5bce7276a95f9ffac6d754cde9a862860&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">04</span>
-          <span class="nome">KBM - Criativo-C.png</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">KBM - Criativo-D.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/db348bd8-13ce-43e8-a8f1-7aaac7a70596/KBM_-_Criativo-D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466REUJ3QU4%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222931Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCd1W%2B%2FMC%2FL9DyRvMRqAQW%2BBpfxlJ8T9aXUebLZhe908QIhAIksdVHFUEiOtqbytiz14zRSzNUDuAt9WndnRy%2FfP1MWKv8DCH8QABoMNjM3NDIzMTgzODA1Igwbz3N7wKAAppvfFOwq3AOzUXLpB8Qg8izo77cNliwk%2Fz6kJlVZnXxJl7K97ErZ3Y2bkdbncOZsDypyf0gUp1J4ZWtxSw7Ed8BPzKVJhlA7eGzSJrySB3HGjyX80MgYydKo0%2FeN2bAdl0CRkRCZNNhPm7jtlti7iHAF6ykYFhGLAL1x9d8hKd2UQJtklZLYFdYpg6umbD6tsXwY6EPHayU8c25BddJEjyoMmiARi7O40KB6LvL6DF45qxLdbGJA02cbEChVEdABuHa7Da0pTNPwbw17l5emNmo9zPAd4YhNhWL7EdzjyNdRbj5ED32qLmijLbBSgt7JU5ZjmDf0lfGxmrUZtEyviuSPnedLektxYF%2FrvkU9Frd7p%2FAyrlkiRczxS%2BD61qwngAtOlFMaiLVZlL5hv2Vk6rrjibhsF1D6A0eR7nhro21Z2QIRjTo3D70MPDkHxyGaRlv4YvZkJddSYL5daHWNYnCMj58N1t6O1Jp5xLrlNE%2BxQfWKw%2F%2FMC3KS76AjNK072bIZOJPhjfmWdG6LsHKFvXBpr6Guc%2BgsqWrTyqV%2FOzxKxJp7QQhaD9Nl7Ss6E5L850hLs3BjB6blDonYLYdHAC9AEXGHaTkR6Tykco9BuPoXvqmLak6uwahaKHYaJgKWBy3qbDCiy%2FXOBjqkASw2wySR1HqeNG4T4rmlDa0yLeM0RzgPTKotvkeyycQ3stbEcNAkZFzTbePUckRdBmYPGrgbNZ%2BjNCBSbf6bV0qNoU%2Bxfh%2FKGIUzZBFsjb15Rzqutd4RfwQFguZ20%2FA8yg9nMSbXngmTrgjmG324I1tLpqWTXLfdFGTIlvrc7zCWNWkQMsdNQjSnVeXe6PnRVY3lPxmgTbE39wvSDpK0DMyvzOAQ&X-Amz-Signature=c53ee76e302cff323cc839258fc597b07aad79a60081e803fe19a8497d885be2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq2')">
+            <span class="num">02</span>
+            <span class="nome">KBM - Criativo-E.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq2">Ver</span>
+          </div>
+          <div class="preview" id="prevarq2">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/f76c2d3f-014b-4a66-91b8-1593da9515a0/KBM_-_Criativo-E.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466REUJ3QU4%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222931Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCd1W%2B%2FMC%2FL9DyRvMRqAQW%2BBpfxlJ8T9aXUebLZhe908QIhAIksdVHFUEiOtqbytiz14zRSzNUDuAt9WndnRy%2FfP1MWKv8DCH8QABoMNjM3NDIzMTgzODA1Igwbz3N7wKAAppvfFOwq3AOzUXLpB8Qg8izo77cNliwk%2Fz6kJlVZnXxJl7K97ErZ3Y2bkdbncOZsDypyf0gUp1J4ZWtxSw7Ed8BPzKVJhlA7eGzSJrySB3HGjyX80MgYydKo0%2FeN2bAdl0CRkRCZNNhPm7jtlti7iHAF6ykYFhGLAL1x9d8hKd2UQJtklZLYFdYpg6umbD6tsXwY6EPHayU8c25BddJEjyoMmiARi7O40KB6LvL6DF45qxLdbGJA02cbEChVEdABuHa7Da0pTNPwbw17l5emNmo9zPAd4YhNhWL7EdzjyNdRbj5ED32qLmijLbBSgt7JU5ZjmDf0lfGxmrUZtEyviuSPnedLektxYF%2FrvkU9Frd7p%2FAyrlkiRczxS%2BD61qwngAtOlFMaiLVZlL5hv2Vk6rrjibhsF1D6A0eR7nhro21Z2QIRjTo3D70MPDkHxyGaRlv4YvZkJddSYL5daHWNYnCMj58N1t6O1Jp5xLrlNE%2BxQfWKw%2F%2FMC3KS76AjNK072bIZOJPhjfmWdG6LsHKFvXBpr6Guc%2BgsqWrTyqV%2FOzxKxJp7QQhaD9Nl7Ss6E5L850hLs3BjB6blDonYLYdHAC9AEXGHaTkR6Tykco9BuPoXvqmLak6uwahaKHYaJgKWBy3qbDCiy%2FXOBjqkASw2wySR1HqeNG4T4rmlDa0yLeM0RzgPTKotvkeyycQ3stbEcNAkZFzTbePUckRdBmYPGrgbNZ%2BjNCBSbf6bV0qNoU%2Bxfh%2FKGIUzZBFsjb15Rzqutd4RfwQFguZ20%2FA8yg9nMSbXngmTrgjmG324I1tLpqWTXLfdFGTIlvrc7zCWNWkQMsdNQjSnVeXe6PnRVY3lPxmgTbE39wvSDpK0DMyvzOAQ&X-Amz-Signature=df6c258b601ba7f958a0db12b1c733dcd5ce6943e881e1c376f053973fcc7308&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq3')">
+            <span class="num">03</span>
+            <span class="nome">KBM - Criativo-F.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq3">Ver</span>
+          </div>
+          <div class="preview" id="prevarq3">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/94029ddd-c858-45ab-8f4a-c1505756f804/KBM_-_Criativo-F.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466REUJ3QU4%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222931Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCd1W%2B%2FMC%2FL9DyRvMRqAQW%2BBpfxlJ8T9aXUebLZhe908QIhAIksdVHFUEiOtqbytiz14zRSzNUDuAt9WndnRy%2FfP1MWKv8DCH8QABoMNjM3NDIzMTgzODA1Igwbz3N7wKAAppvfFOwq3AOzUXLpB8Qg8izo77cNliwk%2Fz6kJlVZnXxJl7K97ErZ3Y2bkdbncOZsDypyf0gUp1J4ZWtxSw7Ed8BPzKVJhlA7eGzSJrySB3HGjyX80MgYydKo0%2FeN2bAdl0CRkRCZNNhPm7jtlti7iHAF6ykYFhGLAL1x9d8hKd2UQJtklZLYFdYpg6umbD6tsXwY6EPHayU8c25BddJEjyoMmiARi7O40KB6LvL6DF45qxLdbGJA02cbEChVEdABuHa7Da0pTNPwbw17l5emNmo9zPAd4YhNhWL7EdzjyNdRbj5ED32qLmijLbBSgt7JU5ZjmDf0lfGxmrUZtEyviuSPnedLektxYF%2FrvkU9Frd7p%2FAyrlkiRczxS%2BD61qwngAtOlFMaiLVZlL5hv2Vk6rrjibhsF1D6A0eR7nhro21Z2QIRjTo3D70MPDkHxyGaRlv4YvZkJddSYL5daHWNYnCMj58N1t6O1Jp5xLrlNE%2BxQfWKw%2F%2FMC3KS76AjNK072bIZOJPhjfmWdG6LsHKFvXBpr6Guc%2BgsqWrTyqV%2FOzxKxJp7QQhaD9Nl7Ss6E5L850hLs3BjB6blDonYLYdHAC9AEXGHaTkR6Tykco9BuPoXvqmLak6uwahaKHYaJgKWBy3qbDCiy%2FXOBjqkASw2wySR1HqeNG4T4rmlDa0yLeM0RzgPTKotvkeyycQ3stbEcNAkZFzTbePUckRdBmYPGrgbNZ%2BjNCBSbf6bV0qNoU%2Bxfh%2FKGIUzZBFsjb15Rzqutd4RfwQFguZ20%2FA8yg9nMSbXngmTrgjmG324I1tLpqWTXLfdFGTIlvrc7zCWNWkQMsdNQjSnVeXe6PnRVY3lPxmgTbE39wvSDpK0DMyvzOAQ&X-Amz-Signature=f7fe19413cf14a9299a25ee7023850f3c1c5bc34d3de98261b54a7eca092a247&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq4')">
+            <span class="num">04</span>
+            <span class="nome">KBM - Criativo-C.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq4">Ver</span>
+          </div>
+          <div class="preview" id="prevarq4">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/d12db14d-5a1d-4490-b5a3-935895f34fc4/KBM_-_Criativo-C.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466REUJ3QU4%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222931Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCd1W%2B%2FMC%2FL9DyRvMRqAQW%2BBpfxlJ8T9aXUebLZhe908QIhAIksdVHFUEiOtqbytiz14zRSzNUDuAt9WndnRy%2FfP1MWKv8DCH8QABoMNjM3NDIzMTgzODA1Igwbz3N7wKAAppvfFOwq3AOzUXLpB8Qg8izo77cNliwk%2Fz6kJlVZnXxJl7K97ErZ3Y2bkdbncOZsDypyf0gUp1J4ZWtxSw7Ed8BPzKVJhlA7eGzSJrySB3HGjyX80MgYydKo0%2FeN2bAdl0CRkRCZNNhPm7jtlti7iHAF6ykYFhGLAL1x9d8hKd2UQJtklZLYFdYpg6umbD6tsXwY6EPHayU8c25BddJEjyoMmiARi7O40KB6LvL6DF45qxLdbGJA02cbEChVEdABuHa7Da0pTNPwbw17l5emNmo9zPAd4YhNhWL7EdzjyNdRbj5ED32qLmijLbBSgt7JU5ZjmDf0lfGxmrUZtEyviuSPnedLektxYF%2FrvkU9Frd7p%2FAyrlkiRczxS%2BD61qwngAtOlFMaiLVZlL5hv2Vk6rrjibhsF1D6A0eR7nhro21Z2QIRjTo3D70MPDkHxyGaRlv4YvZkJddSYL5daHWNYnCMj58N1t6O1Jp5xLrlNE%2BxQfWKw%2F%2FMC3KS76AjNK072bIZOJPhjfmWdG6LsHKFvXBpr6Guc%2BgsqWrTyqV%2FOzxKxJp7QQhaD9Nl7Ss6E5L850hLs3BjB6blDonYLYdHAC9AEXGHaTkR6Tykco9BuPoXvqmLak6uwahaKHYaJgKWBy3qbDCiy%2FXOBjqkASw2wySR1HqeNG4T4rmlDa0yLeM0RzgPTKotvkeyycQ3stbEcNAkZFzTbePUckRdBmYPGrgbNZ%2BjNCBSbf6bV0qNoU%2Bxfh%2FKGIUzZBFsjb15Rzqutd4RfwQFguZ20%2FA8yg9nMSbXngmTrgjmG324I1tLpqWTXLfdFGTIlvrc7zCWNWkQMsdNQjSnVeXe6PnRVY3lPxmgTbE39wvSDpK0DMyvzOAQ&X-Amz-Signature=9d8709a6b20dd2c93010514ba2666ae5827c0af1d582a0e74689bed4a09e42cc&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
