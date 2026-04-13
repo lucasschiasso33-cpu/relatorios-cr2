@@ -6,30 +6,53 @@
 <title>Dia mundial da agricultura</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Dia mundial da agricultura</h1>
-  <div class="empresa">Rural Trading</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Dia mundial da agricultura</h1>
+    <div class="empresa">Rural Trading</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/7f62712c-cbd0-4c7e-9f93-eb50e37f0e1d/Hoje_celebramos_o_Dia_Mundial_da_Agricultura.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WP7S2LRP%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T215926Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIASxgaVgcYOR3TSwlx3s%2FX6yH5rrF3Wze7hCwwUwn6GsAiB71eHX0L3%2Bzhy%2FGGDrMJN2Fe1NeIoY6L1ka317i6ErHCr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMpYrL3HFRru434T8AKtwDyAq0p5A960LgRroq%2FGlz%2Fxi0fP02y%2F94Wjfjkj73lH24Q%2B8jxhkB8marjEcYpdYy2aN5f5wXBcOePzWXNv4XhT9QVJYwu9TuEfgy3uoYfXP6LxXV1lA2cPoe22PyT4TY8jOKvjEoSKQJAeAD%2BGxLMPOnblSIkD3UnAkt2JJ%2BEc0X%2BLPemyoTst1FsPybK1IDGPz4%2BuuYpJuENpKArEcBsaOaTRoJHbcQVVAgnRRfeZVWlrd8SOYJU%2BvQrZbaUyBofS%2B18aVQQbTwsvP2Yqw5RYAzaK9qq7qrrx1SlaSXtA72pMtPdT47%2BzGbANJIIEveSO%2FZxp4dhbLM%2BouC1LTNdwnHMYobpLNl2HMu%2BC%2FYdci4QUzwptSEoj%2FMpVZ56H0ilfp4WQf07xNr9a4neE3qbRakPq7O1fVfj68Ao%2B0x%2FjKBdDAuBaxDqtQztHVGfeVj%2BQF9PEeDLigtmsntSR%2BXLwTUPgVpysnJxjod1GwF0FluoE3jKfQVwVxK%2FmUUV%2BcecdOOhB6MnoC7z1s3OeR354s3mlL9bMMMSgHtOiJjT3g5i1oniW2BfNGtb1eqFMDsEm2Yxjughn35jDkzXBnTjA6kJz%2B%2BL9EkPnGqU7j%2Fx1YncLzXQAhPQh7KhIQwnsv1zgY6pgHPVjdQ2Og9m7NIFJoBo28TuUu8wuzpju7wrLdxkaBmAvXEnAmZHpYNTiWYhIXdaU7OqhvtLm5A560ipLpXWA67ExyYy8bFTYkmWDqug7TK6mTnUX%2FV%2Fo2AlrSZ2rrbQGx82ci70rCIV76VMM%2BJMRs9lK1HYLmxnqJEeIEhmLOhlhFQGj5iMi%2FdqoT5uesiUs13g3m1GHzwf0wsViP%2Bwgn5W01Gj26s&X-Amz-Signature=378f9347e8759544980f4a734973b434b6bd8b36750abaa8840c40882d608f9f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Hoje_celebramos_o_Dia_Mundial_da_Agricultura.mp4</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Hoje_celebramos_o_Dia_Mundial_da_Agricultura.mp4</span>
+            <span class="ext">MP4</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
+                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/7f62712c-cbd0-4c7e-9f93-eb50e37f0e1d/Hoje_celebramos_o_Dia_Mundial_da_Agricultura.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZDC5F4G2%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222548Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIDh%2FLLe0gKfGPuTSS5%2FF1PPXPuiCeuStKco69TS6VY8TAiBuP6ElQQA8ajI%2B1AY1iZ74TzCAHjwGqbHIaQ40WI1eYyr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMzdltTeZSwNihIArHKtwD5jyQv9%2BYiPDhBFv7ZocQrYQUkM9s%2BwsjSU5flUTYNoau9VNf%2BFJPEvC%2F6EUMBpVW0uphGw1sN8XtnZejM%2FJIVGH1VHRK41YYWhzSWyfFht4QE6KUaMvvObY7WuB5ZiexXTadOn1hdQVmhIFJInGjhP6KrzRrxOXR4LhMoVaPEKXdfxqfgB%2Ftv6QxuriRJLMLaaWYapXILgNrlYSgCq3BvyrMvCRQCd4Ewi%2FftPwLyswT5TCgJn6VDoVF1B3z7NxYnESn6iwEl1nWs1C3HfH9YVEalD0CtMaKVSvZE5LXrgMSDLvXAGytZuWhzIo4Ibon6lB47FNddnTL19jqc9AHBTgt73pfOVHmFi9GC%2Byp1cHdLhQ7zWEYXVCUZps%2FENcWZwmwOShN09u1tJvAeCL%2FTIv8JyliRmxa7rKPZsC9WrkUn8oaPifMRK1IWsNMkSzkI6yHiDyGVfMvdZOxd4h%2Byz2K3tnps%2BcOWXBpi80hw8AKtJiOGTwHElNMQHqAOYbk%2B9wKhBHoDAruBLOY9aRN4LpmsjStn2jWHaf8Wa4A8FwpJ%2Fk6bdeXnZ3ziu9v%2FI1bSDEDBRZ5m26nSyfCEk3okpymzI2aGssB9pLjIjSoXm9vVTPQH3a1qXRXX5Awosv1zgY6pgHEL72Ku7iwBx%2Fp3eK5ldJMNv0cdSgEz%2BZJS%2B0c%2FhQJSv0HZWGAxozeXadCFFnWeU5ANjKmKfMrj3tWnAZmmhQg7arUAquji76wQRad1vVjdouC9q38xvmMxlQfQjkckqu9Ldwe2%2FdDGoF5dAzaHY3qTJG76yvcNlr1YuZtPUJpVWtInVsNFjyjq37VkF7oe7yR4qdUNjo8%2B892CY0RCA6bDIO76NJe&X-Amz-Signature=14dda96f29aadc32f3626025c628a6ce397cf5231f403736b328bc35302b810c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
+              </video>
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
