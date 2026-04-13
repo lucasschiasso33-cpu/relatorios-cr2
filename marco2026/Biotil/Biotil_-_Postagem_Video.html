@@ -6,30 +6,53 @@
 <title>Biotil - Postagem Vídeo</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Biotil - Postagem Vídeo</h1>
-  <div class="empresa">Biotil</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Biotil - Postagem Vídeo</h1>
+    <div class="empresa">Biotil</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/4c85764b-9855-4ac0-8671-80a8c0f200c1/Biotil_-_Produzindo_o_Futuro.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YJMSF666%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220329Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCC8yNLESuT4T480iBVIFZodW5cY1hS5L57hxvXLs%2BpJQIhAPpdvUG5ANNVrcddasfe3S1elP5Mq8A4oKD74xxEhQC0Kv8DCH8QABoMNjM3NDIzMTgzODA1IgwJE0Rd1TEvpq6Wbc4q3ANRkbqNpLfUnBVvv0jQm3ciTgK%2BiP0FCHZsR%2BW7vE2yx6NLeOQj7fZBp%2B9eFPy5Pd5y%2FGPnpOTjMyXWLC2UZps%2ByjZu4%2FUjPlVgtGqHc%2Bs8wZ6kSwI7TE%2BarGCZU%2B6L3B005DGDi0QDFwtjJ56923NaE04047Bw45Nm6XimwlcwKg02tTcrfT1ePzWHFMxnj1kebF25f6NUiaI6Tc8a88iqcxqpUmpfuvYyA8iWmxnUFctgoey3pscoqmR%2FpEFE2R52759Ht%2FGfCyiOfpMCS6TwujeGOArkq8rBwYVLvh82M5MfIzv%2BpcXO4Ybto6GKXIrwmErxhlsixGPfCngfd3vs3mjyxLggE1iD9PvyEB8DA79o2KiyIEAXOHXHTbc7BQcwcNLmbLPthbSK4cZMgBqjSq2NJh0ZVIYRYwJo3cr5eGFvdeXRMqMe1OpqA%2FF1mx86L3arYZfMnec5OS93r%2FwVlY5Kv1hDFNvTlEag8Wd3WKr2u4VAGPHv7uReXgm%2FfIBe7KV6RStjenqyWo6gCMg1KA4e3ODPvTwdAt3Zqmptf386U1phvff%2B6cZAYZDLvTHXTd11ACZTX9QOnqROqwAgfK2Njw9PxQ%2FZpU2Qk%2FRCGMNbpXp%2FdRGzVra%2B%2FTCiy%2FXOBjqkAUp86WhxQdkZLlnxzV97oN1RoaUN26PV3nUn%2BmGff1Q9L%2BMA%2BvLHM4UEWglqF8Y%2FJj1EsP0%2FIi7%2BNgobllUf%2FewtM%2BC3k9bCOBzLNwpFl2p7Pd8gnKGRwSnky8xg79qgL8Gx5cYXQPSLEhnETmgq9WkFddO%2BzHspIJsZBwe7SpNkfM8k6WCPqWfx3YpJYcdvEtQdAHuKORjs%2FXBf0ymx%2BB78i7HQ&X-Amz-Signature=31cd420fa96ffb0dfb0661055ad9bd70ce44c96f1903aa8f182809ee4981f689&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Biotil - Produzindo o Futuro.mp4</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Biotil - Produzindo o Futuro.mp4</span>
+            <span class="ext">MP4</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
+                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/4c85764b-9855-4ac0-8671-80a8c0f200c1/Biotil_-_Produzindo_o_Futuro.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RCUPGIRC%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222952Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCVdtuQ%2B6oNxD2emwrunbB6Vclmt6ffuV%2F%2FN1yG5CQbhQIhAN9M4wDvD4EUIfO3V6EBv4lVj53YNhoUKI93PRhOkGtqKv8DCH8QABoMNjM3NDIzMTgzODA1Igy%2BiXG7TI6yaPo0l9cq3APyOCo%2FXGxXZU7OvWo%2BwZFrqPo8eepm5gFdiSeKn7qoIsV4cOcTjCB%2FkzOWtkl2tpsumz3TEnm2%2BFYZJehh4SBQyO%2BgCFGIvSDfYu92ah9RqGFdHElgICbTBdgo%2FkcLoa4FpQVOc5iNn7ykLcSOQvTeVjhHhko91bv0VBsWymJFW8lvMbOiNbxh6j%2Ba29XnOsgp9H6NN%2Bsg9psH7uGHeEUCoQQvOOh9UyVwS%2Fw68lr%2Bhh4nQqPhah6pq%2BfWrdbkyeZkljrNCPQP1dJ7mRDj040RcijTJ%2BFR9B%2BPViowy47YPIc%2FimFh6Tr9AvSA17IUh8kkatCIc3NNicbYW9V6ascZ4gWT8b36wHahqpeHF2LtXNMWJbun%2F1BxWxlU6j93mfT1pJcbvhnvBoaAXJ8J7LLOsYjqzBinsipVLo58yfswdP2LX5%2BPm%2FdX4j2ca5WT3TsXuor0frzkwcbeGcN5pDNwozK6iNkrQ402th2SrqGjfFu5W3xN5ClGIqtNIgS8rVqyx75WZuX7nmtdR3nBhIRSJIjxMdeGtHYHYkKlGi41%2BRr86XGPh9fKQAs8hoYHDZPtmL1VCYkE7IoLjI7W7MYmBFGxVCi331RkETJQp6Lw1sOugi2E%2BW0l3CfJizCey%2FXOBjqkASsn8QnWuTXTuENOT8RgX8wUGTSjVcz9wsjiYAnjBKxgvBDKUwG%2BuSGqITtxWAHOgQINTTfNimH6z0nq3F5%2B0ixtO70zV%2B%2FCkRxtvDrMd4Krb4XxbxoR%2F9DFnMQILrcZhiJwvN%2FggcTr3oqMhA4MnYT3dJFcuzQaKONM%2FMMFTPL3poPoXvlwB6U5AOBvBlwJ1qpl1sHlOFTQO5BfczTG7OJ4%2Bpb9&X-Amz-Signature=410bff5653b21e3ab8ecf2d2178a3d94977064f9fe3e46abed5f2ee5cf9d6d5d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
+              </video>
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
