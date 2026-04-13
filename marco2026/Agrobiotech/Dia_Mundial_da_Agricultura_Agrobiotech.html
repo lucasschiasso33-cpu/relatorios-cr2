@@ -6,30 +6,53 @@
 <title>Dia Mundial da Agricultura (Agrobiotech)</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Dia Mundial da Agricultura (Agrobiotech)</h1>
-  <div class="empresa">Agrobiotech</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Dia Mundial da Agricultura (Agrobiotech)</h1>
+    <div class="empresa">Agrobiotech</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/c92f2e8c-c110-489f-8377-a920e14a3aaa/Agrobiotech-VideoV2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RLYTRZIO%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220245Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCp6V44bMVDvxPKuRmIoBkkZLR5Fk0l9yG1NyJIa%2BpDsAIgBvDBIEjzJ9xwtBmxqqiy5fBdfOkjHFKs52I6BfHTKSkq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDGvm1IEFZrLfFp8tESrcAzF2uAEOjMRtC8hkO0nxkpTJqwRJ4ljwQiTzd8pbRPcH3LYVJRWHjv9VFgpVdCYYNCfttZb2dsXRN6jxfujvEDF6zsqqZwbcIK%2FWtlC4F8T%2FooXxZ7Y3D3Q6Yn2qDEhs%2FkG65v25C1o9%2FbQmGDQtNyWDPuOBpjIm%2FaXlJSckfJAAMoUFvqxLheCEaeDeaAGkR6JBGy3%2FzJNO02NNR4KyFnHSVJxL9ZQJKgJxqlYXuQdS2dAxWGQId6WlauLDWeFD68zVUoZCFb31XnuJvEhLY5AWSvph0%2BGbCM%2BkWprBPvmgelx6xjphEAuOliWtm1LPg8PTWQuFf4jf5HpIPsJlzupEm5eK4hCyiNY6RxvU%2BkFbqIJ8fvPHSbgZ%2FrKrc9d9O%2F%2B6HOTkFc7OF%2FAK00o8MXP%2BnsZly14ks6XxOqZwDYRyRvOaEOgOa2IkJVUfVfLImeSIW5ytvCvLPjwgj9r6JHboxx1EDQjdDnMJJQp2kZR0q5wuv9jLgPdNQIeegVkPMDjwd1WIwrMRvdH9dd6zlA6RFOyST0XOXd7ByZleeSK%2Fe5YU%2BVJq9cySRjhH2Ko1yqrW9tx6A37aVVrgWKyXb6jmeJUBftP1N7%2BoDXtRPyXONC6uDvMNsGL2O1lfMKLL9c4GOqUBbRDmnd30d75jyubfKUugHNs4zm0fXBJyiLfQX2J3gUhRnHa%2FWZx%2FJ%2FqM4kpATWqEqcDwh5E4iBUUibHU8pCLxeGfMjDI3s4f7yNebNwi%2BHY1C8YY3STNF0W4Hi2vJFvcMcNq3pOFa27KP8ToqshvHSCE1NS0L4rXmblIkyEYL3DnwoYKoV6OEPJWAFY48VE%2B2%2FiPh3Ex0PcEuVt4hSkif9fXX83B&X-Amz-Signature=5e87bf88bb4ed583e48691dd7c685e94b0c387f0943ee0c373541a62d850b6ad&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Agrobiotech-VideoV2.mp4</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Agrobiotech-VideoV2.mp4</span>
+            <span class="ext">MP4</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
+                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/c92f2e8c-c110-489f-8377-a920e14a3aaa/Agrobiotech-VideoV2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663E3ZQP4Y%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222908Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIBnJYYcGnjltGgov0%2BH8gVjEa6weEZTQOjk63bdZOz%2BOAiEA6fZhXzHxUyRqcOdBBQ2wLLqyzhDWaLWlF%2BqktVUgIo0q%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDEdLHpNDG%2F9CuF%2FnsircAz70OkDoIf8drm572TBV4QcBROg0%2FvHddHCGQ2UefZP%2FwO02RzFQ90hL7ahEldjyBNXaJ9ddG23C8uBqQBVt3Gm3EAGbXTrULbSuyWLEaNzqmtR5OwK9XvgWTh7XmOQw9AqFCBxrWwp0X5J872tCqPCmSTbLoc0pnE0TDOt6FrlICjUGjfWaDK6xxApKVVbQQ5KzaYDx9%2FzysQR4WcaO2xmDIDLbwoD6lyuaakhJGhbt6cAgXWp%2BnPlKpOO8GRKbQOkKMCnJGbatpzrDXMTBuDqwRoIyilEe%2FzjBwWJD0wzZg021e%2F9hCKXyHjDyhVFMFBy91kMiN9%2B%2BL9DoWXkdKLlYY8vpvL8ebL%2FDe8E3XOquMmwEbfziCiLT1KrJHwJEtz3pL7YwpBRek%2FS30G3KXpSatXhtTi3ldujT4V1FFR4AflhPncm5rbBYVxoukhKKZ4ZtfgPPLhBSzIShBtTFQ6i8dKqJLDvZAuhYVS7jrT7bBGKlidmYlYxg%2BhtKLJRaxjxdKyiwnUNxM7ps%2FZda02OYpWWBgZP%2BBRRMzOHium49yOCzf1FW4I44LxRcz%2BP7xDP34lK3DmrIyuNMZWGhm53fY8KXP3nZmGswVol%2Bj5g9bKaMIZojJEUktXnDMKDL9c4GOqUB1o7zJmRk4e%2Bc1lZlV%2BIJk1ymo0kjLRa5Pi3doAN9w7g9b6EuaO8xvYfiM%2BPCC1rT1vj9A0rctQWBR80Lj3305Kp2cyeNtMvOqFzNVhT2mpxWbE33Nv%2BBYvrL1lZLqq8YNqbCF%2BDrhMv7GpguR9f%2B3pnTjh1mzzVBgllNiYevEqYZ8pblbOylyghFCcmTQrjIx1O%2FpD2pok7CmuL%2FcQhdy7bQhLtH&X-Amz-Signature=8fd9b1b2d36e846ed3cde09f85e3d3283d3ec8518e896ce95c1c3d8229e7238f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
+              </video>
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
