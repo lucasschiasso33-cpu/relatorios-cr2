@@ -6,30 +6,49 @@
 <title>Costa Lemos - Atualização de Site</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Costa Lemos - Atualização de Site</h1>
-  <div class="empresa">Costa Lemos</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Costa Lemos - Atualização de Site</h1>
+    <div class="empresa">Costa Lemos</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/c9940756-f2ae-4350-9d24-38291ffbffbe/COSTA_LEMOS_SITE.docx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QJ57Y3Y7%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220118Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDj%2FAhRTkX5JskbAVzFXELthnoVY%2Fhpxb63lXshw6mQFgIgbejP%2BhAjq7cZfoYV7MX02aBs711UNvorR7Npf4aRX8Uq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDBd860h%2BcQo3xzR08CrcA0xGy1VdzrKby%2FDWtcyzI2h6vSt2cuY4kQiEicv5Vg4qw7BSg1%2BSBFEue8TD1xlXLHmcTzOASWTYQLVOls955pCb2AY3WwhhQg8rQyZKPIUz3D7FsmGqzwrEyJ9umUdGa3UOkC6qGzKEqkJYBGW17SLA3ZQRi07GdGvT5CGYbrlglXhhg8h%2FoFmQrM7QkS2OmrRmX0A5ONmpeqkb4aJv%2BZZnVJWO8K2YvJBRSg6I2kPMc3TEFtuhrxlZ4FogI7%2BN9HaDN43DhGLJIIJya4bFD0B3VP5QUvJSnGWoO9hPCBR8dtQnOqCq40%2FmLk%2FyMv%2BQZ6rYs6dXvh5XMBnZoWrntr6AT3HR4cowSsI4ea9UWXhTjE%2Fpnq68CZlzBoNyLUcdgIoqH2AjUzRAnI6RjHsKZfHATNXMzLsSNPfQ8jay5ztGMmelpWrTTLrJyBRI5VZOkZc9LbpV0AaH4hAHclgCZicKlLMJb0jxwhB6bJoWoXGJ0BeiSUjW%2BLHmDe6ePKWh63REa6yaOpuJP5Kr6vmze%2BGO3rf6dXtBjQwxsQkNWft%2F0%2F0uyGhKo7pof4lsYvvsR%2F02i7cMT0s2SGXUEK29NCF%2FKl2Omt9ZDG%2FldDiQpqNcT90ZiLgNStzp5Ki9MKDL9c4GOqUBtEnafCq%2BrAgAzi%2FlxmEPcTDH3eUwaOzsZEiZyrPXs79zUnKM0Z2nWyTM9t3QFVv0zxRqQMvEVlxH9%2Byl8wlanmc1YF1ceLuSWI7XFY3tvme6ECXZBsju4B6uQtvk%2B9jlP5%2F6AOGJyrw2a%2BlyXMBEbSvhCojwjeD7yrGspmR4eTGLWFoOV8QkYtnWLAlQYWpIZGKgWniOHbc4NgD1a8hIdGqVCuwv&X-Amz-Signature=cd06de8e7cece29123a4029f4f25f811d06595840723a6a281ae74019f499dc7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">COSTA_LEMOS_SITE.docx</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">COSTA_LEMOS_SITE.docx</span>
+            <span class="ext">OUTRO</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1" style="display:none"></div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
