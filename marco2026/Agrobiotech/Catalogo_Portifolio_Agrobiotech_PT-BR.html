@@ -6,30 +6,51 @@
 <title>Catálogo Portifólio Agrobiotech (PT-BR)</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Catálogo Portifólio Agrobiotech (PT-BR)</h1>
-  <div class="empresa">Agrobiotech</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Catálogo Portifólio Agrobiotech (PT-BR)</h1>
+    <div class="empresa">Agrobiotech</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/f7a98c51-7eac-4a7a-b9c6-fc6431f75736/Catlogo_Portiflio_Agrobiotech.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZPCIMUKK%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220006Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIEDzLUUxqzYJ3Z8x0HArGTSkKnPQykBkHLWKRUKpeO%2FtAiBYYsrCijzxii7oyy9ZyHw6YqP8f2cL8OA3NaLpKOPFiSr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMKDX3Z3fvSzbEtB9lKtwDJnHzHUqKUTluEO37iy77Zq4COqkAriEalFu%2B%2F2CquedprA2aF%2BLR61uHIZYPrTGLn%2BWG%2BGbrrYrHc8fE8JbJt8H1KPtBI%2BUUFePvrSxcNP0QmRSZwtG8TgyIenXpWXK3qBcsiBx6su9%2FLjrgwjoYa75NHSf0qx42MjaOUTR3oNbXL9s%2BIX%2BvzI%2FgRDNOFmoyOBme79wm6NzdHRr7wa6WYAm9GOnOqQyvxkKHEkLDCu0yx8SeYnJcNCV7ylK%2FO4iThLY0yCvqxzTbfCNmLXjZJJ4wQ%2FjBOPM7JTNDYzRFyV1QQ4mkRLoms0cuxCBVMVi158Th7RZUYWF0dJU9f3O5BBQ%2FFrKrEGlL73UI8%2F8dO4bR3X2kEmeIe7Nop6I57OqPnJ2W5a7Es5DyyJdue7PcVvg9yFOHdwgsy5Cv%2FHZpExu6oI0bMK2deIgitBKYF%2BRDn2jbYynAdeWGhcdjnI6pQLLHkl%2FsdL%2FfTyJPZPwO3Ju%2B%2Fc34tB5rVONrgfaBN%2BNuNmVMxCRSHYu7YDY58xO0B4FiW4CeAPB5zWnku8YOICwQweXIuWuaanvqx15ta7GjS3Q7GnZMtASmrz%2BcbpIjLE861ddDJHd4nVAm5VbdH79pBnpTa2tiCQiypfUwn8v1zgY6pgGmS8s0vmDZN59wS7MpD8%2BRY9STUtbfxYSC5tsg%2FiHy1xN8YY2Ucw1SyiW8WSwxAMClOC0nRTg1bVLW0lBvysZe0W8baFQGZb9Psy9Jbgn8Ands75o%2BvG57EoaeEFx%2BcTfOUIhi9D6A3piUuQ%2FN9ju9oax%2FCqn5H4F9P1%2Bw96UkoZD88Cnw%2BpMueN6I5Hf3DmVQsCvB19ngaNQcE7g2JuXWTw%2FUUhwo&X-Amz-Signature=6345ec8e607873bf0424f7a96fc4ecfc6d77c3407b9c1aa0cf7c937824e0053a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Catálogo Portifólio Agrobiotech.pdf</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Catálogo Portifólio Agrobiotech.pdf</span>
+            <span class="ext">PDF</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/f7a98c51-7eac-4a7a-b9c6-fc6431f75736/Catlogo_Portiflio_Agrobiotech.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QYF6XOFF%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222628Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIC1vtMxUHnj1wSsX%2B87qZUA5Rz4BSIiGWkPwvAUd4PzmAiEA9HoaY22JnScqAmVXtVbbW9iXD57v20bx%2BOxLgbzKzBEq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDHhFw4JlkvtSz19%2FmCrcA6M123DjrpjztuaJQVYwntW5SJmyGZdZluaSIbd2KO9Ej2ufquoJjQAaPYjTM1kFoeZcdrOxthf4y6294HiOzkExEh%2FmSJsKnAo5BBVpkLHCTe2MJ6UPtUbHIe1elQi0zr5GzjvF7tYC9tKTaHG%2BB%2Fkk4j9mlBrC3gtkdswuHAAzN5IHJsa3lEKj1AfWkt1e%2FFtvhu5nYJXG4UrLx9mUgwd1P5wL2V1NJeg7KWKPFAIQR02OOC1n2uR8yEbh1CfOkriof6SsGsKhxXiZxhtlHzklq%2FHzNGwbF43paeIyIm1%2BnjJdBJM%2Byd%2FyANK0vTyo0jQN8A%2FxTVd7y3k2EJqzEuUznk76mCrVcc7ujlKv1ogNKdRlbdq3aYj4ZKxFCUg6YJjls7dzi2wDRR6JMbTqyhrd%2BJhjXgBkvr%2Fjzp5pELbFtPgqwubF%2FgGiU%2F%2FHuV3HUFzE3KjzrYC2p3mdEk00Wx8efu4bA9gcaG2p8Ta0DrOAVqlTzM7DNQwFm2R6Lt82XRfN%2BqqCokOGRzl7idnaPFTjg515zl6Qan0tvv9C%2FfixAXq%2F4czMo%2FD8RExGzblebH0Ah%2FOVTRNWI9DGt74jfjkFYCoj7TTQoJiAE%2FRg527jOuZEtuvXK46%2FaptPMKnR9c4GOqUBDKSh2OdLHVYQ9Z3ZGzk1aCmRxxFF2vBLi0m4D5U3RXEkGpykbSaLTLn6QCVsupi21SZFGkuqWUv28l9PCsd%2BYKXUc8EaiVEE0weRQ9RJ5omPcYfXzcE%2FopItQBKFB02OrypKXJUm9R2OzK7L1f86XCvs7tHGQIe6oT2ah79XgMiiyV%2FhvEcvvdwcxqbFXOO%2Fz0uUarf9qR0HctfB0PgLN7kN4I21&X-Amz-Signature=bdb388af33be7227dbba34b31557834bd2586305762def81f0fd7463ad803c48&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="width:100%;height:80vh;border:none;border-radius:6px;" allowfullscreen></iframe>
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
