@@ -6,30 +6,51 @@
 <title>Conteúdo Estático</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Conteúdo Estático</h1>
-  <div class="empresa">Bonavida</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Conteúdo Estático</h1>
+    <div class="empresa">Bonavida</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/a5b16c62-7f34-4ec1-bb56-233e2664964f/Prancheta_1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZPCIMUKK%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T215918Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIEDzLUUxqzYJ3Z8x0HArGTSkKnPQykBkHLWKRUKpeO%2FtAiBYYsrCijzxii7oyy9ZyHw6YqP8f2cL8OA3NaLpKOPFiSr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMKDX3Z3fvSzbEtB9lKtwDJnHzHUqKUTluEO37iy77Zq4COqkAriEalFu%2B%2F2CquedprA2aF%2BLR61uHIZYPrTGLn%2BWG%2BGbrrYrHc8fE8JbJt8H1KPtBI%2BUUFePvrSxcNP0QmRSZwtG8TgyIenXpWXK3qBcsiBx6su9%2FLjrgwjoYa75NHSf0qx42MjaOUTR3oNbXL9s%2BIX%2BvzI%2FgRDNOFmoyOBme79wm6NzdHRr7wa6WYAm9GOnOqQyvxkKHEkLDCu0yx8SeYnJcNCV7ylK%2FO4iThLY0yCvqxzTbfCNmLXjZJJ4wQ%2FjBOPM7JTNDYzRFyV1QQ4mkRLoms0cuxCBVMVi158Th7RZUYWF0dJU9f3O5BBQ%2FFrKrEGlL73UI8%2F8dO4bR3X2kEmeIe7Nop6I57OqPnJ2W5a7Es5DyyJdue7PcVvg9yFOHdwgsy5Cv%2FHZpExu6oI0bMK2deIgitBKYF%2BRDn2jbYynAdeWGhcdjnI6pQLLHkl%2FsdL%2FfTyJPZPwO3Ju%2B%2Fc34tB5rVONrgfaBN%2BNuNmVMxCRSHYu7YDY58xO0B4FiW4CeAPB5zWnku8YOICwQweXIuWuaanvqx15ta7GjS3Q7GnZMtASmrz%2BcbpIjLE861ddDJHd4nVAm5VbdH79pBnpTa2tiCQiypfUwn8v1zgY6pgGmS8s0vmDZN59wS7MpD8%2BRY9STUtbfxYSC5tsg%2FiHy1xN8YY2Ucw1SyiW8WSwxAMClOC0nRTg1bVLW0lBvysZe0W8baFQGZb9Psy9Jbgn8Ands75o%2BvG57EoaeEFx%2BcTfOUIhi9D6A3piUuQ%2FN9ju9oax%2FCqn5H4F9P1%2Bw96UkoZD88Cnw%2BpMueN6I5Hf3DmVQsCvB19ngaNQcE7g2JuXWTw%2FUUhwo&X-Amz-Signature=b42acc44d6707b2f7b5fd47adc6d481a275215301d708a9f4df3439286274c39&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Prancheta_1.jpg</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Prancheta_1.jpg</span>
+            <span class="ext">JPG</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/a5b16c62-7f34-4ec1-bb56-233e2664964f/Prancheta_1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665EFDPB5P%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222540Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIEzraq4wrb8VhyfCYrmurH2zoZdSDWGNaVCeJgn5EP%2BIAiEAtW8OgdjJ4BYRxV486BPKnrGFFTTxEFc11n4FMb0A4nQq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDC3UxQqUiNT0AM47zircA%2B%2FMSirVHXDvfFGLidRKSUqX%2FvyzDP36kAOjX6WyrdRZSc8ty6VQ%2F1KU%2B8FS0Ud7SCQyhR6U4eA7vuf%2FknodGk%2B44F4pmLonrM9PYQXjWTrgv6LRsCcADbJMhP3UMWWpuApxRDn%2BhOD4IMoOtlFVWBuYNruCZMva%2FNeO2ofp%2Bx0pEcZKCjQlTgU1IkFpMRw0h8avk%2BaSNN2Z2jk3Bvw50OkAHx9Iuc%2FBbSFx4sP2wQlHWysLEKbsxtHOUO1X%2BaQggIDLC6%2F%2BV5rtHN2U0jchaw7c5oEI72EOsOtd%2BixdW6YJRDJs8zTEcJpHMM%2BbnNVXfP7p8o76LpjUrZXemXAg%2BDV2ryzXL6bheLbhipmWjLs0pLqSIp2aZ4AocxV4FnyTBIuB6%2BH%2FArtRofuEgKRxKHACOmCizNnWRabgDBncAH8fnBh%2FRQruCS9uu3H57OgrkHVXvkx9wrfdL0LhibL96bJCqORvOXtx%2FNvKSMwOS%2FMWUtRTPpxdy55GPraPKlXfklwN5u6x0Qp7dhOky41uXkfG5iMZQ3ZjHm8eEa%2BzeuN20fZ9XvDflU%2Bn0EOmeuJ57QpBu7AABcU4NV7cK%2Fw6N7eBU%2FUmqFNGRd7uX%2F6795gMic0GlHYpBiDNOfbhMJ7L9c4GOqUBVpF%2Fh%2BqnlwnP8yy7HMk8feUwc77Ngeb%2FofY1rmblgjWpG%2B%2B3lJku2OaQXlP%2FE%2Fv%2BZcC8xtHZ2c%2FLUkucDREamCzl90QDGfQUM1yYb69P9DOkW%2FIljbocIU3uxWww2TqqhPPHHx6jtm9Q8m68DmVDFS44NnYhJjnAcz0zIp95lJJoOH86kh39pT2QnkY3uP5RL3pzMA3DJNhgBUWU3ksV0Ey20l8J&X-Amz-Signature=3187ece28c1a1834bf6d2625ed3afb58d0f39a490b5af289120e00fa184b977b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
