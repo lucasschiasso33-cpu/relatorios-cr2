@@ -6,45 +6,84 @@
 <title>Campanha promocional Dia das Mães</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Campanha promocional Dia das Mães</h1>
-  <div class="empresa">Lava e Leve</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Campanha promocional Dia das Mães</h1>
+    <div class="empresa">Lava e Leve</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/42c87201-d5b7-4bf8-ac69-19deb12c6486/Prancheta_2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46624ZKSJLI%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T215830Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHThP0NOXEG9pin6QmwBzih7SEIlHKaU9FzKvDGxKqvsAiEAjaOFVIEUXJqTQsrKCsn1TwNubjBFs9dWME8tKksaXswq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDFflZpqOooZEeUbU4SrcA9Lsli7pXlnNrwJ%2F4WtAGPlW5bXvkuZ8CR8%2BHyqTfl1l7seZKRYPtovJZA9imrMcbjgBTlM%2FGYZ%2FJHQ6M7NhSTHV%2FIPcnEMZrL%2F0YiCcgXbf97dlx59RusCFXUkC3Wo1n72a2T1%2Bk07qnI1cgMpGegPxn4ipeTgBm4e63SENDDGartgnerv9TVWFgi6BsgNhWn8%2FSU%2BTig18PEVPBvblXOJQnu%2BPoglUkL37W%2FDoxIN5Ht58U1h93Zlen%2Br3LuLt7WjvjGvRlhURaK7PWYqUOeey%2BlqLdCMR%2Fe%2FUhE06wNKMXif%2Bk0lexpT5osWiUNH%2FoSk19Mu%2FQG2INGP7Cn%2BURipxzhUZENbpSNnn5gSx7JncdJ5G5xFbGWQvGE8RFmogFJ6NGPQma%2FK6YxGFsVu0Ev%2FTF2VM5lU9%2FOfcDJzIYZjae9ADrTqhWja5Z2ZklOpM3bnSezQSQ8XbmqYK1WOrnwtXYJ5kgV07yA5%2FWCbrl4WYIG%2FvQnIf0WKcZckt7m%2B06oYwsLkGD%2Bv0Uoaq0ErF81sAb5TIMgz6sSW44iW35q1fTckC9JkAuQHSeg47SeuG7dG1qpFsz8joTk%2FZrRAlxEZ2ucfC%2FvonWaQ6MSH3vbJRWimprzwmjBvY6zuOMJ7L9c4GOqUBwLFBYKNMVso%2FxZ3XD3%2BLExwvXsU%2F%2BTKPXz%2BJpuxz%2BWYyPFSRiKIrV%2Brp%2FjtIvcAsYlOdeC6Y9qsKmVk65vYyquj%2FOJUKey0QQPaGNy1KWqo%2FaHz2AkZtmZJLveMQfOgTbHcgBBV4wxeQioJuuYP76Pz%2FjbWg%2BG9HnYsCO1gHN7LSCRoe4WCN0aqbR%2FJvRCcVzpKjv3A3Sv1blbRXuqaJ55XsbFs1&X-Amz-Signature=38c62c36c806421ccc5a038e95d0bebc54e957c2e1300fa8bdf6664baabbc9b7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Prancheta_2.jpg</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/9c5a86bc-6706-4222-8e7b-24211203c091/Prancheta_1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46624ZKSJLI%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T215830Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHThP0NOXEG9pin6QmwBzih7SEIlHKaU9FzKvDGxKqvsAiEAjaOFVIEUXJqTQsrKCsn1TwNubjBFs9dWME8tKksaXswq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDFflZpqOooZEeUbU4SrcA9Lsli7pXlnNrwJ%2F4WtAGPlW5bXvkuZ8CR8%2BHyqTfl1l7seZKRYPtovJZA9imrMcbjgBTlM%2FGYZ%2FJHQ6M7NhSTHV%2FIPcnEMZrL%2F0YiCcgXbf97dlx59RusCFXUkC3Wo1n72a2T1%2Bk07qnI1cgMpGegPxn4ipeTgBm4e63SENDDGartgnerv9TVWFgi6BsgNhWn8%2FSU%2BTig18PEVPBvblXOJQnu%2BPoglUkL37W%2FDoxIN5Ht58U1h93Zlen%2Br3LuLt7WjvjGvRlhURaK7PWYqUOeey%2BlqLdCMR%2Fe%2FUhE06wNKMXif%2Bk0lexpT5osWiUNH%2FoSk19Mu%2FQG2INGP7Cn%2BURipxzhUZENbpSNnn5gSx7JncdJ5G5xFbGWQvGE8RFmogFJ6NGPQma%2FK6YxGFsVu0Ev%2FTF2VM5lU9%2FOfcDJzIYZjae9ADrTqhWja5Z2ZklOpM3bnSezQSQ8XbmqYK1WOrnwtXYJ5kgV07yA5%2FWCbrl4WYIG%2FvQnIf0WKcZckt7m%2B06oYwsLkGD%2Bv0Uoaq0ErF81sAb5TIMgz6sSW44iW35q1fTckC9JkAuQHSeg47SeuG7dG1qpFsz8joTk%2FZrRAlxEZ2ucfC%2FvonWaQ6MSH3vbJRWimprzwmjBvY6zuOMJ7L9c4GOqUBwLFBYKNMVso%2FxZ3XD3%2BLExwvXsU%2F%2BTKPXz%2BJpuxz%2BWYyPFSRiKIrV%2Brp%2FjtIvcAsYlOdeC6Y9qsKmVk65vYyquj%2FOJUKey0QQPaGNy1KWqo%2FaHz2AkZtmZJLveMQfOgTbHcgBBV4wxeQioJuuYP76Pz%2FjbWg%2BG9HnYsCO1gHN7LSCRoe4WCN0aqbR%2FJvRCcVzpKjv3A3Sv1blbRXuqaJ55XsbFs1&X-Amz-Signature=7f4ab7593460c3df968a28382119446d648869e74a5eee64c9d6f86b49468694&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">02</span>
-          <span class="nome">Prancheta_1.jpg</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/28331239-05cc-4824-b134-fe37ffdffcec/Prancheta_4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46624ZKSJLI%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T215830Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHThP0NOXEG9pin6QmwBzih7SEIlHKaU9FzKvDGxKqvsAiEAjaOFVIEUXJqTQsrKCsn1TwNubjBFs9dWME8tKksaXswq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDFflZpqOooZEeUbU4SrcA9Lsli7pXlnNrwJ%2F4WtAGPlW5bXvkuZ8CR8%2BHyqTfl1l7seZKRYPtovJZA9imrMcbjgBTlM%2FGYZ%2FJHQ6M7NhSTHV%2FIPcnEMZrL%2F0YiCcgXbf97dlx59RusCFXUkC3Wo1n72a2T1%2Bk07qnI1cgMpGegPxn4ipeTgBm4e63SENDDGartgnerv9TVWFgi6BsgNhWn8%2FSU%2BTig18PEVPBvblXOJQnu%2BPoglUkL37W%2FDoxIN5Ht58U1h93Zlen%2Br3LuLt7WjvjGvRlhURaK7PWYqUOeey%2BlqLdCMR%2Fe%2FUhE06wNKMXif%2Bk0lexpT5osWiUNH%2FoSk19Mu%2FQG2INGP7Cn%2BURipxzhUZENbpSNnn5gSx7JncdJ5G5xFbGWQvGE8RFmogFJ6NGPQma%2FK6YxGFsVu0Ev%2FTF2VM5lU9%2FOfcDJzIYZjae9ADrTqhWja5Z2ZklOpM3bnSezQSQ8XbmqYK1WOrnwtXYJ5kgV07yA5%2FWCbrl4WYIG%2FvQnIf0WKcZckt7m%2B06oYwsLkGD%2Bv0Uoaq0ErF81sAb5TIMgz6sSW44iW35q1fTckC9JkAuQHSeg47SeuG7dG1qpFsz8joTk%2FZrRAlxEZ2ucfC%2FvonWaQ6MSH3vbJRWimprzwmjBvY6zuOMJ7L9c4GOqUBwLFBYKNMVso%2FxZ3XD3%2BLExwvXsU%2F%2BTKPXz%2BJpuxz%2BWYyPFSRiKIrV%2Brp%2FjtIvcAsYlOdeC6Y9qsKmVk65vYyquj%2FOJUKey0QQPaGNy1KWqo%2FaHz2AkZtmZJLveMQfOgTbHcgBBV4wxeQioJuuYP76Pz%2FjbWg%2BG9HnYsCO1gHN7LSCRoe4WCN0aqbR%2FJvRCcVzpKjv3A3Sv1blbRXuqaJ55XsbFs1&X-Amz-Signature=22dd4a4a380653692533793333a723f4184f0c6e72c51e637eea86fd487743c9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">03</span>
-          <span class="nome">Prancheta_4.jpg</span>
-          <span class="btn">Abrir</span>
-        </a>
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/f5009b2e-d44f-4149-9936-a4a62526b929/Prancheta_3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46624ZKSJLI%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T215830Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHThP0NOXEG9pin6QmwBzih7SEIlHKaU9FzKvDGxKqvsAiEAjaOFVIEUXJqTQsrKCsn1TwNubjBFs9dWME8tKksaXswq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDFflZpqOooZEeUbU4SrcA9Lsli7pXlnNrwJ%2F4WtAGPlW5bXvkuZ8CR8%2BHyqTfl1l7seZKRYPtovJZA9imrMcbjgBTlM%2FGYZ%2FJHQ6M7NhSTHV%2FIPcnEMZrL%2F0YiCcgXbf97dlx59RusCFXUkC3Wo1n72a2T1%2Bk07qnI1cgMpGegPxn4ipeTgBm4e63SENDDGartgnerv9TVWFgi6BsgNhWn8%2FSU%2BTig18PEVPBvblXOJQnu%2BPoglUkL37W%2FDoxIN5Ht58U1h93Zlen%2Br3LuLt7WjvjGvRlhURaK7PWYqUOeey%2BlqLdCMR%2Fe%2FUhE06wNKMXif%2Bk0lexpT5osWiUNH%2FoSk19Mu%2FQG2INGP7Cn%2BURipxzhUZENbpSNnn5gSx7JncdJ5G5xFbGWQvGE8RFmogFJ6NGPQma%2FK6YxGFsVu0Ev%2FTF2VM5lU9%2FOfcDJzIYZjae9ADrTqhWja5Z2ZklOpM3bnSezQSQ8XbmqYK1WOrnwtXYJ5kgV07yA5%2FWCbrl4WYIG%2FvQnIf0WKcZckt7m%2B06oYwsLkGD%2Bv0Uoaq0ErF81sAb5TIMgz6sSW44iW35q1fTckC9JkAuQHSeg47SeuG7dG1qpFsz8joTk%2FZrRAlxEZ2ucfC%2FvonWaQ6MSH3vbJRWimprzwmjBvY6zuOMJ7L9c4GOqUBwLFBYKNMVso%2FxZ3XD3%2BLExwvXsU%2F%2BTKPXz%2BJpuxz%2BWYyPFSRiKIrV%2Brp%2FjtIvcAsYlOdeC6Y9qsKmVk65vYyquj%2FOJUKey0QQPaGNy1KWqo%2FaHz2AkZtmZJLveMQfOgTbHcgBBV4wxeQioJuuYP76Pz%2FjbWg%2BG9HnYsCO1gHN7LSCRoe4WCN0aqbR%2FJvRCcVzpKjv3A3Sv1blbRXuqaJ55XsbFs1&X-Amz-Signature=6457ff3cc776e9994692a60af7dcb304252ae45327eebb9b1399688c67b1116d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">04</span>
-          <span class="nome">Prancheta_3.jpg</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Prancheta_2.jpg</span>
+            <span class="ext">JPG</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/42c87201-d5b7-4bf8-ac69-19deb12c6486/Prancheta_2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466625ZZW66%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222452Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDzp%2Bj1aggs3SHCtfSQOdy4brGpZcf9RLKaLzbLk3qLEwIhAOwMAf6WwlHxm9ELo42rcpU7nvYiMnN%2BJO2KDNIhmvSJKv8DCH8QABoMNjM3NDIzMTgzODA1IgwNz8qWFil8IQl0%2Fe0q3AM7WOTzEfacuov%2BCjV58VbHT5grKL3%2FTLhogNh7tNw8Yks0oh39e%2Bt3nbIOLuH4uoO36SeSKJj1F8ToSrkBpjXtUjXTSKbjG%2Bj5TJi%2FA7h%2FZrZJ%2Be2sE1UkNxe4zdJrDFkUOrF4dh40BhEwPrZJrKBtyxaiT5NPNoOMe%2Bh%2FxjvHC0gDOMNdh5WrVeuGeyi0Xr1SrO%2BQ4SBRK82w%2BezpQukspkx9iVKGdcnZ4oc6EIlURfdM20ZCy9vGPTIfTY9ecQ0b9IStHl0m32B559YLa3qh0yiLNqqepcTFx709Yq27P%2B1Df4Im8XJ4aQw7E2yCCCFTywqEcQpC969HTu0cZnlHBbtNeGO27LfGPvx5%2BiOa7hiPk4ql7OkhSWu%2Fgg%2FG6Isut8h21Ct8B%2B4eSFEbZJRFPybddWa8IddTIxWYhFriXfiY3ZZgtgyjpUHHMpqIa%2B6hK8rZmNOandEbpnwvJMXSnto6nhDqW0klb8ZNcoe3hOO2sO2CrilpVsnYW4VFXQtZO3Kpmj%2F%2F%2BC1SCXSx3v27qeWGNGS%2BpSCEZ51SsWvmeWIk9IbmvzKavZohtxFPolWSbqIQQKwNFD2f0Ujc3UFTHDIuVtVlCJigZtF8LGGCIYX8YAlg%2BXTv36CCdzCey%2FXOBjqkAZu21mPzvIlQc2p8KnCItsu6e5kLpSzu6YGcBGjJmIN8Yuerliw1WusSvS6YbQh2rGUp50l5VwaqOiWIIule2pDRBNc2zqNcMottR7PdRZARcKO%2FiObN1ITzsveVZDOwWxY0vBXe7tqx0jWRyqar1JEBOBSY7eqOpSKpQ4hFAR9yu8vDwmeFEh4byNv7lE9PJFZwj7bgJIuF9GUIlJ0tuIYjGyRa&X-Amz-Signature=a421630909efba877ecba763b988dcf732537d619ab43647e2efcd1718887989&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq2')">
+            <span class="num">02</span>
+            <span class="nome">Prancheta_1.jpg</span>
+            <span class="ext">JPG</span>
+            <span class="btn" id="btnarq2">Ver</span>
+          </div>
+          <div class="preview" id="prevarq2">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/9c5a86bc-6706-4222-8e7b-24211203c091/Prancheta_1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466625ZZW66%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222452Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDzp%2Bj1aggs3SHCtfSQOdy4brGpZcf9RLKaLzbLk3qLEwIhAOwMAf6WwlHxm9ELo42rcpU7nvYiMnN%2BJO2KDNIhmvSJKv8DCH8QABoMNjM3NDIzMTgzODA1IgwNz8qWFil8IQl0%2Fe0q3AM7WOTzEfacuov%2BCjV58VbHT5grKL3%2FTLhogNh7tNw8Yks0oh39e%2Bt3nbIOLuH4uoO36SeSKJj1F8ToSrkBpjXtUjXTSKbjG%2Bj5TJi%2FA7h%2FZrZJ%2Be2sE1UkNxe4zdJrDFkUOrF4dh40BhEwPrZJrKBtyxaiT5NPNoOMe%2Bh%2FxjvHC0gDOMNdh5WrVeuGeyi0Xr1SrO%2BQ4SBRK82w%2BezpQukspkx9iVKGdcnZ4oc6EIlURfdM20ZCy9vGPTIfTY9ecQ0b9IStHl0m32B559YLa3qh0yiLNqqepcTFx709Yq27P%2B1Df4Im8XJ4aQw7E2yCCCFTywqEcQpC969HTu0cZnlHBbtNeGO27LfGPvx5%2BiOa7hiPk4ql7OkhSWu%2Fgg%2FG6Isut8h21Ct8B%2B4eSFEbZJRFPybddWa8IddTIxWYhFriXfiY3ZZgtgyjpUHHMpqIa%2B6hK8rZmNOandEbpnwvJMXSnto6nhDqW0klb8ZNcoe3hOO2sO2CrilpVsnYW4VFXQtZO3Kpmj%2F%2F%2BC1SCXSx3v27qeWGNGS%2BpSCEZ51SsWvmeWIk9IbmvzKavZohtxFPolWSbqIQQKwNFD2f0Ujc3UFTHDIuVtVlCJigZtF8LGGCIYX8YAlg%2BXTv36CCdzCey%2FXOBjqkAZu21mPzvIlQc2p8KnCItsu6e5kLpSzu6YGcBGjJmIN8Yuerliw1WusSvS6YbQh2rGUp50l5VwaqOiWIIule2pDRBNc2zqNcMottR7PdRZARcKO%2FiObN1ITzsveVZDOwWxY0vBXe7tqx0jWRyqar1JEBOBSY7eqOpSKpQ4hFAR9yu8vDwmeFEh4byNv7lE9PJFZwj7bgJIuF9GUIlJ0tuIYjGyRa&X-Amz-Signature=f2be7194736276b025233d8fe33fdf57c2bac0401ad96a3c00a5a13ef1f66f29&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq3')">
+            <span class="num">03</span>
+            <span class="nome">Prancheta_4.jpg</span>
+            <span class="ext">JPG</span>
+            <span class="btn" id="btnarq3">Ver</span>
+          </div>
+          <div class="preview" id="prevarq3">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/28331239-05cc-4824-b134-fe37ffdffcec/Prancheta_4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466625ZZW66%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222452Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDzp%2Bj1aggs3SHCtfSQOdy4brGpZcf9RLKaLzbLk3qLEwIhAOwMAf6WwlHxm9ELo42rcpU7nvYiMnN%2BJO2KDNIhmvSJKv8DCH8QABoMNjM3NDIzMTgzODA1IgwNz8qWFil8IQl0%2Fe0q3AM7WOTzEfacuov%2BCjV58VbHT5grKL3%2FTLhogNh7tNw8Yks0oh39e%2Bt3nbIOLuH4uoO36SeSKJj1F8ToSrkBpjXtUjXTSKbjG%2Bj5TJi%2FA7h%2FZrZJ%2Be2sE1UkNxe4zdJrDFkUOrF4dh40BhEwPrZJrKBtyxaiT5NPNoOMe%2Bh%2FxjvHC0gDOMNdh5WrVeuGeyi0Xr1SrO%2BQ4SBRK82w%2BezpQukspkx9iVKGdcnZ4oc6EIlURfdM20ZCy9vGPTIfTY9ecQ0b9IStHl0m32B559YLa3qh0yiLNqqepcTFx709Yq27P%2B1Df4Im8XJ4aQw7E2yCCCFTywqEcQpC969HTu0cZnlHBbtNeGO27LfGPvx5%2BiOa7hiPk4ql7OkhSWu%2Fgg%2FG6Isut8h21Ct8B%2B4eSFEbZJRFPybddWa8IddTIxWYhFriXfiY3ZZgtgyjpUHHMpqIa%2B6hK8rZmNOandEbpnwvJMXSnto6nhDqW0klb8ZNcoe3hOO2sO2CrilpVsnYW4VFXQtZO3Kpmj%2F%2F%2BC1SCXSx3v27qeWGNGS%2BpSCEZ51SsWvmeWIk9IbmvzKavZohtxFPolWSbqIQQKwNFD2f0Ujc3UFTHDIuVtVlCJigZtF8LGGCIYX8YAlg%2BXTv36CCdzCey%2FXOBjqkAZu21mPzvIlQc2p8KnCItsu6e5kLpSzu6YGcBGjJmIN8Yuerliw1WusSvS6YbQh2rGUp50l5VwaqOiWIIule2pDRBNc2zqNcMottR7PdRZARcKO%2FiObN1ITzsveVZDOwWxY0vBXe7tqx0jWRyqar1JEBOBSY7eqOpSKpQ4hFAR9yu8vDwmeFEh4byNv7lE9PJFZwj7bgJIuF9GUIlJ0tuIYjGyRa&X-Amz-Signature=fb05e8a5d21e67ab08424c700affa02916f3148a7481cbd0222ed2d165394db3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq4')">
+            <span class="num">04</span>
+            <span class="nome">Prancheta_3.jpg</span>
+            <span class="ext">JPG</span>
+            <span class="btn" id="btnarq4">Ver</span>
+          </div>
+          <div class="preview" id="prevarq4">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/f5009b2e-d44f-4149-9936-a4a62526b929/Prancheta_3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466625ZZW66%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222452Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDzp%2Bj1aggs3SHCtfSQOdy4brGpZcf9RLKaLzbLk3qLEwIhAOwMAf6WwlHxm9ELo42rcpU7nvYiMnN%2BJO2KDNIhmvSJKv8DCH8QABoMNjM3NDIzMTgzODA1IgwNz8qWFil8IQl0%2Fe0q3AM7WOTzEfacuov%2BCjV58VbHT5grKL3%2FTLhogNh7tNw8Yks0oh39e%2Bt3nbIOLuH4uoO36SeSKJj1F8ToSrkBpjXtUjXTSKbjG%2Bj5TJi%2FA7h%2FZrZJ%2Be2sE1UkNxe4zdJrDFkUOrF4dh40BhEwPrZJrKBtyxaiT5NPNoOMe%2Bh%2FxjvHC0gDOMNdh5WrVeuGeyi0Xr1SrO%2BQ4SBRK82w%2BezpQukspkx9iVKGdcnZ4oc6EIlURfdM20ZCy9vGPTIfTY9ecQ0b9IStHl0m32B559YLa3qh0yiLNqqepcTFx709Yq27P%2B1Df4Im8XJ4aQw7E2yCCCFTywqEcQpC969HTu0cZnlHBbtNeGO27LfGPvx5%2BiOa7hiPk4ql7OkhSWu%2Fgg%2FG6Isut8h21Ct8B%2B4eSFEbZJRFPybddWa8IddTIxWYhFriXfiY3ZZgtgyjpUHHMpqIa%2B6hK8rZmNOandEbpnwvJMXSnto6nhDqW0klb8ZNcoe3hOO2sO2CrilpVsnYW4VFXQtZO3Kpmj%2F%2F%2BC1SCXSx3v27qeWGNGS%2BpSCEZ51SsWvmeWIk9IbmvzKavZohtxFPolWSbqIQQKwNFD2f0Ujc3UFTHDIuVtVlCJigZtF8LGGCIYX8YAlg%2BXTv36CCdzCey%2FXOBjqkAZu21mPzvIlQc2p8KnCItsu6e5kLpSzu6YGcBGjJmIN8Yuerliw1WusSvS6YbQh2rGUp50l5VwaqOiWIIule2pDRBNc2zqNcMottR7PdRZARcKO%2FiObN1ITzsveVZDOwWxY0vBXe7tqx0jWRyqar1JEBOBSY7eqOpSKpQ4hFAR9yu8vDwmeFEh4byNv7lE9PJFZwj7bgJIuF9GUIlJ0tuIYjGyRa&X-Amz-Signature=f9c4c441005e965c38433ad299be67eadd04ddbaee24c7c4460dd3109c31f1f6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
