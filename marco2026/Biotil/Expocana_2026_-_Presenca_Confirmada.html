@@ -6,30 +6,51 @@
 <title>Expocana 2026 - Presença Confirmada</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Expocana 2026 - Presença Confirmada</h1>
-  <div class="empresa">Biotil</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Expocana 2026 - Presença Confirmada</h1>
+    <div class="empresa">Biotil</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/73eb1e74-bf49-4676-95fd-562b7c47cc98/Biotil_-_PresenaConfirmada.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WV2EKXL5%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220209Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIDPPFf7mueTOzfk1xwesaxTDosJdkFz6%2BBc6KwGIDtW3AiEA%2FsIrilDDCQuOsT2ARC33LA9K9MV2P%2BV%2F1lir8ZrmemAq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDPlOFZcvEsvrHG76ECrcA9p2gjlKrzo7yTVGRAmUbZ%2Bb2VqRGFsr2pvV60zJcqWzAUOeNQ9PDXht9k0CdvzOvJC4z5r0rUhRDd%2B%2FS9tXZ%2FbmtB9srJz%2Bjx8EbpuV856t3ODPDVKj0IjW6cVDTpDzabDkbLcitbXj%2FMfABSGTBu%2Fx0nHXH1H9uH5LUN%2BW1OaY%2FFQtqo3OEZcm8uA6nAZORMZwed2SDFBLZdTv3J37IIMGXw5fW3nwdEppamwSvbd0EIRi3Rbud3Ic086XUNHcnef6eK7pIgP5bqUojske84kmCfQMZmNbgmcJDPEYc2n%2BH9Wy6ekcV%2BBD8%2Bp0l2%2F%2ByDkUDMu9lQChje6fkkaDcRw2zyE53Hi%2FX2xJ%2FhTohntQUluqof7iVBmpyrr%2FzAe1QHd8YZ219sDC6%2BEwz9Ej1igiK8Ulvmz8upy6lG3%2BbiA8QtgPHc8auad1kBoyhVJ4JdwGWSBU4h9CCWTYJh6oKnAW8sa3cV3JajnW5853Zl2FX4dgD9ZiAdrjeM6e6IGJ3Vv4J6%2BNkRY7duxrFQdaYf642QQ3JXx%2FAb8ACW9sojmelQEM%2FeuHeSR%2Fz86WEcvq1pEYM0ax5XHltxwmA7NngysfLDGc%2Bm9VQLDZ9XW%2FkwT6ZWl9uqYW0qnLXYFZMJzL9c4GOqUBy73hz6dVIg4RuZWlpmBS9zZ%2FVXJyGJyITb8FHs6OjAkKAZ91XrXJg%2BIhAPxCmW3xWGTW6Chij0voUc58ckBnPBHot%2BAsp6GalElEGpPjrKQrvjeLNQ3dLeTq7rX%2Bn9ojg4BpMpDc9IAVxvTwtmSks8%2FYXE68Q4CD3P44PAZvsDkPauhzJMEPPA4Qf5Szg00wlwQAfoIzSyxKmnugbIbGTh5JuvDa&X-Amz-Signature=fcc6a59aaf297259d036d416257446150dfa0cfea486cf4aacb70de856ffaccd&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Biotil - PresençaConfirmada.png</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Biotil - PresençaConfirmada.png</span>
+            <span class="ext">PNG</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/73eb1e74-bf49-4676-95fd-562b7c47cc98/Biotil_-_PresenaConfirmada.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46624ZKSJLI%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222831Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIHThP0NOXEG9pin6QmwBzih7SEIlHKaU9FzKvDGxKqvsAiEAjaOFVIEUXJqTQsrKCsn1TwNubjBFs9dWME8tKksaXswq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDFflZpqOooZEeUbU4SrcA9Lsli7pXlnNrwJ%2F4WtAGPlW5bXvkuZ8CR8%2BHyqTfl1l7seZKRYPtovJZA9imrMcbjgBTlM%2FGYZ%2FJHQ6M7NhSTHV%2FIPcnEMZrL%2F0YiCcgXbf97dlx59RusCFXUkC3Wo1n72a2T1%2Bk07qnI1cgMpGegPxn4ipeTgBm4e63SENDDGartgnerv9TVWFgi6BsgNhWn8%2FSU%2BTig18PEVPBvblXOJQnu%2BPoglUkL37W%2FDoxIN5Ht58U1h93Zlen%2Br3LuLt7WjvjGvRlhURaK7PWYqUOeey%2BlqLdCMR%2Fe%2FUhE06wNKMXif%2Bk0lexpT5osWiUNH%2FoSk19Mu%2FQG2INGP7Cn%2BURipxzhUZENbpSNnn5gSx7JncdJ5G5xFbGWQvGE8RFmogFJ6NGPQma%2FK6YxGFsVu0Ev%2FTF2VM5lU9%2FOfcDJzIYZjae9ADrTqhWja5Z2ZklOpM3bnSezQSQ8XbmqYK1WOrnwtXYJ5kgV07yA5%2FWCbrl4WYIG%2FvQnIf0WKcZckt7m%2B06oYwsLkGD%2Bv0Uoaq0ErF81sAb5TIMgz6sSW44iW35q1fTckC9JkAuQHSeg47SeuG7dG1qpFsz8joTk%2FZrRAlxEZ2ucfC%2FvonWaQ6MSH3vbJRWimprzwmjBvY6zuOMJ7L9c4GOqUBwLFBYKNMVso%2FxZ3XD3%2BLExwvXsU%2F%2BTKPXz%2BJpuxz%2BWYyPFSRiKIrV%2Brp%2FjtIvcAsYlOdeC6Y9qsKmVk65vYyquj%2FOJUKey0QQPaGNy1KWqo%2FaHz2AkZtmZJLveMQfOgTbHcgBBV4wxeQioJuuYP76Pz%2FjbWg%2BG9HnYsCO1gHN7LSCRoe4WCN0aqbR%2FJvRCcVzpKjv3A3Sv1blbRXuqaJ55XsbFs1&X-Amz-Signature=9edcbae8f47133af42a04d6cbfc5741e9211fdd770384b3c1a75f9fd53151376&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;" />
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
