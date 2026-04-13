@@ -6,30 +6,53 @@
 <title>Arte BioSulphur 800</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Arte BioSulphur 800</h1>
-  <div class="empresa">Agrobiotech</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Arte BioSulphur 800</h1>
+    <div class="empresa">Agrobiotech</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/34f73b59-f288-42a0-a797-0f589c0decfc/BiosulphurV6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QRGRWBHR%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T215957Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCVk2zr0Ap2kiR3YEp%2BwfetqYCgKM059IIYvhsAyRtOOAIhALBw9pJWWXM7R6YkudwZ6FYc1qfeYyOvDZh2WM9Tmd8cKv8DCH8QABoMNjM3NDIzMTgzODA1IgwaBU%2F3ekp62lw3BbYq3ANhmABox8Y0Pp2bnIY31u8CFZ%2B%2BNkEaHBVDiLl00KDYW4Q3uvD3GbqGyPBa2ywsCLYdqOHE34BvBgzCtkv4RsStzRy6hZDDLXAfXVY5PLn19%2Bz6VS4juVs4DMwmAAGL8I2wej3YKfS3VBZSPsT52EkP%2BqlVR5%2FYf6OAZ%2FlQnlPDafxe7G3iYiz7qYUW3knm6R4oDYMKIOlOK86v6AkiEmdUMmWQCkJsVkwMDev1IiHnffI4Q5WJhIifD9g4LanG2Q3XSi19W6jwHJ3gVhPmWZ%2FbBOL7z28EoD0w4t2FVguzSdxGySNfJtSQlYJ6x%2FvE2g3KhdsDqlFbVrpQx%2FaSyGSK%2BZI9m7F%2BKx%2FD5ncJS5RsIE%2B%2BL2zEXntsVGxiEHQSpuMQERZmIfzVbEqfk7I7JIr%2FZV3Y0tNQT4qiX8hs9X1aJS8agqOsz1JcuAXsIJffcFHK4xwDUrFWL%2BJ5CyWQecQYkcHaqP4hncg2b49DmBBbSPL52ywSZ2cDrlbxrJwm8FRdfBivxB3i45iYdUnTMfQr8tBo2%2FqSBILZ8%2FQIf61IsoKHpyDvW8B4kV%2Fr%2FV1Gjk0aYPxQcKzOVToaHUNfyswYpL9FAVTi0aUGoXLivgxIHun7K3aj%2BpGiFk6dezCgy%2FXOBjqkAQ%2BO0RNRuGWpXE4jnWzWz3Fa%2F4lrLIDyN8eU%2FOENG4%2Bt4OjFsDeo2GNY8azKw4XUODnPbv16FzJ5RwVEjUDBCRIqdc92WYHv3e1j26XORH55iJ6dk%2B7jlPoEtl6OjVRZK%2B5QN7k3m5z4230S2JmBv5fGNnGX%2FpXQzjjY4lwvFmTkr8%2BlA9Ag2uTDrnEC%2FJYwr9Z1S3t05RwUkdr4khnb3RurttsU&X-Amz-Signature=a396d397f1770168a8db7e9452592069292c9ec93c48624257da820e7ef62eb5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">BiosulphurV6.mp4</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">BiosulphurV6.mp4</span>
+            <span class="ext">MP4</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
+                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/34f73b59-f288-42a0-a797-0f589c0decfc/BiosulphurV6.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663FZAPO3X%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222619Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQCGJ2zRdT5W%2Brqdg3%2BhdZqavnoq2736cblD7ThWH2Na%2BQIhAJe5Q7akEBYg5kUumW9gVsd%2Ffq%2FBD8BUNSh73%2BIUQ%2FDjKv8DCH8QABoMNjM3NDIzMTgzODA1Igw0vhhzrUlFxdcgpkMq3AMCTqj1xXzDy6ZN%2F9icALx%2F1H6j76snOT4tCmseKIzayY9cMWpNPQHLQQc4%2Bf4TkIrpINCMKjxw1LwC0Cbg449iaKHK5lmIKJ9n%2FSfh7TWTAC8NIeXTiKCruPKmEQSHh7qzs5CtnuDLXU4xVoGq81drY6RBTLamncXhtFjeHAQ7G8%2Bgni8BHYhPS4yk4LQKdaf8Hgm%2FiwuSz2qt9z6YCam%2BTuxfmSbIu1mtPazO2IdnF%2FoKOnzyqnEhYjc%2BD2w89%2BwoH3fgoeqNmZs7SIVrjGjc4kIr%2BxUxmR9EnPVxFrhCBuD8JsLGYWt5fNYTOAz1NcDhlBkFPe00zdq2PFRRgE2H3rY7OYq6FDDKiP%2BHyccVDBR4seXd2E7f5CYTEtib7FCDycpQ8im%2FXuE%2Bjfj20K%2B%2FjXDZqWqKm%2FaE8R54VplZIFP1xt2pdd0YImXXHOa%2F6lj9bY7i5C%2B5b1sDkBkuaM%2FjxdQRM5U62N%2FWm3wu0TsuMiwqtazGZPvDPiJ0zHfrIJYnjjjwwlIyB%2FOnRhkhwb%2FbDfgUruejBiX%2BEfQY2EOc1n8w9dN5HOUbc4KU3BRXbA%2BmgU2Vyhl1Pb6do0iTLmiX9pWN%2BT7mwYvncYK49HElrSPw2SGAYFPNcLF0TzCey%2FXOBjqkAQ%2BGRqbf7lebMTFlHanoR73TwpBvwHgmnI8vJtL2Mg08BteS4B4urx6ng7VxGAh1IYskl61iuw9RyPq4AtpNdC0vSpeW0UmP3lr1D81pK87fDMeAlNdsrX9beMetmr0JMF3QBvq6KPob%2F3YbYRWzmz3LevQrTHvqr%2FklYR066NlHVZD20fJcdTykekDJwiWO2SMcPO%2F2POA4wEHc6MGVELGGNmbu&X-Amz-Signature=8a9645ae9b0693012c946fb8ffc0c45e496e065972ed52323a0c4f7ad5607392&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
+              </video>
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
