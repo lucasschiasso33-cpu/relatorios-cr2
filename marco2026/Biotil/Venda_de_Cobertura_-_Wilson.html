@@ -6,30 +6,53 @@
 <title>Venda de Cobertura - Wilson</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:22px;color:#fff;margin-bottom:4px;text-align:center;max-width:600px}
-  .empresa{font-size:14px;color:#2563EB;margin-bottom:32px}
-  .lista{width:100%;max-width:600px;display:flex;flex-direction:column;gap:10px}
-  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;text-decoration:none;color:#fff;transition:background .2s}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
   .num{font-size:11px;color:#aaa;min-width:20px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 12px;border-radius:4px;white-space:nowrap}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .rodape{margin-top:32px;font-size:12px;color:#555}
+  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
 </style>
 </head>
 <body>
-  <div class="logo">CR2 Marketing</div>
-  <h1>Venda de Cobertura - Wilson</h1>
-  <div class="empresa">Biotil</div>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Venda de Cobertura - Wilson</h1>
+    <div class="empresa">Biotil</div>
+  </div>
   <div class="lista">
-        <a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/a5520028-3c58-4351-b2ac-c99747d4f573/Venda_de_Coberturas_-_Wilson.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664LPXCFTC%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T220057Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIAmnhF2kcevLlKEppJnzthqUhg1%2Fi1A%2BJPherqjUuqdbAiEA9DMgNGi2WkC5MxIsBHXjVH3aoepQlXrkukFHfgTonnMq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDPE4GtpiS3TfS1yNGCrcAyKp27VFJ5VqKo51d6kbFm4zVqeb1h11GFkG9oUc4FMAZo603%2BhEcTzJotXciZLGne8%2FQ9Hy8y1IbQrnuuXdI%2BOIV6EiKxANdhZ1dV2LU93emV%2FOkSaUrBM8hwmHfs5NSltsOvAykVAiD61urG3%2FpcQqBNGjTvmxmU6dF7MbSgOushE%2FlOzjchM1CG6ChzkoKHYyO%2BDY5eKUQruD%2FcPMod%2BM%2FBSoxVfTXx7gv8y7V4vbwvvTk9peeuPSJlMAXhn%2BFhrm78nl2kOsyZ9uBt6RJ1BZto6Lti301pi7yDrBvKb32%2F6PNiNBw3rHiDE29zUbbl4ic%2Fd3rMqOsNG%2BuSDZIwNQ9QW88kLU0SNTuKblep2VtmQYjQAfH8ej%2BtmViDYunEHiPTR%2BXu0nO5ShlnNJLDLdPGSWshTAx%2Bz6XDB0W4iBNqgVjSfoYkPAUMbEM8uanaN1ulTgn31v8WK26NWK1YE9VCDCb79inK4GYJLoFo5TWvUlW9qKbh98zQsbQksQm8RJY6TsehjnzKupi%2BlkGfW3NlJnFHymSj0tAIRBpBlG0q27a6WX%2FbeEue8M9bAqnCFIkDTTosallRkmshotuiavdJKHZh0ZaviMnGuhtR8vxyIzZe5%2FxGDuDJ%2FaMKLL9c4GOqUBE81iOEBWmt%2B1whORdqrY0Exi14V1Pyo5rYObpOGA4K0%2Bksks6owTEll7exN3UAWqcPvjGl9aXu9A1wzJIzikiXdf%2BucrjKDZO0j%2FBP3s4ZDssxU%2Buy%2FXaExQHj%2BbHKr8jIPIVomhuyZ5IbFboNBFcwq7SgzGOmtG3wGgAp46c8daLhA3QBlO8avfZ6k7nYSAEZI948B%2B6jswEZDS6%2Fxui7Ea35el&X-Amz-Signature=1f238ed535b9deb2b2c10616cefa9eeb4a087a1d17e9ffdd63f5e20b27209b7e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" target="_blank" class="arquivo">
-          <span class="num">01</span>
-          <span class="nome">Venda de Coberturas - Wilson.mp4</span>
-          <span class="btn">Abrir</span>
-        </a></div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Venda de Coberturas - Wilson.mp4</span>
+            <span class="ext">MP4</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1">
+              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
+                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/a5520028-3c58-4351-b2ac-c99747d4f573/Venda_de_Coberturas_-_Wilson.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WJF3QQ5H%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222712Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDDZIF7uU4Eoi2QU9szGATUBQMnZzoLNQmCT%2B5nltsImwIhAMXppYIlP5woXoowS6lR%2B9AYuD0YkTyhrw58T%2Bp%2BfpqzKv8DCH8QABoMNjM3NDIzMTgzODA1IgydxEo5hRg2UHGDb0gq3ANoqThMk8TYPKtJWEeEbMlBClf%2Fw%2FVQfZBQWVzpJBx6HLZCE%2F9lkIJL%2BhnHhj%2BPtmHA9bSViiu3Vs1O8euxG%2Fz%2FMH4ZBd%2FsJ3m1Q7CFQAIHFKnRPGOn7Yb8ObksijF7JjsUBTU6sUtRDrmHmkfTA8xz8k5npPfwQHk7Pa2GGMCqQWFa01%2FbOfS3U42EQxM9ROr640iMemyPBCSukHdvLVUCQ5Y5Yz4uSCc2YdAvGk%2FpyKM2G8bFwpNWF8L9QAMksoMEC%2FpicKn%2B%2BGClKK6MHXn7ISxzvWi3fxlmJVzYlkjsM8%2B5le2Gd%2B8y7F0W4G2bbe0IUfqkbFQQ9HnSlf1rU5etoP%2B9KCR6EumcuwtmP80Hny8amkgPL%2Fbb6b0iRdrkqNX2Ycj6Iql%2FvoZ9RzHTS9khqHPRYht4JawPzCp%2BcD6c%2Fz9AW3O%2Fuz51C9OvHqPhgHyHxFsi1g6bRtww9B6benGy%2FJwTtTVSIoIT7Je4r4VcX5DLt6iPKZJ6ZscFSplT%2BR%2BSY59KxLP7zK%2FfH7%2Bz3osw7b%2FbSXYoZpHopNFPB9Hw%2BBKlcmRz3gIzt4GGh6UUkmKjxNpU5tUXc4p3BNzCQrhHL8FTuErlFgdURDqs6UhyfvDrrtJ7l7U%2B7ID9fzCey%2FXOBjqkATOBsxBkgpxwnFwN%2BFRlCBbIJ56uL3RUIwhWSmDyaeakwRUsoPuHoDsM9f0mR%2Bul7SEIzcnf7ma9AZ0wvAD5vNxEONxksEZdHENhB7FXcFvuNgkj1oae6fvawdEzeVS5%2BAt3FHvkwQoEQ72CoEivDnprtnmM90JQTeUQZUA2LcaKtffwKBOzeitgAdE9FyQps9g58O4%2BsXJX8ZqhKAyL9BmPm0Dt&X-Amz-Signature=93990007a3010c103707d559f95c166c8e3c6a869faa4b5f34b71f4bb1d37e03&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
+              </video>
+            </div>
+        </div></div>
   <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+<script>
+  function toggle(uid) {
+    var prev = document.getElementById("prev" + uid);
+    var btn  = document.getElementById("btn"  + uid);
+    if (!prev) return;
+    var open = prev.classList.toggle("open");
+    btn.textContent = open ? "Fechar" : "Ver";
+  }
+</script>
 </body>
 </html>
