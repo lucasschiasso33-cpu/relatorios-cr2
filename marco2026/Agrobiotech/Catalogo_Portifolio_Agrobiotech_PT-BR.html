@@ -11,17 +11,17 @@
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
   h1{font-size:22px;color:#fff;margin-bottom:4px}
   .empresa{font-size:14px;color:#2563EB}
-  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .lista{width:100%;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
   .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
-  .num{font-size:11px;color:#aaa;min-width:20px}
+  .num{font-size:11px;color:#aaa;min-width:22px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 7px;border-radius:3px;white-space:nowrap}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:50px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview{display:none;background:#111;padding:14px;border-radius:0 0 8px 8px;margin-top:-4px}
   .preview.open{display:block}
-  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#444}
 </style>
 </head>
 <body>
@@ -38,18 +38,16 @@
             <span class="ext">PDF</span>
             <span class="btn" id="btnarq1">Ver</span>
           </div>
-          <div class="preview" id="prevarq1">
-              <iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/f7a98c51-7eac-4a7a-b9c6-fc6431f75736/Catlogo_Portiflio_Agrobiotech.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QYF6XOFF%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222628Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIC1vtMxUHnj1wSsX%2B87qZUA5Rz4BSIiGWkPwvAUd4PzmAiEA9HoaY22JnScqAmVXtVbbW9iXD57v20bx%2BOxLgbzKzBEq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDHhFw4JlkvtSz19%2FmCrcA6M123DjrpjztuaJQVYwntW5SJmyGZdZluaSIbd2KO9Ej2ufquoJjQAaPYjTM1kFoeZcdrOxthf4y6294HiOzkExEh%2FmSJsKnAo5BBVpkLHCTe2MJ6UPtUbHIe1elQi0zr5GzjvF7tYC9tKTaHG%2BB%2Fkk4j9mlBrC3gtkdswuHAAzN5IHJsa3lEKj1AfWkt1e%2FFtvhu5nYJXG4UrLx9mUgwd1P5wL2V1NJeg7KWKPFAIQR02OOC1n2uR8yEbh1CfOkriof6SsGsKhxXiZxhtlHzklq%2FHzNGwbF43paeIyIm1%2BnjJdBJM%2Byd%2FyANK0vTyo0jQN8A%2FxTVd7y3k2EJqzEuUznk76mCrVcc7ujlKv1ogNKdRlbdq3aYj4ZKxFCUg6YJjls7dzi2wDRR6JMbTqyhrd%2BJhjXgBkvr%2Fjzp5pELbFtPgqwubF%2FgGiU%2F%2FHuV3HUFzE3KjzrYC2p3mdEk00Wx8efu4bA9gcaG2p8Ta0DrOAVqlTzM7DNQwFm2R6Lt82XRfN%2BqqCokOGRzl7idnaPFTjg515zl6Qan0tvv9C%2FfixAXq%2F4czMo%2FD8RExGzblebH0Ah%2FOVTRNWI9DGt74jfjkFYCoj7TTQoJiAE%2FRg527jOuZEtuvXK46%2FaptPMKnR9c4GOqUBDKSh2OdLHVYQ9Z3ZGzk1aCmRxxFF2vBLi0m4D5U3RXEkGpykbSaLTLn6QCVsupi21SZFGkuqWUv28l9PCsd%2BYKXUc8EaiVEE0weRQ9RJ5omPcYfXzcE%2FopItQBKFB02OrypKXJUm9R2OzK7L1f86XCvs7tHGQIe6oT2ah79XgMiiyV%2FhvEcvvdwcxqbFXOO%2Fz0uUarf9qR0HctfB0PgLN7kN4I21&X-Amz-Signature=bdb388af33be7227dbba34b31557834bd2586305762def81f0fd7463ad803c48&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="width:100%;height:80vh;border:none;border-radius:6px;" allowfullscreen></iframe>
-            </div>
+          <div class="preview" id="prevarq1"><iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/f7a98c51-7eac-4a7a-b9c6-fc6431f75736/Catlogo_Portiflio_Agrobiotech.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46653RWLSYF%2F20260414%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260414T011650Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIGKdaCv4r0Q6%2B5sEjKNG5pNMw4It1IeZpB6xg7VirpRSAiBHtx6SjLWKdvtpkW9v6OElSGcckSZuWZ4H7yVWQKhNySqIBAiC%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM%2FJNcXqkOf%2FA5DN1SKtwDsgoSz%2BqntkYOT97buGmv%2FOSximr4qQLMIyyylQpDesZmqwb3I4qrmMJ%2FmHYyvhz4J5qwnQcJJlDFxinO7Kw2W6OwPGN%2FSyLuantER4i61%2FFI1MD7tVCCc6nqFEqG0d2%2FNZUUZWkutxqMOP20Mx4DZB4MMEzsxVNZ8BQ9O5t61usNi99jmKBqDVVrI%2FsOpQOeqPY9URhdPkK8KdPHupcQw1nluU13xGW%2F9iGVihCJD%2BpH0w%2FCNF0RWGFvppTTh9byvVvXr%2FNUVYlGOtZa9HxrfedblYQPStCH5DLdjnK2bedjeJdvn2irRXUZs3SZbVaSYG%2Bw02RDEw7VHXL9hg4RO%2Bb%2BQbakqOhqtoxkM8yd4sYo3RshfpRTXnLzpbvOPINVVhzOvHhlwjf9BSEz9LHPI2aTp%2F%2B7dzymXBV69gy1saLYRlttP15XxZ8R0RAguXePKuigb73iIsHVyRwHmVbNQ2UStxSB9GiNdRb4GGW3WXI%2Bn3%2FIiYNYMymEHse08NCNQIr2hkZvjPvE2euRHaNn0W5Kku0YhAjm2CCcWRKRgYN4auVc%2BxHV%2FZobJnHxX%2B8FgPUlFf%2FcmobnEVrV%2Fu7GEd9W2WTNKoX55JSE4k1vfnccEV5L2GzF%2Bk9r%2BAUwtZX2zgY6pgGQOKvf7bDZ8FH2ss1CysFwNTN3HsKZ1jsqq%2BKNICBIaOFzat6ZjO7tmGKxAdT8313TUSuBA2XCHzXCQR2WOHpVyuzpcm41RNOx64Lskb%2Fy2GHomZQqpxDDukMXcIwxfe0t%2FDG6%2Bh1yRqpsSiIxO6xZGg5np9%2BzLPEnRZQaCXwAb%2FDMdqz2zQ3lp9JwIJG1tYQtFFTmzl541fw0eiDOwmZIpPtM1uvR&X-Amz-Signature=a158504663788e6ac1ca2509f165838d81e12be4e4de7c4d7da46b107398ed71&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="width:100%;height:82vh;border:none;border-radius:6px;"></iframe></div>
         </div></div>
-  <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+  <div class="rodape">Relatorio de Entregas &mdash; Marco 2026</div>
 <script>
-  function toggle(uid) {
-    var prev = document.getElementById("prev" + uid);
-    var btn  = document.getElementById("btn"  + uid);
-    if (!prev) return;
-    var open = prev.classList.toggle("open");
-    btn.textContent = open ? "Fechar" : "Ver";
+  function toggle(uid){
+    var prev=document.getElementById("prev"+uid);
+    var btn=document.getElementById("btn"+uid);
+    if(!prev)return;
+    var open=prev.classList.toggle("open");
+    btn.textContent=open?"Fechar":"Ver";
   }
 </script>
 </body>
