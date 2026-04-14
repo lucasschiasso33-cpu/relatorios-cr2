@@ -11,17 +11,17 @@
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
   h1{font-size:22px;color:#fff;margin-bottom:4px}
   .empresa{font-size:14px;color:#2563EB}
-  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .lista{width:100%;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
   .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
-  .num{font-size:11px;color:#aaa;min-width:20px}
+  .num{font-size:11px;color:#aaa;min-width:22px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 7px;border-radius:3px;white-space:nowrap}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:50px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview{display:none;background:#111;padding:14px;border-radius:0 0 8px 8px;margin-top:-4px}
   .preview.open{display:block}
-  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#444}
 </style>
 </head>
 <body>
@@ -38,20 +38,16 @@
             <span class="ext">MP4</span>
             <span class="btn" id="btnarq1">Ver</span>
           </div>
-          <div class="preview" id="prevarq1">
-              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
-                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/00d280ad-43b7-433b-b475-0d41d457df56/Leve_Dicas_-_Ningum_te_conta.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46624E4XMXD%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222544Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIAx4Ifhj2ZxBUMWX%2FBkCzXj9y7BvTDhpfvIRIXHcyp5TAiEArDJoMnZwGM2TR0ehaORMqfb%2BQUealThsr1PGa4lEgVYq%2FwMIfxAAGgw2Mzc0MjMxODM4MDUiDEKTF7t4bngeyQhmryrcA6WCB52mmMRQ5NGnbb9nKV660sOcKUlNCe%2FuoOZZe6PhJVPpU5q6afk7JMHhP6cpVIbfKRBSGzqSrgP3Q1wit3aSwf1oXCpvQy7%2B0M%2BHHpgIt5BkpIsWVNC9QNc%2FtVsvN7htyEbxQwdbR0e847f%2Br%2F8wRWflCCqlHEFxR1vbtYCHptx9PZvhFDKgRLLR43kSF6magRF7nwLcWZ6UyiYaPGau09SoJXdpWyLCMhrMqVqaBZFvW5rNQ612nWknUTy5FaNYGxlsDDooVZmCTdabfhsc2GZ6b3Em09nHdI1VFEI9c6y1MYHPwBiTTNzlkqiaUK7%2BnNZv6VNFFMlSynieSqsUNPwXcAH7Je%2FrDhDEj8LTehoDoeeWUquMonY%2FAmED36qIE%2Bm%2BUqMNO8WzYXyk1p0gUzlCWYLMZhKfetTDXJc%2BKhCB7o7M3W88emIvSNHyysasZXAi3LzNO67HEv%2FQXDzcL8JJ3Wdh78jRNTs7y0QWA3V4nvSZswvcYLLzFLFeeWyAuCjmeTvJHLNE5zq2FQRFbbOHvN9qYJijSU1lAPty6s%2BcMcVCHJyDzYLAqD4MWuV5h9DCWt3FBhTCWZ0s%2BQb%2BgxCWhstN4L%2BRbdJ2Uqlm7EBAyVCOvCWAnt0fMJ7L9c4GOqUB6GJ6U8rXJJN7A7JRJtWfqrUSljBi5bFkGWI%2F2%2BFBdANnPP7YuR8FSCE81xicmarDf5oV%2FFVXTm28%2FS5pZjGDJhveUFt5rAgHVcLAUbqa%2BX3QzUdxuxCet1pYo4gjP95ArCgCRtsMyJMfwQPXiZGqtkeRlXJ2LDWIgqvZQ4fzZ83mEEHDBurPmldJ36AO3CR256WML%2FZWBhHkCK7lKOAXuGWGAiRT&X-Amz-Signature=14d5a65f41d5d03946d55cada28762a9670b916c53c68494f27bf6c51b940b41&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
-              </video>
-            </div>
+          <div class="preview" id="prevarq1"><video controls style="max-width:100%;max-height:82vh;border-radius:6px;display:block;margin:0 auto;"><source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/00d280ad-43b7-433b-b475-0d41d457df56/Leve_Dicas_-_Ningum_te_conta.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XE5Q2T33%2F20260414%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260414T011347Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCICxJrJqU6iIGzqelEIXMFlM52dZV0136S6alau14CfsiAiEAiJnvP7F2U1D6juYjVawLg9Mh3gi8u5zfQnQVislUQpAqiAQIgv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDDUDYtBzAXx%2FLO1a3yrcA5Pm3HxYjQi%2FuufNlr32pdnGuq%2BK%2BC8CKlQkm97f3s7xlg8Q1icnVSkjpnXgkTSVb7LJaxw0CXYhv53sU8flxF%2BynLO8pD3M1cGOzl1P52bDavr1OYDp5RuWVlV0To5Gc%2BYX4A1oPjORMuy78GRfe8Oc83c6S8xZUenGIIiSZUaPLhmIuaKx90KDTyiUMXbQirIarMWVgMdnzlU6PPXoCZvrvy5uYTZGRoMeJwaDB9D7v7bzDLF9Z5d%2FI9wUnMseVsktxebGb6CwXCkm%2B66FJ1wx2pVICqBNy0TEh7x9wl3kF7%2FLA%2BZmVlrNUKv1rfa5wXa3UO5Khwq9VTXB286NwP0qKQjevSfOQeBeVSwjs0LBG0CmwjOHPEhwL%2FgzlY0ur3VacJR77MRexIQzuPJYqXFKln4MHSE%2FrhsDJOiLZbH%2Fhiv1I6%2F1Z9pAACKR9n14Rkf3MHXYH4PwTj%2B5%2FWgQibMkJDEx2NsRpeTGLD4oyRwDJij77kZRSfCD%2Fo44rBQ4iZsPmdf0YxnaXAv2vGeVabmg2Er5yjUJdVkoVz5oTwNZnK6pwvd7LkrJah4oIW5fxxgvCVKwqcMVFbL45nlIELV5suYkn7rQNXR1TlHa50gv1azRFsiH1DysX%2FfSMLWV9s4GOqUBQQOQAvsBMjAs419%2F8sa9E8dqYSG1tpvxAKtk12Xh04T6q3E0%2BPKSat9qiZRgN09GValcDVVDDxYT9DQ20DU7Ow4r1NEZI4a6%2FxJMBPuNifCQm7XrDegG%2BGlMIflIJM4b3%2BBaaPsAmgEF1H0CD8TyziBtYrBzie6r5g%2BdAHY1GcRLshVR8wBiUfwj774Pjg8DbwvaSoKMlDAqd96KyNFXvSVW25Tj&X-Amz-Signature=96f72a579d63c0163154d50bf00a6d8845534b921f6e5b1abdd2060e4d588518&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject"></video></div>
         </div></div>
-  <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+  <div class="rodape">Relatorio de Entregas &mdash; Marco 2026</div>
 <script>
-  function toggle(uid) {
-    var prev = document.getElementById("prev" + uid);
-    var btn  = document.getElementById("btn"  + uid);
-    if (!prev) return;
-    var open = prev.classList.toggle("open");
-    btn.textContent = open ? "Fechar" : "Ver";
+  function toggle(uid){
+    var prev=document.getElementById("prev"+uid);
+    var btn=document.getElementById("btn"+uid);
+    if(!prev)return;
+    var open=prev.classList.toggle("open");
+    btn.textContent=open?"Fechar":"Ver";
   }
 </script>
 </body>
