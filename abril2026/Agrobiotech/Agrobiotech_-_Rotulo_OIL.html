@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Agrobiotech - Rótulo OIL</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
+  .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
+  .arquivo:hover{background:#2563EB}
+  .num{font-size:11px;color:#aaa;min-width:22px}
+  .nome{flex:1;font-size:14px;word-break:break-all}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 7px;border-radius:3px;white-space:nowrap}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:50px;text-align:center}
+  .arquivo:hover .btn{background:#fff;color:#2563EB}
+  .preview{display:none;background:#111;padding:14px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#444}
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Agrobiotech - Rótulo OIL</h1>
+    <div class="empresa">Agrobiotech</div>
+  </div>
+  <div class="lista">
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Inner-Oil-Rótulo.pdf</span>
+            <span class="ext">PDF</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1"><iframe src="https://raw.githubusercontent.com/lucasschiasso33-cpu/relatorios-cr2/main/abril2026/Agrobiotech/arquivos/Agrobiotech_-_Rotulo_OIL/Inner-Oil-Rotulo.pdf" style="width:100%;height:82vh;border:none;border-radius:6px;"></iframe></div>
+        </div>
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq2')">
+            <span class="num">02</span>
+            <span class="nome">Rotulo-Inner-Oil - Corel-Versão 17.0.cdr</span>
+            <span class="ext">BIN</span>
+            <span class="btn" id="btnarq2">Ver</span>
+          </div>
+          <div class="preview" id="prevarq2" style="display:none"><a href="https://raw.githubusercontent.com/lucasschiasso33-cpu/relatorios-cr2/main/abril2026/Agrobiotech/arquivos/Agrobiotech_-_Rotulo_OIL/Rotulo-Inner-Oil_-_Corel-Versao_170.bin" style="color:#2563EB;font-size:14px;">Baixar arquivo</a></div>
+        </div></div>
+  <div class="rodape">Relatorio de Entregas &mdash; Marco 2026</div>
+<script>
+  function toggle(uid){
+    var prev=document.getElementById("prev"+uid);
+    var btn=document.getElementById("btn"+uid);
+    if(!prev)return;
+    var open=prev.classList.toggle("open");
+    btn.textContent=open?"Fechar":"Ver";
+  }
+</script>
+</body>
+</html>
