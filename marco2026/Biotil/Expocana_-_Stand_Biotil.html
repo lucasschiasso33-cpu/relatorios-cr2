@@ -11,17 +11,17 @@
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
   h1{font-size:22px;color:#fff;margin-bottom:4px}
   .empresa{font-size:14px;color:#2563EB}
-  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .lista{width:100%;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
   .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
-  .num{font-size:11px;color:#aaa;min-width:20px}
+  .num{font-size:11px;color:#aaa;min-width:22px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 7px;border-radius:3px;white-space:nowrap}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:50px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview{display:none;background:#111;padding:14px;border-radius:0 0 8px 8px;margin-top:-4px}
   .preview.open{display:block}
-  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#444}
 </style>
 </head>
 <body>
@@ -38,9 +38,7 @@
             <span class="ext">PDF</span>
             <span class="btn" id="btnarq1">Ver</span>
           </div>
-          <div class="preview" id="prevarq1">
-              <iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/b7bc0ca4-8060-4c42-978e-eaab3e97b48d/Biotil_-_Stand-Expocana2026_-_9x3M_%28escala_reduzida%29_V2.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WJF3QQ5H%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222731Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDDZIF7uU4Eoi2QU9szGATUBQMnZzoLNQmCT%2B5nltsImwIhAMXppYIlP5woXoowS6lR%2B9AYuD0YkTyhrw58T%2Bp%2BfpqzKv8DCH8QABoMNjM3NDIzMTgzODA1IgydxEo5hRg2UHGDb0gq3ANoqThMk8TYPKtJWEeEbMlBClf%2Fw%2FVQfZBQWVzpJBx6HLZCE%2F9lkIJL%2BhnHhj%2BPtmHA9bSViiu3Vs1O8euxG%2Fz%2FMH4ZBd%2FsJ3m1Q7CFQAIHFKnRPGOn7Yb8ObksijF7JjsUBTU6sUtRDrmHmkfTA8xz8k5npPfwQHk7Pa2GGMCqQWFa01%2FbOfS3U42EQxM9ROr640iMemyPBCSukHdvLVUCQ5Y5Yz4uSCc2YdAvGk%2FpyKM2G8bFwpNWF8L9QAMksoMEC%2FpicKn%2B%2BGClKK6MHXn7ISxzvWi3fxlmJVzYlkjsM8%2B5le2Gd%2B8y7F0W4G2bbe0IUfqkbFQQ9HnSlf1rU5etoP%2B9KCR6EumcuwtmP80Hny8amkgPL%2Fbb6b0iRdrkqNX2Ycj6Iql%2FvoZ9RzHTS9khqHPRYht4JawPzCp%2BcD6c%2Fz9AW3O%2Fuz51C9OvHqPhgHyHxFsi1g6bRtww9B6benGy%2FJwTtTVSIoIT7Je4r4VcX5DLt6iPKZJ6ZscFSplT%2BR%2BSY59KxLP7zK%2FfH7%2Bz3osw7b%2FbSXYoZpHopNFPB9Hw%2BBKlcmRz3gIzt4GGh6UUkmKjxNpU5tUXc4p3BNzCQrhHL8FTuErlFgdURDqs6UhyfvDrrtJ7l7U%2B7ID9fzCey%2FXOBjqkATOBsxBkgpxwnFwN%2BFRlCBbIJ56uL3RUIwhWSmDyaeakwRUsoPuHoDsM9f0mR%2Bul7SEIzcnf7ma9AZ0wvAD5vNxEONxksEZdHENhB7FXcFvuNgkj1oae6fvawdEzeVS5%2BAt3FHvkwQoEQ72CoEivDnprtnmM90JQTeUQZUA2LcaKtffwKBOzeitgAdE9FyQps9g58O4%2BsXJX8ZqhKAyL9BmPm0Dt&X-Amz-Signature=6fedf720667754b1f33c101e622f3862e2005594f8a0250647abb740924a3e80&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="width:100%;height:80vh;border:none;border-radius:6px;" allowfullscreen></iframe>
-            </div>
+          <div class="preview" id="prevarq1"><iframe src="https://raw.githubusercontent.com/lucasschiasso33-cpu/relatorios-cr2/main/marco2026/Biotil/arquivos/Expocana_-_Stand_Biotil/Biotil_-_Stand-Expocana2026_-_9x3M_escala_reduzida_V2.pdf" style="width:100%;height:82vh;border:none;border-radius:6px;"></iframe></div>
         </div>
         <div class="arquivo-wrap">
           <div class="arquivo" onclick="toggle('arq2')">
@@ -49,9 +47,7 @@
             <span class="ext">PDF</span>
             <span class="btn" id="btnarq2">Ver</span>
           </div>
-          <div class="preview" id="prevarq2">
-              <iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/a5e98448-b111-4614-b430-7b52546cc9a4/Biotil_-_Ps-Testeira_Stand-Expocana2026_-_120x360M_%28escala_reduzida%29.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WJF3QQ5H%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222731Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDDZIF7uU4Eoi2QU9szGATUBQMnZzoLNQmCT%2B5nltsImwIhAMXppYIlP5woXoowS6lR%2B9AYuD0YkTyhrw58T%2Bp%2BfpqzKv8DCH8QABoMNjM3NDIzMTgzODA1IgydxEo5hRg2UHGDb0gq3ANoqThMk8TYPKtJWEeEbMlBClf%2Fw%2FVQfZBQWVzpJBx6HLZCE%2F9lkIJL%2BhnHhj%2BPtmHA9bSViiu3Vs1O8euxG%2Fz%2FMH4ZBd%2FsJ3m1Q7CFQAIHFKnRPGOn7Yb8ObksijF7JjsUBTU6sUtRDrmHmkfTA8xz8k5npPfwQHk7Pa2GGMCqQWFa01%2FbOfS3U42EQxM9ROr640iMemyPBCSukHdvLVUCQ5Y5Yz4uSCc2YdAvGk%2FpyKM2G8bFwpNWF8L9QAMksoMEC%2FpicKn%2B%2BGClKK6MHXn7ISxzvWi3fxlmJVzYlkjsM8%2B5le2Gd%2B8y7F0W4G2bbe0IUfqkbFQQ9HnSlf1rU5etoP%2B9KCR6EumcuwtmP80Hny8amkgPL%2Fbb6b0iRdrkqNX2Ycj6Iql%2FvoZ9RzHTS9khqHPRYht4JawPzCp%2BcD6c%2Fz9AW3O%2Fuz51C9OvHqPhgHyHxFsi1g6bRtww9B6benGy%2FJwTtTVSIoIT7Je4r4VcX5DLt6iPKZJ6ZscFSplT%2BR%2BSY59KxLP7zK%2FfH7%2Bz3osw7b%2FbSXYoZpHopNFPB9Hw%2BBKlcmRz3gIzt4GGh6UUkmKjxNpU5tUXc4p3BNzCQrhHL8FTuErlFgdURDqs6UhyfvDrrtJ7l7U%2B7ID9fzCey%2FXOBjqkATOBsxBkgpxwnFwN%2BFRlCBbIJ56uL3RUIwhWSmDyaeakwRUsoPuHoDsM9f0mR%2Bul7SEIzcnf7ma9AZ0wvAD5vNxEONxksEZdHENhB7FXcFvuNgkj1oae6fvawdEzeVS5%2BAt3FHvkwQoEQ72CoEivDnprtnmM90JQTeUQZUA2LcaKtffwKBOzeitgAdE9FyQps9g58O4%2BsXJX8ZqhKAyL9BmPm0Dt&X-Amz-Signature=a007fd3348af66fed77d42d466048e24b85b2392f79942fe527499ac0d82b3ab&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="width:100%;height:80vh;border:none;border-radius:6px;" allowfullscreen></iframe>
-            </div>
+          <div class="preview" id="prevarq2"><iframe src="https://raw.githubusercontent.com/lucasschiasso33-cpu/relatorios-cr2/main/marco2026/Biotil/arquivos/Expocana_-_Stand_Biotil/Biotil_-_Pes-Testeira_Stand-Expocana2026_-_120x360M_escala_r.pdf" style="width:100%;height:82vh;border:none;border-radius:6px;"></iframe></div>
         </div>
         <div class="arquivo-wrap">
           <div class="arquivo" onclick="toggle('arq3')">
@@ -60,18 +56,16 @@
             <span class="ext">PDF</span>
             <span class="btn" id="btnarq3">Ver</span>
           </div>
-          <div class="preview" id="prevarq3">
-              <iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/7558048b-61a2-4f24-8c54-ef59e1749da9/Biotil_-_Testeira_Stand-Expocana2026_-_10x08M_%28escala_reduzida%29.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WJF3QQ5H%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222731Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDDZIF7uU4Eoi2QU9szGATUBQMnZzoLNQmCT%2B5nltsImwIhAMXppYIlP5woXoowS6lR%2B9AYuD0YkTyhrw58T%2Bp%2BfpqzKv8DCH8QABoMNjM3NDIzMTgzODA1IgydxEo5hRg2UHGDb0gq3ANoqThMk8TYPKtJWEeEbMlBClf%2Fw%2FVQfZBQWVzpJBx6HLZCE%2F9lkIJL%2BhnHhj%2BPtmHA9bSViiu3Vs1O8euxG%2Fz%2FMH4ZBd%2FsJ3m1Q7CFQAIHFKnRPGOn7Yb8ObksijF7JjsUBTU6sUtRDrmHmkfTA8xz8k5npPfwQHk7Pa2GGMCqQWFa01%2FbOfS3U42EQxM9ROr640iMemyPBCSukHdvLVUCQ5Y5Yz4uSCc2YdAvGk%2FpyKM2G8bFwpNWF8L9QAMksoMEC%2FpicKn%2B%2BGClKK6MHXn7ISxzvWi3fxlmJVzYlkjsM8%2B5le2Gd%2B8y7F0W4G2bbe0IUfqkbFQQ9HnSlf1rU5etoP%2B9KCR6EumcuwtmP80Hny8amkgPL%2Fbb6b0iRdrkqNX2Ycj6Iql%2FvoZ9RzHTS9khqHPRYht4JawPzCp%2BcD6c%2Fz9AW3O%2Fuz51C9OvHqPhgHyHxFsi1g6bRtww9B6benGy%2FJwTtTVSIoIT7Je4r4VcX5DLt6iPKZJ6ZscFSplT%2BR%2BSY59KxLP7zK%2FfH7%2Bz3osw7b%2FbSXYoZpHopNFPB9Hw%2BBKlcmRz3gIzt4GGh6UUkmKjxNpU5tUXc4p3BNzCQrhHL8FTuErlFgdURDqs6UhyfvDrrtJ7l7U%2B7ID9fzCey%2FXOBjqkATOBsxBkgpxwnFwN%2BFRlCBbIJ56uL3RUIwhWSmDyaeakwRUsoPuHoDsM9f0mR%2Bul7SEIzcnf7ma9AZ0wvAD5vNxEONxksEZdHENhB7FXcFvuNgkj1oae6fvawdEzeVS5%2BAt3FHvkwQoEQ72CoEivDnprtnmM90JQTeUQZUA2LcaKtffwKBOzeitgAdE9FyQps9g58O4%2BsXJX8ZqhKAyL9BmPm0Dt&X-Amz-Signature=6f8a353dbf0cd6cc46798933873a038f7e6c8ace0a737c3a361c3cb22315ec09&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="width:100%;height:80vh;border:none;border-radius:6px;" allowfullscreen></iframe>
-            </div>
+          <div class="preview" id="prevarq3"><iframe src="https://raw.githubusercontent.com/lucasschiasso33-cpu/relatorios-cr2/main/marco2026/Biotil/arquivos/Expocana_-_Stand_Biotil/Biotil_-_Testeira_Stand-Expocana2026_-_10x08M_escala_reduzid.pdf" style="width:100%;height:82vh;border:none;border-radius:6px;"></iframe></div>
         </div></div>
-  <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+  <div class="rodape">Relatorio de Entregas &mdash; Marco 2026</div>
 <script>
-  function toggle(uid) {
-    var prev = document.getElementById("prev" + uid);
-    var btn  = document.getElementById("btn"  + uid);
-    if (!prev) return;
-    var open = prev.classList.toggle("open");
-    btn.textContent = open ? "Fechar" : "Ver";
+  function toggle(uid){
+    var prev=document.getElementById("prev"+uid);
+    var btn=document.getElementById("btn"+uid);
+    if(!prev)return;
+    var open=prev.classList.toggle("open");
+    btn.textContent=open?"Fechar":"Ver";
   }
 </script>
 </body>
