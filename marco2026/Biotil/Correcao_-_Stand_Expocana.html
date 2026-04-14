@@ -11,17 +11,17 @@
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
   h1{font-size:22px;color:#fff;margin-bottom:4px}
   .empresa{font-size:14px;color:#2563EB}
-  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .lista{width:100%;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
   .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
-  .num{font-size:11px;color:#aaa;min-width:20px}
+  .num{font-size:11px;color:#aaa;min-width:22px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 7px;border-radius:3px;white-space:nowrap}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:50px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview{display:none;background:#111;padding:14px;border-radius:0 0 8px 8px;margin-top:-4px}
   .preview.open{display:block}
-  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#444}
 </style>
 </head>
 <body>
@@ -38,18 +38,16 @@
             <span class="ext">PDF</span>
             <span class="btn" id="btnarq1">Ver</span>
           </div>
-          <div class="preview" id="prevarq1">
-              <iframe src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/b11b71ca-1732-46df-9923-1c6ecf10e254/Biotil_-_Stand-Expocana2026_-_95x3M_%28escala_reduzida%29_V3.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466T5Q577BO%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222821Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDlFl962KfmwFFYjaDlQqANceswenBIhKh01x3E8mg4BQIhALLCXcKlM%2F4ucqVS75tuq%2Bn0S%2FnCeAsHSDQh%2FsGx98yNKv8DCH8QABoMNjM3NDIzMTgzODA1IgzJvOZruKIIiaTC6H0q3ANAJmcGV1sY8g8vFQtJ20amB%2FIXWZ%2B7XCeowAwu4YfTV3JfKLP4tfUKbCTAhPWXF0hLlAEyXaG5UYHTtRcO3LceJ2RXkwN%2BhbyIvZcaUpmyjgTlpWLPyrQlvJ7XXZuJIcyCgiGxqGHt6woTxz%2Bpz%2F4brishRXecsNDU9wPhAGjFmDN5fShTJ6aN0B6Lja5WiwRrdwYnzT7qodnnJ1nHlZ6cAZ7UJbyRnRDOALVlaadY1RsmzVDkIorvfCRxqJGaXIVC7RtgHBX9y5EXaSjM7%2B8wOaZBcJQBngpOx5zcEoraR4gX0ksFJjMHsak7l5up4mArD7OQ%2FumC4X3pah6ZK5a0CPkrNd3kHCvXcYxzwl1cI%2BUzk4Mi8L62321LegX2j%2FsY%2BI1mkzxTp73Kw1WIRqDjp9eQ3YmB0ICnCCj5uSS9MM4Y%2F%2BnfvaIi71oXkjuvp0UNFnWZYr8Ql4qFNHZFGWNZe%2B37KjSXuGIjs6yATQ6G1Gp6xczZmbNbgvgmJvSPqBDgk8eBKqzRc6WI86BLsZsGglo1Cdbxu5FtMKI9X%2Ftsp8vdJueFOFpdMlRcvIHjkMgi6sfg7660tmGwVzRVVEB%2BwN2YfFbq6UolbMfhcjvORon4oHigw2n3ewL03TCiy%2FXOBjqkATDfs4LJO2duUeWzxG%2FezNZg%2F9khG1c3eXELgfYlQJ18S%2FF5D8t%2FiAOiAuqZkIcbT%2B0pE1UbVq6SnW9wBhdFk%2BDGwX5rhy2pTwUJ%2FTQuibLX3c6I8DlECb3%2F3w%2BPvTtEzVMx1MOcJq3dOvSuoW9W7ckEKR6%2FnfdRyX9DI8ZUsCFe%2FNu7fXBJ5IqEWRPmCRDhktTBs%2F%2BJUrK9GQ2B66K0w8Aq%2B3VW&X-Amz-Signature=a967164864468fb2f23f41e607f70aae17371c3e0e73e875712e38456cef5963&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" style="width:100%;height:80vh;border:none;border-radius:6px;" allowfullscreen></iframe>
-            </div>
+          <div class="preview" id="prevarq1"><iframe src="https://raw.githubusercontent.com/lucasschiasso33-cpu/relatorios-cr2/main/marco2026/Biotil/arquivos/Correcao_-_Stand_Expocana/Biotil_-_Stand-Expocana2026_-_95x3M_escala_reduzida_V3.pdf" style="width:100%;height:82vh;border:none;border-radius:6px;"></iframe></div>
         </div></div>
-  <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+  <div class="rodape">Relatorio de Entregas &mdash; Marco 2026</div>
 <script>
-  function toggle(uid) {
-    var prev = document.getElementById("prev" + uid);
-    var btn  = document.getElementById("btn"  + uid);
-    if (!prev) return;
-    var open = prev.classList.toggle("open");
-    btn.textContent = open ? "Fechar" : "Ver";
+  function toggle(uid){
+    var prev=document.getElementById("prev"+uid);
+    var btn=document.getElementById("btn"+uid);
+    if(!prev)return;
+    var open=prev.classList.toggle("open");
+    btn.textContent=open?"Fechar":"Ver";
   }
 </script>
 </body>
