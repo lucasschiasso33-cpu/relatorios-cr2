@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Teaser Site</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Arial,sans-serif;background:#0D1B2A;color:#fff;min-height:100vh;padding:40px 20px}
+  .header{text-align:center;margin-bottom:32px}
+  .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
+  h1{font-size:22px;color:#fff;margin-bottom:4px}
+  .empresa{font-size:14px;color:#2563EB}
+  .lista{width:100%;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
+  .arquivo:hover{background:#2563EB}
+  .num{font-size:11px;color:#aaa;min-width:22px}
+  .nome{flex:1;font-size:14px;word-break:break-all}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 7px;border-radius:3px;white-space:nowrap}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:50px;text-align:center}
+  .arquivo:hover .btn{background:#fff;color:#2563EB}
+  .preview{display:none;background:#111;padding:14px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview.open{display:block}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#444}
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">CR2 Marketing</div>
+    <h1>Teaser Site</h1>
+    <div class="empresa">Agrobiotech</div>
+  </div>
+  <div class="lista">
+        <div class="arquivo-wrap">
+          <div class="arquivo" onclick="toggle('arq1')">
+            <span class="num">01</span>
+            <span class="nome">Teaser Site_2.mp4</span>
+            <span class="ext">MP4</span>
+            <span class="btn" id="btnarq1">Ver</span>
+          </div>
+          <div class="preview" id="prevarq1"><video controls style="max-width:100%;max-height:82vh;border-radius:6px;display:block;margin:0 auto;"><source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/15e5cdd5-e772-4197-beac-cff8d487a489/Teaser_Site_2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466VK6OHCUB%2F20260414%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260414T030039Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQCTA3DSUdoHz1Mrlo%2BLP7yheRdpyIzOatukZgqYWFssWAIgcZ6Nh0U0QCtw7rQKjRMYb4DNqffcvgIgiErK7kdE6AMqiAQIgv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDAy6c72A%2FxzwFojWayrcA36vsYK0jz5dJBk2305GdZzd1epocpJZvQASpNEsQnJb1jW2TxthGztZrmHHa9XgH95FiH3O6fMKKf1X4t0Uo0TPZ4a2yc547iuSaTeC3MrDRsM2w%2Bhrabyx0OVBB1gKgLx%2FaIqpN9Gl47ZCJvs%2BQs%2FAmHVfatTVXOwcx2zAR49iO9E%2FKyoaGTTz6AFtHUEAlQH%2FoD7aV2wGZEE8LnEB7qywdZCQYkFhl3AUoODxbQ6ErV5Ts%2FFWXhIYsaXXd95e6POCmoIxZoPWzwBfcAS%2BhW%2FJwXxvoWeMNV5e1PgMJ6eAqy6gXJhlzLIYFVtfFtv%2B%2F%2BBnmQoiLswOXb6NQXrh0Z6OU0dxyflH3LJOmEH4oqUEsGeAWjUckqNi4ZG0hCSY0J5HsGJpi1mqICHqM1goA718NHuyACu2zdz7Su0ldnCUB%2FzZjIDeLTiEgBqofEjye4gSO23EVzP%2B3enddsY6buZ1U9%2FH6SgnNeDWUkLVr9UxzhIlq3w9PwvkWz8PZhMlkg3izfrqF%2F%2FVFsNqrzyQBmRbh1qpyiAkIbpGHHTTXCMHpvCLSoIp%2BekMUoN3Zkvh0mp2bxvx96VPdrLj4QAmIQW7ooEdwHEMnMTiFJQGkbVfTNjBJC1Qg%2B8XYNVCMLSV9s4GOqUB6JKVGwBVeQgsVCszOyi66CoFSt%2Fl69AkFjeHi3UM90aXASIDItUkma9a3J4rESlnNrjglIvfoHzWWggbyVzlnXu1CjhRrHlYpN7SyAWXMER2t6urA28WI9bdUNtyoACyWqyHyJZ6sBLAlt5ZIIodttuGhKxoQXjb%2FtAcmMZYEG2CTI8RgUb5nVXc2IilLRF8HPc8eI5HzWTgjlkCcFz2%2FzG5vkHe&X-Amz-Signature=bbc180690ae06a1b254171536cac80117ffa752dcaf9067984f91e3e6b24b7c1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject"></video></div>
+        </div></div>
+  <div class="rodape">Relatorio de Entregas &mdash; Marco 2026</div>
+<script>
+  function toggle(uid){
+    var prev=document.getElementById("prev"+uid);
+    var btn=document.getElementById("btn"+uid);
+    if(!prev)return;
+    var open=prev.classList.toggle("open");
+    btn.textContent=open?"Fechar":"Ver";
+  }
+</script>
+</body>
+</html>
