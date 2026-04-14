@@ -11,17 +11,17 @@
   .logo{font-size:12px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
   h1{font-size:22px;color:#fff;margin-bottom:4px}
   .empresa{font-size:14px;color:#2563EB}
-  .lista{width:100%;max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
+  .lista{width:100%;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
   .arquivo{display:flex;align-items:center;gap:14px;background:#1A3A5C;padding:14px 18px;border-radius:8px;cursor:pointer;transition:background .2s;user-select:none}
   .arquivo:hover{background:#2563EB}
-  .num{font-size:11px;color:#aaa;min-width:20px}
+  .num{font-size:11px;color:#aaa;min-width:22px}
   .nome{flex:1;font-size:14px;word-break:break-all}
-  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 6px;border-radius:3px}
-  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:40px;text-align:center}
+  .ext{font-size:10px;background:#0D1B2A;color:#aaa;padding:2px 7px;border-radius:3px;white-space:nowrap}
+  .btn{font-size:12px;background:#2563EB;color:#fff;padding:5px 14px;border-radius:4px;white-space:nowrap;min-width:50px;text-align:center}
   .arquivo:hover .btn{background:#fff;color:#2563EB}
-  .preview{display:none;background:#111;padding:12px;border-radius:0 0 8px 8px;margin-top:-4px}
+  .preview{display:none;background:#111;padding:14px;border-radius:0 0 8px 8px;margin-top:-4px}
   .preview.open{display:block}
-  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#555}
+  .rodape{text-align:center;margin-top:32px;font-size:12px;color:#444}
 </style>
 </head>
 <body>
@@ -38,29 +38,25 @@
             <span class="ext">MP4</span>
             <span class="btn" id="btnarq1">Ver</span>
           </div>
-          <div class="preview" id="prevarq1">
-              <video controls style="max-width:100%;max-height:80vh;border-radius:6px;display:block;margin:0 auto;">
-                <source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/dd9116a2-5c81-4150-a314-155feaaebfc5/Wilson_%28Resumido%29.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QMKZXWRR%2F20260413%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260413T222706Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIC2Cp5Zcpjqr%2F6q1a9BPI%2BxSK3jAwXvyrl59OlvT%2BlP1AiBs5LvvL%2Bahn77t1dpCVcbPIOjEVq%2Flh5m6lZ1ijE1VLSr%2FAwh%2FEAAaDDYzNzQyMzE4MzgwNSIMUiLGnZLk24bj%2BSOmKtwDGVS1RbPi3zb%2BG8XcDHZO8DHTxepqKFvfNNX1QpaXMMuCBywZIDy%2F44gL0d%2B5YzkSk0xisfvMIu4WjFRN2pMXUDZyothSJUGGLMXcPXbE7%2Frkl7JTkOD9Mco5QxWhetPqjGiLfQ%2BJQJwmAG9dsBrwPA9KtkJCbgb1xXkj6Riz5su%2Fx94R%2FJD746T8VOKjXUZEQx3XHRdNUbR5TdyPZ46D7f8yq4gKKuDpIvoEMAMzCfvat73j17wcpI2U%2FpKNQNDV05EWfW1eUCwtW3Aq9Pto0%2BNlCL7sGvA3xGryf8zOM5Ru9xpddlJjZaoLLYvtw%2Fs1bMoWzoAUfoXUbRbvPeZhlkR%2BogRWMawLKhZWYEyLEYdBEZ9yqxtTXiwKDWb9qPKyjGudyiR5e9vKKNZPxODgz6QAjowxOlqYkfHqa5JA3UBymkX18IsFSH087czu4KPE1F9Pk5T2K3ytYLB4p7NlXU834sjVQl0ike80lFa5ehWeSOiU16EOt2L9UNFlvwKGCErd6A5H7LCTr14BuGf%2FX9UKcneaUQaoqe34%2Fko%2FiZ%2B2c1kJb%2FzuW9eyR6D17CG7GfOMt8oQNLD8UvUJVX7H9Mu1Uq1yjOXCemxzROu9p1JceiG4PjO0iXvRGWUwocv1zgY6pgFYrXqYNgT%2FLVCM%2FK2Wf%2BVF9mT910DSuM2k3H7pvdryRQpehpu3hZ8qHkCkecPPULZU3jW16VucIoIytfNOA3X3V3%2BJIg%2FZoneHJ1J96Bv1aR4iKT%2BVnPCfRU0KtGt0yHMIAVSAFiDERDnDNSbZggb6E1k0AWa9xaxOIv6r5qv084C9I0xOmDuJ7CgNgtGwTUWPIqcVBdj0qhZuPmqB6FF6EP10GJMF&X-Amz-Signature=98bee358edfb9677691a2bc12a07fc3f369bf8149a2d285bb92696317e602d2c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject">
-              </video>
-            </div>
+          <div class="preview" id="prevarq1"><video controls style="max-width:100%;max-height:82vh;border-radius:6px;display:block;margin:0 auto;"><source src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ab6a064b-ad08-81bf-8b90-0003205a1bf8/dd9116a2-5c81-4150-a314-155feaaebfc5/Wilson_%28Resumido%29.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UMRDD7WL%2F20260414%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260414T011930Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDHh8KuLBe7ZVqC18vWoZgxtjs%2FDGIBzw6ptzm2GT6dQAIgcolTFc1ZOTcogmXEY5b6i0Db0u29nxlr%2FDhAnnadIrAqiAQIgv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDM%2FzqjKNAZWPoJ%2FeeyrcA6GFLKEVwlBp11uizjDgMW3NIk5dCNySrFL0nQvexhxelTPiomk30cF8%2B16b%2FyGiRfOacLj2hlGiCVRm2NtGwmDEzPa5yyKPoZyzwyiGjkOu5MLDbENlES0BAQFVbmA6mkgH0Gz8PZ5GIOj7va%2BrxbKBHwRwUgq2PF30xEYYkwxJu5DViuOOsOEeSvglTpb%2FGM%2FkZyDb6%2FfyBf9%2F5YIGh%2FNHssS%2F8ldSJ%2BNINjC9lEA4I3T7iJTglOnx6lJ8JYxI%2F2%2FO8%2FFYk%2B0sFUS2%2BowFTUVrHrLh4QUEeCsZv2BxNpWJq5z5af4MFHBpqTJR%2B55wotxCV%2B730E5Lu6pyBWhtMdUyAY8UqlYXdKQnDQxtUOa9sEDFyRhsZAz4YURwpqB5evy%2FTzpAjQ%2FSOYaOFOpKshXi1hQiv4%2BnvEnEnQQXVVHd%2FLMUkaFL1k%2FNRguLWrnnkba4qbxEk4iJjDE1Lp91oF0eFdaOlCGV6tqP35dwbRRFCNVpQJF3VVf8syqrMm6oKbGD3Gi3t5aB2YLTPCn%2Fo1eyO2QxNvoBOqbUEI9AMRMPqEqz%2B3hqDl%2Bl%2Bm9I3Q79M7ID2yMGJEh6rDkNk2zlBTn3IppCr%2F1ZrxheJvtIIWN%2FFWNmZGA%2FHCl%2BzVxXMLaV9s4GOqUBm8oddP22FCltKokFq%2BL5XXpSA9y%2BSSQjiAHeGIARR5tGJB2HyMIRbftD2RLGWrFWC8LtNV01zUJfNVo%2B7xeVlP%2B%2BpbbLmI60NiILkvIBC2dRNTwtun6RQ%2B1vn2pLLSgP6KOg7OSaTdIsm8MfY36u53SMPl0g0T1Hy3knmxFZX0Vs5wgJCXICgSvOKtYrKAFYKzdn8xyese%2BmCBsA5RiMpZF0CnAo&X-Amz-Signature=e08e741491472fbb8ba7da8ad67874ca4976aace6b7ca9d51c8dee2a7a3c3ea7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject"></video></div>
         </div>
         <div class="arquivo-wrap">
           <div class="arquivo" onclick="toggle('arq2')">
             <span class="num">02</span>
             <span class="nome">view</span>
-            <span class="ext">OUTRO</span>
+            <span class="ext">BIN</span>
             <span class="btn" id="btnarq2">Ver</span>
           </div>
-          <div class="preview" id="prevarq2" style="display:none"></div>
+          <div class="preview" id="prevarq2" style="display:none"><a href="https://drive.google.com/file/d/1o1excsSh19ZOiUDZZYVXDreHp31YBqm6/view?usp=drive_link" style="color:#2563EB;font-size:14px;">Baixar arquivo</a></div>
         </div></div>
-  <div class="rodape">Relatorio de Entregas - Marco 2026</div>
+  <div class="rodape">Relatorio de Entregas &mdash; Marco 2026</div>
 <script>
-  function toggle(uid) {
-    var prev = document.getElementById("prev" + uid);
-    var btn  = document.getElementById("btn"  + uid);
-    if (!prev) return;
-    var open = prev.classList.toggle("open");
-    btn.textContent = open ? "Fechar" : "Ver";
+  function toggle(uid){
+    var prev=document.getElementById("prev"+uid);
+    var btn=document.getElementById("btn"+uid);
+    if(!prev)return;
+    var open=prev.classList.toggle("open");
+    btn.textContent=open?"Fechar":"Ver";
   }
 </script>
 </body>
